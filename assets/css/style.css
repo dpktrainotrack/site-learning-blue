@@ -2194,7 +2194,7 @@ ul.cert-listing li a i {
   min-width: 65px;
   height: 65px;
   border-radius: 18px;
-  background: rgba(6, 187, 204, 0.1);
+  background-color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
