@@ -5353,3 +5353,9 @@ h5.traning-card-title {
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .hero-video {
+    height: 80vh;
+  }
+}
