@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Certified Cloud Practitioner - CLF-C02 | Site Learning America</title>
+
+    <meta name="description"
+        content="SiteLearningAmerica offers IT certification training, discounted exam vouchers, and career-focused learning programs for cybersecurity, cloud computing, networking, and project management.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- OWL Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/detail.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- ========== MAIN NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-1" href="index.html">
+                <img src="assets/images/logo2.png" alt="Site Learning America" class="navbar-logo">
+                <span class="logo-text-site">
+                    <div class="">SITE </div>
+                    <div>LEARNING</div>
+                    <div>AMERICA</div>
+                </span>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMainMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li> -->
+                    <li class="nav-item dropdown mega-dropdown voucher-mega-dropdown position-relative">
+                        <a class="nav-link dropdown-toggle" href="listing.html">Training <i
+                                class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu mega-menu voucher-mega-menu">
+                            <div class="" style="min-width: 200px;">
+                                <div class="mega-menu-column">
+                                    <ul class="mega-menu-links">
+                                        <li><a href="training.html"><span>AWS</span></a></li>
+                                        <li><a href="training.html"><span>Microsoft</span></a></li>
+                                        <li><a href="training.html"><span>PECB</span></a></li>
+                                        <li><a href="training.html"><span>PEGA</span></a></li>
+                                        <li><a href="training.html"><span>CISCO</span></a></li>
+                                        <li><a href="training.html"><span>CompTIA</span></a></li>
+                                        <li><a href="training.html"><span>Paloalto</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown mega-dropdown voucher-mega-dropdown position-relative">
+                        <a class="nav-link dropdown-toggle" href="vouchers.html">Vouchers <i
+                                class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu mega-menu voucher-mega-menu">
+                            <div class="" style="min-width: 200px;">
+                                <div class="mega-menu-column">
+                                    <ul class="mega-menu-links">
+                                        <li><a href="vouchers.html"><span>AWS</span></a></li>
+                                        <li><a href="vouchers.html"><span>Microsoft</span></a></li>
+                                        <li><a href="vouchers.html"><span>PECB</span></a></li>
+                                        <li><a href="vouchers.html"><span>PEGA</span></a></li>
+                                        <li><a href="vouchers.html"><span>CISCO</span></a></li>
+                                        <li><a href="vouchers.html"><span>CompTIA</span></a></li>
+                                        <li><a href="vouchers.html"><span>Paloalto</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> -->
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="navbar-cta ms-lg-3">
+                    <a href="contact.html" class="btn btn-cta-nav" id="navEnquiryBtn"><i
+                            class="fa-brands fa-whatsapp"></i><span>+1 804-441-8645</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- =================== PREMIUM HERO SECTION ================== -->
+        <section class="voucher-hero position-relative overflow-hidden py-5 d-flex align-items-center"
+            id="trainingEnquiryForm">
+            <!-- Colored Background Orbs for Deep Premium Aesthetic -->
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+
+            <div class="container position-relative z-3 pb-4">
+                <nav aria-label="breadcrumb" class="py-4">
+                    <ol class="breadcrumb custom-breadcrumb-dark mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="vouchers.html">Vouchers</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">AWS Practitioner</li>
+                    </ol>
+                </nav>
+                <div class="row align-items-center gy-5">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="col-lg-8 text-white" data-aos="fade-right">
+
+                        <div class="detail-hero-content">
+
+                            <div class="detail-hero-img mb-4" data-aos="zoom-in" data-aos-delay="200">
+                                <img src="assets/images/traning/aws/Cloud-Practitioner.webp" alt="">
+                            </div>
+
+                            <h1 class="hero-title fw-bold mb-4">
+                                AWS Certified Cloud Practitioner <span class="gradient-text">(CLF-C02)</span>
+                            </h1>
+
+                            <p class="hero-description mb-4">
+                                Kickstart your cloud journey by validating your core technical expertise. This globally
+                                recognized foundational certification verifies your baseline knowledge of cloud
+                                concepts,
+                                security protocols, core AWS infrastructure services, billing, and pricing structures.
+                            </p>
+
+                            <div class="hero-feature-flex d-flex flex-wrap gap-3">
+                                <div class="hero-feature-pill">
+                                    <div class="">
+                                        <i class="fas fa-users text-info me-2"></i>
+                                        <span class="fw-bold">12,850+</span> Students
+                                        Trained
+                                    </div>
+                                </div>
+                                <div class="hero-feature-pill">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>100% Passing Assurance</span>
+                                </div>
+                                <div class="hero-feature-pill">
+                                    <i class="fas fa-headset"></i>
+                                    <span>24/7 Priority Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT FORM / PRODUCT METRICS CARD -->
+                    <div class="col-lg-4">
+                        <div class="hero-form-wrapper" data-aos="fade-left" data-aos-delay="200">
+                            <div class="hero-form-card">
+                                <div class="form-content">
+                                    <div class="form-top mb-4 text-center">
+
+                                        <h3 class="fw-bold mb-1">Book Your Training</h3>
+                                        <p class="text-muted small">Save up to 50% on authentic exam vouchers with
+                                            companion
+                                            training assistance.</p>
+                                    </div>
+
+                                    <form class="custom-form">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <div class="input-group-custom">
+                                                    <i class="fas fa-user input-icon"></i>
+                                                    <input type="text" class="form-control" placeholder="Full Name"
+                                                        required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="input-group-custom">
+                                                    <i class="fas fa-envelope input-icon"></i>
+                                                    <input type="email" class="form-control" placeholder="Email Address"
+                                                        required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="input-group-custom">
+                                                    <i class="fas fa-phone input-icon"></i>
+                                                    <input type="tel" class="form-control" placeholder="Phone Number"
+                                                        required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="input-group-custom">
+                                                    <i class="fas fa-comments input-icon"></i>
+                                                    <textarea class="form-control" rows="2"
+                                                        placeholder="Message or specific questions..."
+                                                        required></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mt-4">
+                                                <button type="submit" class="submit-btn text-uppercase fw-bold w-100">
+                                                    Book Now
+                                                    <i class="fas fa-paper-plane ms-2"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== SECTION 1: KEY HIGHLIGHTS BAR (NEW) ================== -->
+        <section class="highlights-strip py-4">
+            <div class="container">
+                <div class="row g-4 text-center justify-content-center">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="highlight-item-card">
+                            <div class="highlight-icon"><i class="fas fa-signal"></i></div>
+                            <h5>Beginner Friendly</h5>
+                            <p>No prior cloud or IT experience required to start.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="highlight-item-card">
+                            <div class="highlight-icon"><i class="fas fa-stopwatch"></i></div>
+                            <h5>90-Min Exam</h5>
+                            <p>65 multiple-choice questions in a simple format.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="highlight-item-card">
+                            <div class="highlight-icon"><i class="fas fa-chart-line"></i></div>
+                            <h5>High Demand</h5>
+                            <p>Unlocks career paths with +28% YoY growth rates.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="highlight-item-card">
+                            <div class="highlight-icon"><i class="fas fa-award"></i></div>
+                            <h5>3-Year Validity</h5>
+                            <p>Globally recognized credential valid for 36 months.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== MAIN DETAIL WRAPPER SECTION ================== -->
+        <section class="voucher-detail-page py-5 position-relative">
+            <div class="container">
+                <div class="row g-5">
+
+                    <!-- LEFT MAIN CONTENT -->
+                    <div class="col-lg-8">
+
+                        <!-- DYNAMIC TABS SELECTOR FOR BEST UI/UX -->
+                        <div class="tabs-navigation-card mb-4" data-aos="fade-up">
+                            <ul class="nav nav-pills custom-tabs-pills" id="detailTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="overview-tab" data-bs-toggle="tab"
+                                        data-bs-target="#overview-pane" type="button" role="tab"
+                                        aria-controls="overview-pane" aria-selected="true"><i
+                                            class="fas fa-file-alt me-2"></i>Overview</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="curriculum-tab" data-bs-toggle="tab"
+                                        data-bs-target="#curriculum-pane" type="button" role="tab"
+                                        aria-controls="curriculum-pane" aria-selected="false"><i
+                                            class="fas fa-graduation-cap me-2"></i>Syllabus Outline</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="learn-tab" data-bs-toggle="tab"
+                                        data-bs-target="#learn-pane" type="button" role="tab" aria-controls="learn-pane"
+                                        aria-selected="false"><i class="fas fa-check-circle me-2"></i>What You'll
+                                        Learn</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="career-tab" data-bs-toggle="tab"
+                                        data-bs-target="#career-pane" type="button" role="tab"
+                                        aria-controls="career-pane" aria-selected="false"><i
+                                            class="fas fa-briefcase me-2"></i>Career Salaries</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- TABS PANES WRAPPER -->
+                        <div class="tab-content" id="detailTabsContent">
+
+                            <!-- TAB 1: Certification Overview -->
+                            <div class="tab-pane fade show active" id="overview-pane" role="tabpanel"
+                                aria-labelledby="overview-tab">
+                                <div class="detail-card" data-aos="fade-up">
+                                    <div class="card-header-title mb-4">
+                                        <h3 class="fw-bold"><span class="header-line"></span>Certification Overview</h3>
+                                    </div>
+                                    <p class="lead-text">
+                                        The AWS Certified Cloud Practitioner (CLF-C02) credential establishes your basic
+                                        understanding of Amazon Web Services (AWS). It is a vital milestone for
+                                        beginners
+                                        and non-technical business professionals looking to gain strong technical
+                                        credibility.
+                                    </p>
+                                    <p>
+                                        As cloud infrastructure budgets expand across global organizations, there is a
+                                        severe shortage of certified personnel who can navigate basic deployment
+                                        principles,
+                                        manage billing systems, comprehend Shared Responsibility security models, and
+                                        catalog core compute, database, and storage platforms.
+                                    </p>
+                                    <p class="mb-0">
+                                        This exam voucher grants you access to schedule your proctored test at physical
+                                        PearsonVUE test centers, or as a secure online proctored exam in the comfort of
+                                        your
+                                        home. Site Learning America provides comprehensive preparation tools and
+                                        discounts
+                                        to assure your absolute success.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- TAB 2: Training Outline (Syllabus Accordion) -->
+                            <div class="tab-pane fade" id="curriculum-pane" role="tabpanel"
+                                aria-labelledby="curriculum-tab">
+                                <div class="detail-card">
+                                    <div class="card-header-title mb-4">
+                                        <h3 class="fw-bold"><span class="header-line"></span>Syllabus Outline & Modules
+                                        </h3>
+                                    </div>
+                                    <p class="text-muted mb-4">Explore the comprehensive domains covered in the updated
+                                        CLF-C02 syllabus. Each module includes video classes, active labs, and mock
+                                        exams.
+                                    </p>
+
+                                    <div class="accordion custom-voucher-faq" id="syllabusAccordion">
+                                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button fw-bold" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#module1"
+                                                    aria-expanded="true">
+                                                    Domain 1: Cloud Concepts (24% of Exam)
+                                                </button>
+                                            </h2>
+                                            <div id="module1" class="accordion-collapse collapse show"
+                                                data-bs-parent="#syllabusAccordion">
+                                                <div class="accordion-body">
+                                                    <ul class="syllabus-list">
+                                                        <li>Defining the AWS Cloud value proposition and cost benefits
+                                                        </li>
+                                                        <li>Understanding cloud delivery models: Infrastructure as a
+                                                            Service
+                                                            (IaaS), Platform as a Service (PaaS), Software as a Service
+                                                            (SaaS)</li>
+                                                        <li>Reviewing the AWS Global Infrastructure: Availability Zones
+                                                            (AZs), AWS Regions, and Edge Locations</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-bold" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#module2"
+                                                    aria-expanded="false">
+                                                    Domain 2: Security & Compliance (30% of Exam)
+                                                </button>
+                                            </h2>
+                                            <div id="module2" class="accordion-collapse collapse"
+                                                data-bs-parent="#syllabusAccordion">
+                                                <div class="accordion-body">
+                                                    <ul class="syllabus-list">
+                                                        <li>AWS Shared Responsibility Security Model: Customer controls
+                                                            vs.
+                                                            AWS controls</li>
+                                                        <li>AWS Identity and Access Management (IAM): Users, groups,
+                                                            roles,
+                                                            permissions, and Multi-Factor Authentication (MFA)</li>
+                                                        <li>Encryption strategies, AWS Key Management Service (KMS), and
+                                                            compliance tools (AWS Artifact)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-bold" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#module3"
+                                                    aria-expanded="false">
+                                                    Domain 3: Core Technology & Services (34% of Exam)
+                                                </button>
+                                            </h2>
+                                            <div id="module3" class="accordion-collapse collapse"
+                                                data-bs-parent="#syllabusAccordion">
+                                                <div class="accordion-body">
+                                                    <ul class="syllabus-list">
+                                                        <li>Compute Services: Amazon Elastic Compute Cloud (EC2), AWS
+                                                            Lambda, and AWS Elastic Beanstalk</li>
+                                                        <li>Storage Platforms: Amazon Simple Storage Service (S3) and
+                                                            Elastic Block Store (EBS)</li>
+                                                        <li>Databases: Amazon Relational Database Service (RDS), Amazon
+                                                            DynamoDB, and Amazon Aurora</li>
+                                                        <li>Networking: Amazon Virtual Private Cloud (VPC), Route 53,
+                                                            and
+                                                            CloudFront Content Delivery Network (CDN)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item border-0 mb-0 shadow-sm rounded-4 overflow-hidden">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-bold" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#module4"
+                                                    aria-expanded="false">
+                                                    Domain 4: Billing, Pricing & Support (12% of Exam)
+                                                </button>
+                                            </h2>
+                                            <div id="module4" class="accordion-collapse collapse"
+                                                data-bs-parent="#syllabusAccordion">
+                                                <div class="accordion-body">
+                                                    <ul class="syllabus-list">
+                                                        <li>Comparing AWS pricing models (On-Demand, Savings Plans, Spot
+                                                            Instances, Reserved Instances)</li>
+                                                        <li>Budgeting tools: AWS Budgets, Cost Explorer, and the AWS
+                                                            Pricing
+                                                            Calculator</li>
+                                                        <li>AWS Support Plans: Developer, Business, and Enterprise tiers
+                                                            and
+                                                            characteristics</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TAB 3: What You'll Learn (Checker Cards) -->
+                            <div class="tab-pane fade" id="learn-pane" role="tabpanel" aria-labelledby="curriculum-tab">
+                                <div class="detail-card">
+                                    <div class="card-header-title mb-4">
+                                        <h3 class="fw-bold"><span class="header-line"></span>What Skills You Will Master
+                                        </h3>
+                                    </div>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>AWS Infrastructure Architecture</h6>
+                                                    <p class="small text-muted mb-0">Learn how regions, edge locations,
+                                                        and
+                                                        availability zones work together.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>Cost Optimization Metrics</h6>
+                                                    <p class="small text-muted mb-0">Compute accurate pricing models,
+                                                        reserve instances, and cut monthly cloud waste.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>Cloud Security Best Practices</h6>
+                                                    <p class="small text-muted mb-0">Apply IAM user settings, policies,
+                                                        encryption keys, and active threat hunting protocols.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>Core Platform Offerings</h6>
+                                                    <p class="small text-muted mb-0">Understand when to use EC2 vs
+                                                        Lambda,
+                                                        RDS vs DynamoDB, and S3 vs EBS databases.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>Highly-Available Auto Scaling</h6>
+                                                    <p class="small text-muted mb-0">Deploy load balancers and
+                                                        auto-scaling
+                                                        rules that handle spikes in traffic gracefully.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>Career & Exam Blueprinting</h6>
+                                                    <p class="small text-muted mb-0">Confidently navigate the CLF-C02
+                                                        syllabus, practice exam patterns, and mock tests.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TAB 4: Career & Salaries (NEW) -->
+                            <div class="tab-pane fade" id="career-pane" role="tabpanel" aria-labelledby="career-tab">
+                                <div class="detail-card">
+                                    <div class="card-header-title mb-4">
+                                        <h3 class="fw-bold"><span class="header-line"></span>Career Pathways & Salary
+                                            Insights</h3>
+                                    </div>
+                                    <p class="text-muted mb-4">Earning your AWS Certified Cloud Practitioner credential
+                                        is a
+                                        major career catalyst. Here are standard roles and compensation data in the IT
+                                        industry:</p>
+
+                                    <div class="row g-4">
+                                        <div class="col-md-4">
+                                            <div
+                                                class="career-pathway-card text-center p-4 border border-light shadow-sm rounded-4">
+                                                <div class="career-path-icon mb-3"><i
+                                                        class="fas fa-cloud text-warning"></i>
+                                                </div>
+                                                <h5>Cloud Support Specialist</h5>
+                                                <div class="salary-tag mt-2 mb-3">$78,000 - $95,000</div>
+                                                <p class="small text-muted mb-0">Maintains baseline user assets and
+                                                    helps
+                                                    troubleshoot minor infrastructure issues.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div
+                                                class="career-pathway-card text-center p-4 border border-light shadow-sm rounded-4">
+                                                <div class="career-path-icon mb-3"><i
+                                                        class="fas fa-briefcase text-info"></i></div>
+                                                <h5>Cloud Account Representative</h5>
+                                                <div class="salary-tag mt-2 mb-3">$85,000 - $115,000</div>
+                                                <p class="small text-muted mb-0">Advises executive buyers and manages
+                                                    sales
+                                                    targets for cloud subscription accounts.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div
+                                                class="career-pathway-card text-center p-4 border border-light shadow-sm rounded-4">
+                                                <div class="career-path-icon mb-3"><i
+                                                        class="fas fa-graduation-cap text-success"></i></div>
+                                                <h5>Junior Cloud Analyst</h5>
+                                                <div class="salary-tag mt-2 mb-3">$90,000 - $110,000</div>
+                                                <p class="small text-muted mb-0">Assists system engineers in mapping
+                                                    server
+                                                    configurations and planning migrations.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- =================== SECTION 3: PRACTICE EXAMS SIMULATOR PREVIEW (NEW) ================== -->
+                        <div class="detail-card mt-4" data-aos="fade-up">
+                            <div class="card-header-title mb-4">
+                                <h3 class="fw-bold"><span class="header-line"></span>CLF-C02 Exam Simulator Included
+                                </h3>
+                            </div>
+                            <div class="row align-items-center g-4">
+                                <div class="col">
+                                    <p>Gain total confidence with our included state-of-the-art **AWS Exam Simulator**.
+                                        Replicating the exact timing, environment, and interface of the real PearsonVUE
+                                        test, our simulator prepares you to pass on your first attempt.</p>
+                                    <ul class="simulator-features list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Over 500+
+                                            updated mock test questions.</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>
+                                            Comprehensive
+                                            explanations for all correct and incorrect answers.</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Detailed
+                                            category scoreboard pinpointing knowledge gaps.</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i> Infinite practice
+                                            retakes
+                                            with random mock variants.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- =================== SECTION 4: PASS ASSURANCE BADGE & DETAILS (NEW) ================== -->
+                        <div class="detail-card mt-4 pass-assurance-section text-white p-5 rounded-4 shadow-lg position-relative overflow-hidden"
+                            data-aos="fade-up">
+                            <div class="assurance-glow"></div>
+                            <div class="row align-items-center g-4 position-relative z-2">
+                                <div class="col-md-8">
+                                    <div class="aws-badge-premium mb-3 bg-white bg-opacity-10 text-white">
+                                        <i class="fas fa-shield-alt me-2 text-warning"></i>
+                                        <span>SITE LEARNING AMERICA ASSURANCE</span>
+                                    </div>
+                                    <h3 class="fw-bold mb-3">100% Exam Passing Guarantee</h3>
+                                    <p class="text-white-50 mb-0">We back our exam vouchers and preparatory packages
+                                        with a
+                                        comprehensive **Pass Assurance Guarantee**. In the highly unlikely event you
+                                        fail
+                                        your proctored exam after utilizing our simulator study pathways, we will
+                                        provide a
+                                        free secondary consultation and voucher assistance to get you certified.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="guarantee-badge">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>PASS SUCCESS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- =================== FAQS SECTION (REDESIGNED) ================== -->
+                        <div class="detail-card mt-4" data-aos="fade-up">
+                            <div class="card-header-title mb-4">
+                                <h3 class="fw-bold"><span class="header-line"></span>Frequently Asked Questions</h3>
+                            </div>
+
+                            <div class="accordion custom-voucher-faq" id="faqAccordionDetail">
+                                <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#dfaq1" aria-expanded="true">
+                                            Is the AWS Certified Cloud Practitioner ideal for non-technical individuals?
+                                        </button>
+                                    </h2>
+                                    <div id="dfaq1" class="accordion-collapse collapse show"
+                                        data-bs-parent="#faqAccordionDetail">
+                                        <div class="accordion-body">
+                                            Absolutely. This certification is specifically designed as an entry point
+                                            for
+                                            non-technical profiles, sales teams, directors, developers, and systems
+                                            administrators new to cloud infrastructure concepts.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#dfaq2" aria-expanded="false">
+                                            How will I receive my discount exam voucher?
+                                        </button>
+                                    </h2>
+                                    <div id="dfaq2" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordionDetail">
+                                        <div class="accordion-body">
+                                            Your discount exam voucher code will be generated and delivered securely via
+                                            email within 2 to 4 hours of your purchase confirmation, containing
+                                            comprehensive scheduling directions.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-0 mb-0 shadow-sm rounded-4 overflow-hidden">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#dfaq3" aria-expanded="false">
+                                            Can I reschedule my proctored exam?
+                                        </button>
+                                    </h2>
+                                    <div id="dfaq3" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordionDetail">
+                                        <div class="accordion-body">
+                                            Yes, you can reschedule your exam up to 24 hours prior to your selected date
+                                            inside your official testing portal (PearsonVUE) without any penalty or
+                                            administrative fees.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT SIDEBAR (HIGH CONVERTING & STICKY REDESIGNED) -->
+                    <div class="col-lg-4">
+                        <div class="voucher-sidebar" data-aos="fade-left">
+                            <div class="sidebar-card shadow-lg border border-light p-4 rounded-4">
+
+                                <!-- PRODUCT HERO PIC -->
+                                <div class="sidebar-img-container mb-4 overflow-hidden rounded-4">
+                                    <img src="assets/images/traning/banners/min-banner.webp"
+                                        class="img-fluid w-100 sidebar-img" alt="AWS Training Banner">
+                                </div>
+
+                                <!-- PRICING PANEL -->
+                                <div class="pricing-panel mb-4 p-3 bg-light rounded-4 border border-light">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <span class="small text-muted text-uppercase fw-bold">Actual Price</span>
+                                        <span class="text-decoration-line-through text-muted fw-bold">$1,000</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="small text-muted text-uppercase fw-bold">Special Price</span>
+                                        <span class="sidebar-our-price fw-extrabold text-primary">$500</span>
+                                    </div>
+
+                                </div>
+
+                                <!-- HIGH CONVERTING ACTIONS -->
+                                <div class="mb-4">
+                                    <a href="#trainingEnquiryForm"
+                                        class="btn purchase-btn w-100 py-3 rounded-3 text-uppercase fw-bold mb-2 shadow-sm text-white"><i
+                                            class="fas fa-ticket-alt me-2"></i>Book Now</a>
+                                    <a href="https://wa.me/18044418645" target="_blank"
+                                        class="btn secondary-btn w-100 py-3 rounded-3 text-uppercase fw-bold d-inline-flex justify-content-center align-items-center"><i
+                                            class="fab fa-whatsapp me-2 fs-5 text-success"></i>Talk to Consultant</a>
+                                </div>
+
+                                <!-- FEATURES VALUE CHECKLIST -->
+                                <div>
+                                    <h6 class="sidebar-title mb-3 fw-bold">What's Included:</h6>
+                                    <ul class="sidebar-checklist list-unstyled">
+                                        <li class="mb-2 pb-2 border-bottom d-flex align-items-center gap-2"><i
+                                                class="fas fa-check-circle text-primary"></i> <span
+                                                class="small text-muted">1x PearsonVUE/PSI Voucher</span></li>
+                                        <li class="mb-2 pb-2 border-bottom d-flex align-items-center gap-2"><i
+                                                class="fas fa-check-circle text-primary"></i> <span
+                                                class="small text-muted">2x Updated Practice Exams</span></li>
+                                        <li class="mb-2 pb-2 border-bottom d-flex align-items-center gap-2"><i
+                                                class="fas fa-check-circle text-primary"></i> <span
+                                                class="small text-muted">Tutor Q&A Chat Access</span></li>
+                                        <li class="mb-2 pb-2 border-bottom d-flex align-items-center gap-2"><i
+                                                class="fas fa-check-circle text-primary"></i> <span
+                                                class="small text-muted">CLF-C02 Exam Cram Guide</span></li>
+                                        <li class="d-flex align-items-center gap-2"><i
+                                                class="fas fa-check-circle text-primary"></i> <span
+                                                class="small text-muted">Lifetime Core Portal Access</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== SECTION 5: RELATED CERTIFICATIONS SLIDER (NEW) ================== -->
+        <section class="related-certifications py-5  border-top">
+            <div class="container">
+                <div class="section-header-title text-center mb-5" data-aos="fade-up">
+                    <!-- <span class="career-badge">
+                    <i class="fas fa-certificate me-2"></i>RECOMMENDED CERTIFICATIONS
+                </span> -->
+                    <h2 class="section-title fw-bold mt-3">Related Exam <span> Training</span></h2>
+                    <p class="text-muted max-width-600 mx-auto">Explore advanced certifications and bundle products to
+                        map
+                        your path towards cloud architect status.</p>
+                </div>
+
+                <div class="owl-carousel certification-slider" id="relatedCarousel" data-aos="fade-up">
+
+                    <div class="cert-card" data-aos="zoom-in">
+                        <a href="detail.html">
+                            <div class="training-card">
+                                <div class="card-img-wrapper d-flex justify-content-center align-items-center bg-light">
+                                    <img src="assets/images/traning/cisco/CCNA.png" alt="CCNA">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-category">Cisco</span>
+                                    <h3 class="card-title">Cisco Certified Network Associate</h3>
+                                    <!-- <p class="card-desc">Learn how to design and deploy scalable, highly available, and
+                                                                    fault-tolerant systems on AWS.</p> -->
+
+                                    <div class="card-footer-info">
+                                        <div class="card-price-wrapper">
+                                            <span class="original-price">$200.00</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="current-price">$160.00</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-action-btn">Enroll Now</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cert-card" data-aos="zoom-in">
+                        <a href="detail.html">
+                            <div class="training-card">
+                                <div class="card-img-wrapper d-flex justify-content-center align-items-center bg-light">
+                                    <img src="assets/images/traning/cisco/CCNA.png" alt="CCNA">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-category">Cisco</span>
+                                    <h3 class="card-title">Cisco Certified Network Associate</h3>
+                                    <!-- <p class="card-desc">Learn how to design and deploy scalable, highly available, and
+                                                                    fault-tolerant systems on AWS.</p> -->
+
+                                    <div class="card-footer-info">
+                                        <div class="card-price-wrapper">
+                                            <span class="original-price">$200.00</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="current-price">$160.00</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-action-btn">Enroll Now</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cert-card" data-aos="zoom-in">
+                        <a href="detail.html">
+                            <div class="training-card">
+                                <div class="card-img-wrapper d-flex justify-content-center align-items-center bg-light">
+                                    <img src="assets/images/traning/cisco/CCNA.png" alt="CCNA">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-category">Cisco</span>
+                                    <h3 class="card-title">Cisco Certified Network Associate</h3>
+                                    <!-- <p class="card-desc">Learn how to design and deploy scalable, highly available, and
+                                                                    fault-tolerant systems on AWS.</p> -->
+
+                                    <div class="card-footer-info">
+                                        <div class="card-price-wrapper">
+                                            <span class="original-price">$200.00</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="current-price">$160.00</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-action-btn">Enroll Now</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- =================== FOOTER SECTION ================== -->
+    <footer class="site-footer py-5 position-relative overflow-hidden">
+        <div class="container">
+            <div class="row g-5">
+                <!-- CONTACT INFO -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title mb-3">Contact Us</h5>
+                    <ul class="footer-info list-unstyled">
+                        <li><i class="fa-solid fa-location-dot me-2"></i>171 Elden Street, UNIT 3C3, Herndon VA, 20170
+                        </li>
+                        <li><i class="fa-solid fa-envelope me-2"></i><a href="mailto:info@sitelearningamerica.com"
+                                class="text-decoration-none text-white">info@sitelearningamerica.com</a></li>
+                        <li><i class="fa-solid fa-phone me-2"></i><a href="tel:+18044418645"
+                                class="text-decoration-none text-white">+1 804-441-8645</a></li>
+                    </ul>
+                </div>
+                <!-- QUICK LINKS -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title mb-3">Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-white">About</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-white">Contact</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title mb-3">Exam Vouchers</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="" class="text-decoration-none text-white">Aws Exam Vouchers</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-white">PECB Exam Vouchers</a></li>
+                        <li><a href="" class="text-decoration-none text-white">PEGA Exam Vouchers</a></li>
+                        <li><a href="" class="text-decoration-none text-white">PEGA Exam Vouchers</a></li>
+                        <li><a href="" class="text-decoration-none text-white">CompTIA Exam Vouchers</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title mb-3">Traning & Courses </h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="" class="text-decoration-none text-white">AWS Traning</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-white">PECB Traning</a></li>
+                        <li><a href="" class="text-decoration-none text-white">PEGA Traning</a></li>
+                        <li><a href="" class="text-decoration-none text-white">PEGA Traning</a></li>
+                        <li><a href="" class="text-decoration-none text-white">CompTIA Traning</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <p class="mb-0  small">&copy; 2026 Site Learning America. All rights reserved.</p>
+                <ul class="social-icons list-inline mb-0">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/sitelearningamerica/"
+                            class="text-white"><i class="fa-brands fa-facebook-f"></i></a></li>
+
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/company/site-learning-america/"
+                            class="text-white"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/sitelearning_america/"
+                            class="text-white"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Shapes -->
+        <div class="footer-shape footer-shape-1"></div>
+        <div class="footer-shape footer-shape-2"></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
+
+        $('#relatedCarousel').owlCarousel({
+            loop: true,
+            margin: 25,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 4500,
+            smartSpeed: 900,
+            responsive: {
+                0: { items: 1 },
+                768: { items: 2 },
+                1200: { items: 3 }
+            }
+        });
+    </script>
+
+    <!-- Custom Redesign Stylesheet -->
+    <style>
+
+    </style>
+
+</body>
+
+</html>
