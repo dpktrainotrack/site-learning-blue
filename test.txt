@@ -395,3 +395,141 @@
                                                         </ul>
                                                     </div>
                                                 </li>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Why Choose Site Learning America -->
+        <section class="why-choose-sla py-5">
+            <div class="container"> 
+      
+                <div class="text-center mb-5"> 
+                    <h2 class="why-title ">
+                        Why Choose <span>Site Learning America</span>
+                    </h2>
+
+                    <p class="why-description">
+                        We empower professionals and organizations with industry-leading IT training,
+                        certification preparation, and exam voucher solutions designed for career growth.
+                    </p>
+                </div> 
+                <div class="row align-items-center"> 
+                    <!-- Left Content -->
+                    <div class="col-lg-6 mb-4 mb-lg-0"> 
+                        <div class="why-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h5>Authorized Training & Certification Support</h5>
+                                <p>
+                                    Access globally recognized certification programs, official exam
+                                    vouchers, and expert guidance to help you succeed.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="why-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div>
+                                <h5>Expert Instructors</h5>
+                                <p>
+                                    Learn from certified professionals with extensive real-world
+                                    experience across cloud, cybersecurity, networking, AI, and more.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="why-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h5>Hands-On Learning Experience</h5>
+                                <p>
+                                    Build practical skills through interactive labs, projects,
+                                    simulations, and implementation-focused exercises.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="why-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div>
+                            <h5>Flexible Learning Options</h5>
+                            <p>
+                                Choose from online instructor-led training, corporate sessions,
+                                private classes, or customized learning solutions.
+                            </p>
+                        </div>
+                    </div> -->
+
+                    </div>
+
+                    <!-- Right Stats Card -->
+                    <div class="col-lg-6">
+
+                        <div class="why-highlight-card">
+
+                            <div class="row g-4">
+
+                                <div class="col-6">
+                                    <div class="stat-box">
+                                        <i class="fas fa-user-graduate"></i>
+                                        <h3>10K+</h3>
+                                        <span>Learners Trained</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="stat-box">
+                                        <i class="fas fa-certificate"></i>
+                                        <h3>500+</h3>
+                                        <span>Certification Programs</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="stat-box">
+                                        <i class="fas fa-building"></i>
+                                        <h3>200+</h3>
+                                        <span>Corporate Clients</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="stat-box">
+                                        <i class="fas fa-headset"></i>
+                                        <h3>24/7</h3>
+                                        <span>Training Support</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- <div class="text-center mt-4">
+                            <a href="#" class="why-btn">
+                                Explore Training Programs
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
