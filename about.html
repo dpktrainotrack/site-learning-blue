@@ -29,10 +29,10 @@
 </head>
 
 <body>
-
+    <!-- ========== MAIN NAVBAR ========== -->
     <nav class="navbar navbar-expand-lg" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand d-flex align-items-center gap-1" href="index.html">
                 <img src="assets/images/logo.png" alt="Site Learning America" class="navbar-logo">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -44,485 +44,57 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarMainMenu">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-                    <!-- MEGA MENU -->
-                    <li class="nav-item dropdown mega-dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="megaMenuDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Training <i
-                                class="fa-solid fa-angle-down "></i></a>
-                        <div class="dropdown-menu mega-menu" aria-labelledby="megaMenuDropdown" style="width: 100%;">
-                            <div class="container">
-                                <div class="mega-menu-category-header">
-                                    <h3>Training & Certification </h3>
-                                </div>
-                                <div class="row mega-menu-row">
-                                    <!-- LEFT: Certification Names -->
-                                    <div class="col-lg-3 col-md-4 mega-menu-col">
-                                        <div class="mega-menu-category certfication-left-list">
-                                            <ul class="mega-menu-links" id="certLeftNav">
-                                                <li class="cert-nav-item active" data-target="aws-panel">
-                                                    <a href="vouchers.html">
-                                                        <i class="fa-brands fa-aws"></i>
-                                                        <div>
-                                                            <span class="mega-link-title">AWS Certification</span>
-                                                            <span class="mega-link-desc">10 Certificates</span>
-                                                        </div>
-                                                        <i class="fa-solid fa-chevron-right cert-arrow"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="cert-nav-item" data-target="microsoft-panel">
-                                                    <a href="vouchers.html">
-                                                        <i class="fa-brands fa-microsoft"></i>
-                                                        <div>
-                                                            <span class="mega-link-title">Microsoft Certification</span>
-                                                            <span class="mega-link-desc">37 Certificates</span>
-                                                        </div>
-                                                        <i class="fa-solid fa-chevron-right cert-arrow"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="cert-nav-item" data-target="pecb-panel">
-                                                    <a href="vouchers.html">
-                                                        <i class="fa-solid fa-certificate"></i>
-                                                        <div>
-                                                            <span class="mega-link-title">PECB Certification</span>
-                                                            <span class="mega-link-desc">10 Certificates</span>
-                                                        </div>
-                                                        <i class="fa-solid fa-chevron-right cert-arrow"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="cert-nav-item" data-target="pega-panel">
-                                                    <a href="vouchers.html">
-                                                        <i class="fa-solid fa-gears"></i>
-                                                        <div>
-                                                            <span class="mega-link-title">PEGA Certification</span>
-                                                            <span class="mega-link-desc">10 Certificates</span>
-                                                        </div>
-                                                        <i class="fa-solid fa-chevron-right cert-arrow"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="cert-nav-item" data-target="cisco-panel">
-                                                    <a href="vouchers.html">
-                                                        <i class="fa-solid fa-network-wired"></i>
-                                                        <div>
-                                                            <span class="mega-link-title">CISCO Certification</span>
-                                                            <span class="mega-link-desc">10 Certificates</span>
-                                                        </div>
-                                                        <i class="fa-solid fa-chevron-right cert-arrow"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="cert-nav-item" data-target="comptia-panel">
-                                                    <a href="vouchers.html">
-                                                        <i class="fa-solid fa-laptop-code"></i>
-                                                        <div>
-                                                            <span class="mega-link-title">CompTIA Certification</span>
-                                                            <span class="mega-link-desc">17 Certificates</span>
-                                                        </div>
-                                                        <i class="fa-solid fa-chevron-right cert-arrow"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="cert-nav-item" data-target="paloalto-panel">
-                                                    <a href="vouchers.html">
-                                                        <i class="fa-solid fa-fire-flame-curved"></i>
-                                                        <div>
-                                                            <span class="mega-link-title">Paloalto Certification</span>
-                                                            <span class="mega-link-desc">2 Certificates</span>
-                                                        </div>
-                                                        <i class="fa-solid fa-chevron-right cert-arrow"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- RIGHT: Course Listing Panels -->
-                                    <div class="col-lg-9 col-md-8 mega-menu-col">
-                                        <div class="cert-panels-wrapper" id="certPanelsWrapper">
-
-                                            <!-- AWS Panel (default visible) -->
-                                            <div class="cert-panel active" id="aws-panel">
-                                                <div class="cert-panel-header">
-                                                    <i class="fa-brands fa-aws"></i>
-                                                    <h6>AWS Certifications</h6>
-                                                </div>
-                                                <ul class="mega-menu-links cert-listing">
-                                                    <li><a href="aws.html"><i class="fa-solid fa-cloud"></i>
-                                                            <div><span class="mega-link-title">AWS Cloud
-                                                                    Practitioner</span></div>
-                                                        </a></li>
-                                                    <li><a href="aws.html"><i class="fa-solid fa-server"></i>
-                                                            <div><span class="mega-link-title">AWS SysOps
-                                                                    Administrator</span></div>
-                                                        </a></li>
-                                                    <li><a href="aws.html"><i class="fa-solid fa-code"></i>
-                                                            <div><span class="mega-link-title">AWS Developer
-                                                                    Associate</span></div>
-                                                        </a></li>
-                                                    <li><a href="aws.html"><i class="fa-solid fa-diagram-project"></i>
-                                                            <div><span class="mega-link-title">AWS Solutions
-                                                                    Architect</span></div>
-                                                        </a></li>
-                                                    <li><a href="aws.html"><i class="fa-solid fa-chart-line"></i>
-                                                            <div><span class="mega-link-title">AWS Data Analytics</span>
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="aws.html"><i class="fa-solid fa-globe"></i>
-                                                            <div><span class="mega-link-title">AWS Advanced
-                                                                    Networking</span></div>
-                                                        </a></li>
-                                                    <li><a href="aws.html"><i class="fa-solid fa-shield-halved"></i>
-                                                            <div><span class="mega-link-title">AWS Security
-                                                                    Specialty</span></div>
-                                                        </a></li>
-                                                    <li><a href="aws.html"><i class="fa-solid fa-robot"></i>
-                                                            <div><span class="mega-link-title">AWS Machine
-                                                                    Learning</span></div>
-                                                        </a></li>
-                                                    <li><a href="aws.html"><i class="fa-solid fa-gears"></i>
-                                                            <div><span class="mega-link-title">AWS DevOps
-                                                                    Engineer</span></div>
-                                                        </a></li>
-                                                    <li><a href="aws.html"><i class="fa-solid fa-database"></i>
-                                                            <div><span class="mega-link-title">AWS Database
-                                                                    Specialty</span></div>
-                                                        </a></li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- Microsoft Panel -->
-                                            <div class="cert-panel" id="microsoft-panel">
-                                                <div class="cert-panel-header">
-                                                    <i class="fa-brands fa-microsoft"></i>
-                                                    <h6>Microsoft Certifications</h6>
-                                                </div>
-                                                <ul class="mega-menu-links cert-listing">
-                                                    <li><a href="microsoft.html"><i class="fa-solid fa-cloud"></i>
-                                                            <div><span class="mega-link-title">Azure Fundamentals
-                                                                    (AZ-900)</span></div>
-                                                        </a></li>
-                                                    <li><a href="microsoft.html"><i class="fa-solid fa-server"></i>
-                                                            <div><span class="mega-link-title">Azure Administrator
-                                                                    (AZ-104)</span></div>
-                                                        </a></li>
-                                                    <li><a href="microsoft.html"><i class="fa-solid fa-code"></i>
-                                                            <div><span class="mega-link-title">Azure Developer
-                                                                    (AZ-204)</span></div>
-                                                        </a></li>
-                                                    <li><a href="microsoft.html"><i
-                                                                class="fa-solid fa-shield-halved"></i>
-                                                            <div><span class="mega-link-title">Azure Security
-                                                                    (AZ-500)</span></div>
-                                                        </a></li>
-                                                    <li><a href="microsoft.html"><i
-                                                                class="fa-solid fa-diagram-project"></i>
-                                                            <div><span class="mega-link-title">Azure Solutions
-                                                                    Architect</span></div>
-                                                        </a></li>
-                                                    <li><a href="microsoft.html"><i class="fa-solid fa-robot"></i>
-                                                            <div><span class="mega-link-title">Azure AI Engineer
-                                                                    (AI-102)</span></div>
-                                                        </a></li>
-                                                    <li><a href="microsoft.html"><i class="fa-solid fa-chart-line"></i>
-                                                            <div><span class="mega-link-title">Power BI Data
-                                                                    Analyst</span></div>
-                                                        </a></li>
-                                                    <li><a href="microsoft.html"><i class="fa-solid fa-desktop"></i>
-                                                            <div><span class="mega-link-title">Microsoft 365
-                                                                    Fundamentals</span></div>
-                                                        </a></li>
-                                                    <li><a href="microsoft.html"><i class="fa-solid fa-database"></i>
-                                                            <div><span class="mega-link-title">Azure Data
-                                                                    Engineer</span></div>
-                                                        </a></li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- PECB Panel -->
-                                            <div class="cert-panel" id="pecb-panel">
-                                                <div class="cert-panel-header">
-                                                    <i class="fa-solid fa-certificate"></i>
-                                                    <h6>PECB Certifications</h6>
-                                                </div>
-                                                <ul class="mega-menu-links cert-listing">
-                                                    <li><a href="pecb.html"><i class="fa-solid fa-file-shield"></i>
-                                                            <div><span class="mega-link-title">ISO 27001 Lead
-                                                                    Auditor</span></div>
-                                                        </a></li>
-                                                    <li><a href="pecb.html"><i class="fa-solid fa-clipboard-check"></i>
-                                                            <div><span class="mega-link-title">ISO 27001 Lead
-                                                                    Implementer</span></div>
-                                                        </a></li>
-                                                    <li><a href="pecb.html"><i class="fa-solid fa-building-shield"></i>
-                                                            <div><span class="mega-link-title">ISO 22301 Business
-                                                                    Continuity</span></div>
-                                                        </a></li>
-                                                    <li><a href="pecb.html"><i class="fa-solid fa-scale-balanced"></i>
-                                                            <div><span class="mega-link-title">ISO 9001 Quality
-                                                                    Management</span></div>
-                                                        </a></li>
-                                                    <li><a href="pecb.html"><i class="fa-solid fa-leaf"></i>
-                                                            <div><span class="mega-link-title">ISO 14001
-                                                                    Environmental</span></div>
-                                                        </a></li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- PEGA Panel -->
-                                            <div class="cert-panel" id="pega-panel">
-                                                <div class="cert-panel-header">
-                                                    <i class="fa-solid fa-gears"></i>
-                                                    <h6>PEGA Certifications</h6>
-                                                </div>
-                                                <ul class="mega-menu-links cert-listing">
-                                                    <li><a href="pega.html"><i class="fa-solid fa-code-branch"></i>
-                                                            <div><span class="mega-link-title">Pega Certified System
-                                                                    Architect</span></div>
-                                                        </a></li>
-                                                    <li><a href="pega.html"><i class="fa-solid fa-sitemap"></i>
-                                                            <div><span class="mega-link-title">Pega Senior System
-                                                                    Architect</span></div>
-                                                        </a></li>
-                                                    <li><a href="pega.html"><i class="fa-solid fa-robot"></i>
-                                                            <div><span class="mega-link-title">Pega Decisioning
-                                                                    Consultant</span></div>
-                                                        </a></li>
-                                                    <li><a href="pega.html"><i class="fa-solid fa-chart-pie"></i>
-                                                            <div><span class="mega-link-title">Pega Business
-                                                                    Architect</span></div>
-                                                        </a></li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- CISCO Panel -->
-                                            <div class="cert-panel" id="cisco-panel">
-                                                <div class="cert-panel-header">
-                                                    <i class="fa-solid fa-network-wired"></i>
-                                                    <h6>CISCO Certifications</h6>
-                                                </div>
-                                                <ul class="mega-menu-links cert-listing">
-                                                    <li><a href="cisco.html"><i class="fa-solid fa-wifi"></i>
-                                                            <div><span class="mega-link-title">CCNA (200-301)</span>
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="cisco.html"><i class="fa-solid fa-network-wired"></i>
-                                                            <div><span class="mega-link-title">CCNP Enterprise
-                                                                    Core</span></div>
-                                                        </a></li>
-                                                    <li><a href="cisco.html"><i class="fa-solid fa-shield-halved"></i>
-                                                            <div><span class="mega-link-title">CCNP Security
-                                                                    (SCOR)</span></div>
-                                                        </a></li>
-                                                    <li><a href="cisco.html"><i class="fa-solid fa-server"></i>
-                                                            <div><span class="mega-link-title">CCNP Data Center</span>
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="cisco.html"><i class="fa-solid fa-code"></i>
-                                                            <div><span class="mega-link-title">Cisco DevNet
-                                                                    Associate</span></div>
-                                                        </a></li>
-                                                    <li><a href="cisco.html"><i class="fa-solid fa-tower-broadcast"></i>
-                                                            <div><span class="mega-link-title">CCNP Collaboration</span>
-                                                            </div>
-                                                        </a></li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- CompTIA Panel -->
-                                            <div class="cert-panel" id="comptia-panel">
-                                                <div class="cert-panel-header">
-                                                    <i class="fa-solid fa-laptop-code"></i>
-                                                    <h6>CompTIA Certifications</h6>
-                                                </div>
-                                                <ul class="mega-menu-links cert-listing">
-                                                    <li><a href="comptia.html"><i class="fa-solid fa-desktop"></i>
-                                                            <div><span class="mega-link-title">CompTIA A+</span></div>
-                                                        </a></li>
-                                                    <li><a href="comptia.html"><i class="fa-solid fa-wifi"></i>
-                                                            <div><span class="mega-link-title">CompTIA Network+</span>
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="comptia.html"><i class="fa-solid fa-lock"></i>
-                                                            <div><span class="mega-link-title">CompTIA Security+</span>
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="comptia.html"><i class="fa-solid fa-cloud"></i>
-                                                            <div><span class="mega-link-title">CompTIA Cloud+</span>
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="comptia.html"><i class="fa-solid fa-server"></i>
-                                                            <div><span class="mega-link-title">CompTIA Server+</span>
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="comptia.html"><i class="fa-solid fa-shield-halved"></i>
-                                                            <div><span class="mega-link-title">CompTIA CySA+</span>
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="comptia.html"><i class="fa-solid fa-bug"></i>
-                                                            <div><span class="mega-link-title">CompTIA PenTest+</span>
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="comptia.html"><i class="fa-solid fa-chart-line"></i>
-                                                            <div><span class="mega-link-title">CompTIA Data+</span>
-                                                            </div>
-                                                        </a></li>
-                                                    <li><a href="comptia.html"><i class="fa-solid fa-user-shield"></i>
-                                                            <div><span class="mega-link-title">CompTIA CASP+</span>
-                                                            </div>
-                                                        </a></li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- Paloalto Panel -->
-                                            <div class="cert-panel" id="paloalto-panel">
-                                                <div class="cert-panel-header">
-                                                    <i class="fa-solid fa-fire-flame-curved"></i>
-                                                    <h6>Palo Alto Certifications</h6>
-                                                </div>
-                                                <ul class="mega-menu-links cert-listing">
-                                                    <li><a href="paloalto.html"><i
-                                                                class="fa-solid fa-shield-halved"></i>
-                                                            <div><span class="mega-link-title">PCNSA – Network Security
-                                                                    Admin</span></div>
-                                                        </a></li>
-                                                    <li><a href="paloalto.html"><i class="fa-solid fa-fire"></i>
-                                                            <div><span class="mega-link-title">PCNSE – Network Security
-                                                                    Engineer</span></div>
-                                                        </a></li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown mega-dropdown voucher-mega-dropdown position-relative">
+                        <a class="nav-link dropdown-toggle" href="training-list.html">Training <i
+                                class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-menu mega-menu voucher-mega-menu">
+                            <div class="" style="min-width: 200px;">
+                                <div class="mega-menu-column">
+                                    <ul class="mega-menu-links">
+                                        <li><a href="training-brand.html"><span>AWS</span></a></li>
+                                        <li><a href="training-brand.html"><span>Microsoft</span></a></li>
+                                        <li><a href="training-brand.html"><span>PECB</span></a></li>
+                                        <li><a href="training-brand.html"><span>PEGA</span></a></li>
+                                        <li><a href="training-brand.html"><span>CISCO</span></a></li>
+                                        <li><a href="training-brand.html"><span>CompTIA</span></a></li>
+                                        <li><a href="training-brand.html"><span>Paloalto</span></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </li> <!-- VOUCHER MEGA MENU -->
+                    </li>
                     <li class="nav-item dropdown mega-dropdown voucher-mega-dropdown position-relative">
-                        <a class="nav-link dropdown-toggle" href="vouchers.html">Vouchers <i
+                        <a class="nav-link dropdown-toggle" href="vouchers-list.html">Vouchers <i
                                 class="fa-solid fa-angle-down"></i></a>
-                        <div class="dropdown-menu mega-menu voucher-mega-menu" aria-labelledby="voucherMenuDropdown">
-                            <div class="">
-                                <div class="">
-
-                                    <div class="" style="min-width: 250px;">
-                                        <div class="mega-menu-column">
-
-                                            <ul class="mega-menu-links">
-                                                <li class="has-submenu">
-                                                    <a href="vouchers.html" class="d-flex justify-content-between">
-                                                        <span>AWS Vouchers</span>
-                                                        <i class="fa-solid fa-chevron-right"></i>
-                                                    </a>
-                                                    <div class="voucher-grand-child-menu">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="vouchers.html">AWS Cloud Practitioner</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="vouchers.html">AWS SysOps Administrator</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="vouchers.html">AWS Developer Associate</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="vouchers.html">AWS Solutions Architect</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="vouchers.html">AWS Data Analytics</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="vouchers.html">AWS Advanced Networking</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="vouchers.html">AWS Security Specialty</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="vouchers.html">AWS Machine Learning</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="vouchers.html">AWS DevOps Engineer</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="vouchers.html">AWS Database Specialty</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li><a href="vouchers.html"><span>Microsoft Azure</span></a></li>
-                                                <li><a href="vouchers.html"><span>Google Cloud (GCP)</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- <div class="col-lg-3">
-                                            <div class="mega-menu-column">
-                                                <div class="column-header">
-                                                    <i class="fa-solid fa-shield-halved"></i>
-                                                    <h5>Cybersecurity</h5>
-                                                </div>
-                                                <ul class="mega-menu-links">
-                                                    <li><a href="vouchers.html"><span>CompTIA Security+</span></a></li>
-                                                    <li><a href="vouchers.html"><span>Palo Alto PCNSA/PCNSE</span></a></li>
-                                                    <li><a href="vouchers.html"><span>Cisco CyberOps</span></a></li>
-                                                    <li><a href="vouchers.html"><span>CEH Vouchers</span></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-lg-3">
-                                            <div class="mega-menu-column">
-                                                <div class="column-header">
-                                                    <i class="fa-solid fa-network-wired"></i>
-                                                    <h5>Networking & IT</h5>
-                                                </div>
-                                                <ul class="mega-menu-links">
-                                                    <li><a href="vouchers.html"><span>Cisco CCNA/CCNP</span></a></li>
-                                                    <li><a href="vouchers.html"><span>CompTIA A+/Network+</span></a></li>
-                                                    <li><a href="vouchers.html"><span>Juniper Vouchers</span></a></li>
-                                                    <li><a href="vouchers.html"><span>Aruba Vouchers</span></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="col-lg-3">
-                                            <div class="mega-menu-column featured-column">
-                                                <div class="column-header">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <h5>Specialized</h5>
-                                                </div>
-                                                <ul class="mega-menu-links">
-                                                    <li><a href="vouchers.html"><span>PEGA Vouchers</span></a></li>
-                                                    <li><a href="vouchers.html"><span>PECB Lead Auditor</span></a></li>
-                                                    <li><a href="vouchers.html"><span>ITIL Vouchers</span></a></li>
-                                                    <li><a href="vouchers.html"><span>Project Management (PMP)</span></a>
-                                                    </li>
-                                                </ul>
-                                                <div class="mega-menu-promo mt-4">
-                                                    <div class="promo-box">
-                                                        <span>Special Offer</span>
-                                                        <p>Get up to 20% off on bulk voucher bookings!</p>
-                                                        <a href="contact.html" class="btn btn-sm btn-primary">Enquire
-                                                            Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
+                        <div class="dropdown-menu mega-menu voucher-mega-menu">
+                            <div class="" style="min-width: 200px;">
+                                <div class="mega-menu-column">
+                                    <ul class="mega-menu-links">
+                                        <li><a href="vouchers-brand.html"><span>AWS</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>Microsoft</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>PECB</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>PEGA</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>CISCO</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>CompTIA</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>Paloalto</span></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
 
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
                 <div class="navbar-cta ms-lg-3">
                     <a href="contact.html" class="btn btn-cta-nav" id="navEnquiryBtn"><i
-                            class="fa-solid fa-paper-plane"></i><span>Enquiry Now</span></a>
+                            class="fa-brands fa-whatsapp"></i><span>+1 804-441-8645</span></a>
                 </div>
             </div>
         </div>
     </nav>
-
 
     <!-- =========================
      HERO SECTION
@@ -535,11 +107,11 @@
             <div class="row ">
                 <!-- LEFT -->
                 <div class="col-lg-6">
-                    <div class="" data-aos="fade-right">
+                    <div class="hero-content" data-aos="fade-right">
 
-                        <div class="section-badge mb-4">
+                        <!-- <div class="section-badge mb-4">
                             <span>ABOUT SITE LEARNING AMERICA</span>
-                        </div>
+                        </div> -->
 
                         <h1>
                             Empowering Learners Across The United States
@@ -557,11 +129,12 @@
                         </a>
 
                     </div>
+
                 </div>
 
 
                 <!-- RIGHT -->
-                <!-- <div class="col-lg-6">
+                <div class="col-lg-6">
 
                     <div class="hero-image-wrapper" data-aos="fade-left">
 
@@ -588,7 +161,7 @@
 
                     </div>
 
-                </div> -->
+                </div>
 
             </div>
 
@@ -621,16 +194,7 @@
                 <div class="col-lg-6">
 
                     <div data-aos="fade-left">
-
-                        <div class="section-badge mb-3">
-                            <span>OUR STORY</span>
-                        </div>
-
-                        <h2 class="section-title mb-4">
-                            Helping Students Build
-                            <span>Future-Ready Careers</span>
-                        </h2>
-
+                        <h2 class="section-title mb-4"> Our <span>Story</span> </h2>
                         <p class="section-desc">
                             Our mission is to simplify access to globally recognized IT certifications
                             and professional training programs. We support learners at every stage of
@@ -639,9 +203,7 @@
                         </p>
 
                         <div class="feature-list">
-
-                            <div class="feature-item">
-
+                            <div class="feature-item mb-4">
                                 <i class="fas fa-check-circle"></i>
 
                                 <div>
@@ -653,39 +215,25 @@
                                 </div>
 
                             </div>
-
-
-                            <div class="feature-item">
-
+                            <div class="feature-item mb-4">
                                 <i class="fas fa-headset"></i>
-
                                 <div>
                                     <h5>Dedicated Student Support</h5>
-
                                     <p>
                                         Receive professional guidance and responsive customer assistance.
                                     </p>
                                 </div>
-
                             </div>
-
-
-                            <div class="feature-item">
-
+                            <div class="feature-item mb-4">
                                 <i class="fas fa-globe-americas"></i>
-
                                 <div>
                                     <h5>Nationwide Learning Access</h5>
-
                                     <p>
                                         Supporting learners and professionals throughout the United States.
                                     </p>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
                 </div>
@@ -699,32 +247,43 @@
 
 
     <!-- =========================
-     STATS SECTION
+     MISSION & VISION SECTION
 ========================= -->
 
-    <section class="stats-section">
+    <section class="mission-vision-section">
 
         <div class="container">
 
-            <div class="row g-4">
+            <div class="text-center mb-5" data-aos="fade-up">
 
-                <!-- ITEM -->
-                <div class="col-lg-3 col-sm-6">
+                <h2 class="section-title">
+                    Our <span class=""> Vision</span>
+                </h2>
+                <p>At Site Learning Blue, our vision is to be the catalyst for career transformation across America’s
+                    technology landscape. We envision a future where every aspiring technologist — from recent graduates
+                    to mid-career professionals — has clear, affordable, and direct access to the credentials that
+                    define success in the modern digital economy.</p>
 
-                    <div class="stats-card" data-aos="zoom-in">
+            </div>
 
-                        <div class="stats-icon">
-                            <i class="fas fa-user-graduate"></i>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- MISSION -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="mv-card" data-aos="fade-up">
+
+                        <div class="mv-icon">
+                            <i class="fas fa-bullseye"></i>
                         </div>
 
-                        <div class="stats-number">
-                            25K+
-                        </div>
-
-                        <h5>Students Enrolled</h5>
+                        <h3>Our Mission</h3>
 
                         <p>
-                            Thousands of learners trust our certification platform.
+                            To simplify and democratize professional growth by making high-quality IT training and
+                            globally recognized certification vouchers accessible, affordable, and achievable for every
+                            aspiring technologist in the United States.
                         </p>
 
                     </div>
@@ -732,23 +291,21 @@
                 </div>
 
 
-                <!-- ITEM -->
-                <div class="col-lg-3 col-sm-6">
+                <!-- VISION -->
+                <div class="col-lg-4 col-md-6">
 
-                    <div class="stats-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="mv-card" data-aos="fade-up" data-aos-delay="150">
 
-                        <div class="stats-icon">
-                            <i class="fas fa-certificate"></i>
+                        <div class="mv-icon">
+                            <i class="fas fa-eye"></i>
                         </div>
 
-                        <div class="stats-number">
-                            98%
-                        </div>
-
-                        <h5>Success Rate</h5>
+                        <h3>Our Vision</h3>
 
                         <p>
-                            Helping professionals achieve certification success confidently.
+                            To be America's most trusted catalyst for career transformation, fostering a diverse,
+                            skilled, and future-ready workforce that powers technological excellence and business
+                            innovation across the globe.
                         </p>
 
                     </div>
@@ -756,48 +313,32 @@
                 </div>
 
 
-                <!-- ITEM -->
-                <div class="col-lg-3 col-sm-6">
+                <!-- WHO WE SERVE -->
+                <div class="col-lg-4 col-md-6">
 
-                    <div class="stats-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="mv-card" data-aos="fade-up" data-aos-delay="300">
 
-                        <div class="stats-icon">
-                            <i class="fas fa-globe"></i>
+                        <div class="mv-icon">
+                            <i class="fas fa-users"></i>
                         </div>
 
-                        <div class="stats-number">
-                            50+
-                        </div>
+                        <h3>Who We Serve</h3>
 
-                        <h5>States Reached</h5>
-
-                        <p>
-                            Delivering accessible learning solutions nationwide.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- ITEM -->
-                <div class="col-lg-3 col-sm-6">
-
-                    <div class="stats-card" data-aos="zoom-in" data-aos-delay="450">
-
-                        <div class="stats-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-
-                        <div class="stats-number">
-                            4.9/5
-                        </div>
-
-                        <h5>Student Rating</h5>
-
-                        <p>
-                            Highly rated for affordability, support, and reliability.
-                        </p>
+                        <ul class="mv-list">
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                <span><strong>Students:</strong> Launching careers with foundational certs.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-briefcase"></i>
+                                <span><strong>Professionals:</strong> Upskilling for promotion and advancement.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-building"></i>
+                                <span><strong>Organizations:</strong> Certifying teams at scale for tech
+                                    excellence.</span>
+                            </li>
+                        </ul>
 
                     </div>
 
@@ -808,6 +349,10 @@
         </div>
 
     </section>
+
+
+
+
 
 
 
@@ -935,7 +480,74 @@
     </section>
 
 
+    <footer class="site-footer py-5 position-relative overflow-hidden">
+        <div class="container">
+            <div class="row g-5">
+                <!-- CONTACT INFO -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title mb-3">Contact Us</h5>
+                    <ul class="footer-info list-unstyled">
+                        <li><i class="fa-solid fa-location-dot me-2"></i>171 Elden Street, UNIT 3C3, Herndon VA, 20170
+                        </li>
+                        <li><i class="fa-solid fa-envelope me-2"></i><a href="mailto:info@sitelearningamerica.com"
+                                class="text-decoration-none text-white">info@sitelearningamerica.com</a></li>
+                        <li><i class="fa-solid fa-phone me-2"></i><a href="tel:+18044418645"
+                                class="text-decoration-none text-white">+1 804-441-8645</a></li>
+                    </ul>
+                </div>
+                <!-- QUICK LINKS -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title mb-3">Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-white">About</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-white">Contact</a></li>
 
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title mb-3">Exam Vouchers</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="" class="text-decoration-none text-white">Aws Exam Vouchers</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-white">PECB Exam Vouchers</a></li>
+                        <li><a href="" class="text-decoration-none text-white">PEGA Exam Vouchers</a></li>
+                        <li><a href="" class="text-decoration-none text-white">PEGA Exam Vouchers</a></li>
+                        <li><a href="" class="text-decoration-none text-white">CompTIA Exam Vouchers</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="footer-title mb-3">Traning & Courses </h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="" class="text-decoration-none text-white">AWS Traning</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-white">PECB Traning</a></li>
+                        <li><a href="" class="text-decoration-none text-white">PEGA Traning</a></li>
+                        <li><a href="" class="text-decoration-none text-white">PEGA Traning</a></li>
+                        <li><a href="" class="text-decoration-none text-white">CompTIA Traning</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <p class="mb-0  small">&copy; 2026 Site Learning America. All rights reserved.</p>
+                <ul class="social-icons list-inline mb-0">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/sitelearningamerica/"
+                            class="text-white"><i class="fa-brands fa-facebook-f"></i></a></li>
+
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/company/site-learning-america/"
+                            class="text-white"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/sitelearning_america/"
+                            class="text-white"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Shapes -->
+        <div class="footer-shape footer-shape-1"></div>
+        <div class="footer-shape footer-shape-2"></div>
+    </footer>
     <!-- =========================
      SCRIPTS
 ========================= -->
