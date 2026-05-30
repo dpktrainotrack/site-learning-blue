@@ -32,6 +32,263 @@
     <link rel="stylesheet" href="assets/css/training.css">
     <!-- <link rel="stylesheet" href="assets/css/font-awesome-pro.css"> -->
 
+    <style>
+        <!-- Certification Journey Section 
+        -->
+    <section class="certification-journey py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="journey-badge">
+                    <i class="fas fa-route me-2"></i>
+                    Certification Journey
+                </span>
+
+                <h2 class="journey-title mt-3">
+                    Your Path To <span>Certification Success</span>
+                </h2>
+
+                <p class="journey-desc">
+                    Follow these simple steps to start your learning journey,
+                    earn your certification, and advance your career.
+                </p>
+            </div>
+
+            <div class="journey-wrapper">
+
+                <!-- Connecting Line -->
+                <div class="journey-line"></div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Step 1 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <h5>Choose Course</h5>
+
+                            <p>
+                                Select the certification training that aligns with your career goals.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+
+                            <h5>Expert Guidance</h5>
+
+                            <p>
+                                Consult with our training advisors to identify the best learning path.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+
+                            <h5>Enroll & Learn</h5>
+
+                            <p>
+                                Join instructor-led training and gain practical hands-on experience.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+
+                            <h5>Get Certified</h5>
+
+                            <p>
+                                Schedule your exam, earn certification, and boost your career.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <style>
+        .certification-journey {
+            background: var(--white);
+            overflow: hidden;
+        }
+
+        .journey-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: rgba(23, 144, 168, .1);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .journey-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--dark-text);
+        }
+
+        .journey-title span {
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .journey-desc {
+            max-width: 700px;
+            margin: auto;
+            color: var(--gray-text);
+        }
+
+        .journey-wrapper {
+            position: relative;
+            margin-top: 40px;
+        }
+
+        .journey-line {
+            position: absolute;
+            top: 55px;
+            left: 12%;
+            width: 76%;
+            height: 4px;
+            background: linear-gradient(90deg,
+                    var(--primary),
+                    var(--primary-dark));
+            z-index: 1;
+        }
+
+        .journey-item {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .journey-icon {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 6px solid rgba(23, 144, 168, .15);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .journey-icon::before {
+            content: '';
+            position: absolute;
+            inset: 8px;
+            border-radius: 50%;
+            background: var(--gradient-main);
+        }
+
+        .journey-icon i {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            font-size: 34px;
+        }
+
+        .journey-item:hover .journey-icon {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .journey-item h5 {
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--dark-text);
+        }
+
+        .journey-item p {
+            color: var(--gray-text);
+            line-height: 1.7;
+            font-size: .95rem;
+            max-width: 260px;
+            margin: auto;
+        }
+
+        /* Tablet */
+        @media(max-width:991px) {
+
+            .journey-line {
+                display: none;
+            }
+
+            .journey-item {
+                background: var(--white);
+                padding: 25px;
+                border-radius: var(--radius);
+                box-shadow: var(--shadow-sm);
+                border: 1px solid rgba(23, 144, 168, .08);
+            }
+
+        }
+
+        @media(max-width:767px) {
+
+            .journey-icon {
+                width: 90px;
+                height: 90px;
+            }
+
+            .journey-icon i {
+                font-size: 28px;
+            }
+
+            .journey-item {
+                margin-bottom: 10px;
+            }
+
+        }
+
+        .journey-line {
+            position: absolute;
+            top: 55px;
+            left: 10%;
+            width: 80%;
+            height: 4px;
+            background: linear-gradient(90deg,
+                    var(--primary),
+                    var(--primary-dark));
+            z-index: 1;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -202,145 +459,148 @@
                 </div>
             </div>
         </section>
-        <section class="trail-info-strip ">
+
+        <section class="vouchers-card-listing py-4 py-md-5">
             <div class="container">
-                <div class="trail-info-strip-inner">
-                    <div class="trail-strip-item">
-                        <!-- <i class="fa fa-clock"></i> -->
-                        <div>
-                            <!-- <span class="strip-label">Duration</span> -->
-                            <span class="strip-value"><a href="#training-overview">Overview</a></span>
-                        </div>
-                    </div>
-                    <div class="trail-strip-divider"></div>
-                    <div class="trail-strip-item">
-                        <span class="strip-value"><a href="#voucherSection">Vouchers</a></span>
-                    </div>
-                    <div class="trail-strip-divider"></div>
+                <div class="vouchers-grid-wrapper">
+                    <div class="">
+                        <a href="detail.html">
+                            <div class="training-card">
+                                <div class="card-img-wrapper">
+                                    <img src="assets/images/traning/aws/12.webp" alt="AWS Developer">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-category">AWS Development</span>
+                                    <h3 class="card-title">AWS Certified Developer Associate - DVA-C02</h3>
 
 
-                    <div class="trail-strip-item">
-                        <span class="strip-value"><a href="#course-objectives">
-                                Achievement
-                            </a></span>
+                                    <div class="card-footer-info">
+                                        <div class="card-price-wrapper">
+                                            <span class="original-price">$180.00</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="current-price">$144.00</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-action-btn">Enroll Now</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="trail-strip-divider"></div>
-                    <div class="trail-strip-item">
-                        <span class="strip-value"><a href="#course-objectives">
-                                Why Choose Site
-                            </a></span>
+                    <div class="">
+                        <a href="detail.html">
+                            <div class="training-card">
+                                <div class="card-img-wrapper">
+                                    <img src="assets/images/traning/aws/12.webp" alt="AWS Developer">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-category">AWS Development</span>
+                                    <h3 class="card-title">AWS Certified Developer Associate - DVA-C02</h3>
+
+
+                                    <div class="card-footer-info">
+                                        <div class="card-price-wrapper">
+                                            <span class="original-price">$180.00</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="current-price">$144.00</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-action-btn">Enroll Now</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="trail-strip-divider"></div>
-                    <div class="trail-strip-item">
-                        <div>
-                            <span class="strip-value"><a href="#trainee-faq">FAQs</a></span>
-                        </div>
+                    <div class="">
+                        <a href="detail.html">
+                            <div class="training-card">
+                                <div class="card-img-wrapper">
+                                    <img src="assets/images/traning/aws/3.webp" alt="AWS Developer">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-category">AWS Development</span>
+                                    <h3 class="card-title">AWS Certified Developer Associate - DVA-C02</h3>
+
+
+                                    <div class="card-footer-info">
+                                        <div class="card-price-wrapper">
+                                            <span class="original-price">$180.00</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="current-price">$144.00</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-action-btn">Enroll Now</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="detail.html">
+                            <div class="training-card">
+                                <div class="card-img-wrapper">
+                                    <img src="assets/images/traning/aws/AWS Certified DevOps Engineer Professional.webp"
+                                        alt="AWS Developer">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-category">AWS Development</span>
+                                    <h3 class="card-title">AWS Certified Developer Associate - DVA-C02</h3>
+
+
+                                    <div class="card-footer-info">
+                                        <div class="card-price-wrapper">
+                                            <span class="original-price">$180.00</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="current-price">$144.00</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-action-btn">Enroll Now</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="detail.html">
+                            <div class="training-card">
+                                <div class="card-img-wrapper">
+                                    <img src="assets/images/traning/aws/AWS Certified DevOps Engineer Professional.webp"
+                                        alt="AWS Developer">
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-category">AWS Development</span>
+                                    <h3 class="card-title">AWS Certified Developer Associate - DVA-C02</h3>
+
+
+                                    <div class="card-footer-info">
+                                        <div class="card-price-wrapper">
+                                            <span class="original-price">$180.00</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="current-price">$144.00</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-action-btn">Enroll Now</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Overview -->
         <section class="py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-12">
+                    <div class="col-lg-12 col-md-12">
                         <div class="content-area-left">
-                            <div class="overview">
 
-                                <h2 class="title-stylish section-title"> Overview</h2>
-                                <p>Gain flexible and cost-effective exam vouchers for AWS certification exams. Save
-                                    while you prepare and schedule your certification anytime with discounted voucher
-                                    packs.</p>
-                                <p>
-                                    Discover a wide selection of discounted certification vouchers for leading tech
-                                    vendors. Purchase and redeem your exam vouchers easily through our streamlined
-                                    platform.
-
-                                </p>
-
-
-
-                            </div>
-                            <!-- TRAINING AND COURSES -->
-                            <div class="training-and-courses pt-5" id="voucherSection">
-                                <div class="training-and-courses-inner pt-3">
-                                    <div class="training-and-courses-content">
-                                        <h3 class="title-stylish section-title">Training and <span>Courses</span></h3>
-
-                                    </div>
-                                    <div class="mt-4">
-                                        <div class="fancy-card-wraper">
-                                            <div class="traning-fancy-card">
-                                                <div class="course-card">
-                                                    <div class="course-image">
-                                                        <img src="assets/images/traning/aws/Cloud-Practitioner.webp"
-                                                            class="img-fluid" alt="AWS Course">
-                                                    </div>
-                                                    <div class="fancy-card">
-                                                        <div class="course-content">
-                                                            <div class=" mb-3">
-                                                                <h5 class=" mb-2">
-                                                                    AWS Certified Cloud Practitioner - CLF-C02
-                                                                </h5>
-                                                                <div class="mb-1">Duration : 30 Hours
-
-                                                                </div>
-                                                                <div class="mb-1">Price: $10,000/-</div>
-                                                                <div class="enroll-btn-wrapper mt-3">
-                                                                    <a href="detail.html" class="enroll-btn">
-                                                                        Full Details
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="traning-fancy-card">
-                                                <div class="course-card">
-                                                    <div class="course-image">
-                                                        <img src="assets/images/traning/aws/AWS Certified Developer Associate - DVA-C02.webp"
-                                                            class="img-fluid" alt="AWS Course">
-                                                    </div>
-                                                    <div class="fancy-card">
-                                                        <div class="course-content">
-                                                            <div class=" mb-3">
-                                                                <h5 class=" mb-2">
-                                                                    AWS Certified Developer Associate - DVA-C02
-                                                                </h5>
-                                                                <div class="mb-1">Duration : 120 Hours
-
-                                                                </div>
-                                                                <div class="mb-1">Price: $12,000/-</div>
-                                                                <div class="enroll-btn-wrapper mt-3">
-                                                                    <a href="detail.html" class="enroll-btn">
-                                                                        Full Details
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-                            <div class="mt-4 mt-md-5 overview-content">
-                                <h3 class="title-stylish section-title">Key <span>Features</span></h3>
-                                <ul class="training-details-list"
-                                    style="font-size: 16px; line-height: 1.9; color:rgb(90, 90, 90)">
-                                    <li> Save significantly on exam costs with discounted voucher bundles.</li>
-                                    <li> Flexible scheduling – book your exam when you’re ready</li>
-                                    <li> Valid for 12 months from date of purchase</li>
-                                    <li> No additional taxes or hidden charges</li>
-                                    <li> Globally accepted at Pearson VUE testing centers</li>
-                                </ul>
-                            </div>
                             <!-- voucher-benifits -->
                             <div class="pt-4 voucher-benifits">
                                 <h3 class="title-stylish section-title">Voucher <span>Benefits</span></h3>
@@ -414,53 +674,12 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-12">
-                        <div class="enquery-right-form">
-                            <div class="enquery-form-card" data-aos="fade-left" data-aos-delay="100">
-                                <div class="form-header">
-                                    <h3 class="fw-bold text-white Session -white mb-1">Book Now</h3>
-                                    <p class="text-white mb-0 small">Get one to one coaching with expert trainers.
-                                    </p>
-
-                                </div>
-                                <div class="form-body">
-                                    <form id="trainingEnquiryForm">
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control form-control-lg"
-                                                placeholder="Your Name" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="email" class="form-control form-control-lg"
-                                                placeholder="Your Email" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="tel" class="form-control form-control-lg"
-                                                placeholder="Mobile Number" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <select class="form-select form-select-lg" required>
-                                                <option value="" selected disabled>Select Course</option>
-                                                <option value="aws-practitioner">AWS Cloud Practitioner</option>
-                                                <option value="aws-architect">AWS Solutions Architect</option>
-                                                <option value="aws-developer">AWS Developer Associate</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <textarea class="form-control form-control-lg" rows="3"
-                                                placeholder="Message"></textarea>
-                                        </div>
-                                        <button type="submit" class="btn  training-hero-btn">Talk To Expert <i
-                                                class="fa fa-arrow-right ms-2"></i></button>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
         </section>
 
+
+
         <!-- Course Objectives Section -->
-        <section class="course-objectives py-5" id="course-objectives">
+        <section class="course-objectives py-5" id="AchievementsSection">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="section-title mt-3">
@@ -472,10 +691,10 @@
                         with expert-led training.
                     </p>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
 
                     <!-- Objective 1 -->
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
                         <div class="objective-card">
                             <div class="icon-box">
                                 <i class="fas fa-certificate"></i>
@@ -489,7 +708,7 @@
                     </div>
 
                     <!-- Objective 2 -->
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
                         <div class="objective-card">
                             <div class="icon-box">
                                 <i class="fas fa-laptop-code"></i>
@@ -504,7 +723,7 @@
                     </div>
 
                     <!-- Objective 3 -->
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
                         <div class="objective-card">
                             <div class="icon-box">
                                 <i class="fas fa-cloud"></i>
@@ -518,7 +737,7 @@
                     </div>
 
                     <!-- Objective 4 -->
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
                         <div class="objective-card">
                             <div class="icon-box">
                                 <i class="fas fa-briefcase"></i>
@@ -532,7 +751,7 @@
                     </div>
 
                     <!-- Objective 5 -->
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="400">
                         <div class="objective-card">
                             <div class="icon-box">
                                 <i class="fas fa-user-shield"></i>
@@ -547,7 +766,7 @@
                     </div>
 
                     <!-- Objective 6 -->
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="500">
                         <div class="objective-card">
                             <div class="icon-box">
                                 <i class="fas fa-ticket-alt"></i>
@@ -623,12 +842,6 @@
                                             CI/CD workflows.</span></div>
                                 </li>
                             </ul>
-
-                            <div class="career-card-footer">
-
-                                <a href="#trainingEnquiryForm" class="btn-card-action">Learn More <i
-                                        class="fas fa-arrow-right"></i></a>
-                            </div>
                         </div>
                     </div>
 
@@ -666,12 +879,6 @@
                                             services on Azure.</span></div>
                                 </li>
                             </ul>
-
-                            <div class="career-card-footer">
-
-                                <a href="#trainingEnquiryForm" class="btn-card-action">Learn More <i
-                                        class="fas fa-arrow-right"></i></a>
-                            </div>
                         </div>
                     </div>
 
@@ -710,22 +917,139 @@
                                             distributed offices.</span></div>
                                 </li>
                             </ul>
-
-                            <div class="career-card-footer">
-
-                                <a href="#trainingEnquiryForm" class="btn-card-action">Learn More <i
-                                        class="fas fa-arrow-right"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="py-5">
+            <div class="container">
+                <!-- SECTION HEADER -->
+                <div class="text-center mb-5 aos-init aos-animate" data-aos="fade-up">
+                    <!-- <div class="section-badge justify-content-center mb-3">
+                    <span> </span>
+                </div> -->
+                    <h2 class="process-title">
+                        How Voucher
+                        <span>Delivery Works</span>
+                    </h2>
+                    <p class="process-desc">
+                        Our simple certification process helps learners and professionals achieve their career goals
+                        efficiently through trusted
+                        training, authentic vouchers, and expert support.
+
+                    </p>
+                </div>
+
+
+                <!-- PROCESS STEPS -->
+                <div class="row g-4 position-relative process-wrapper">
+
+                    <!-- CONNECTOR LINE -->
+                    <div class="process-line d-none d-lg-block" style="top:55px"></div>
+
+
+
+                    <!-- Step 1 -->
+                    <div class="col-lg col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+
+                            <h5>Purchase Voucher</h5>
+
+                            <p>
+                                Select your certification voucher and securely place your order online.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-lg col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+
+                            <h5>Payment Verification</h5>
+
+                            <p>
+                                Our team verifies your payment and confirms your voucher request.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-lg col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fas fa-ticket-alt"></i>
+                            </div>
+
+                            <h5>Voucher Generated</h5>
+
+                            <p>
+                                Your official certification voucher is generated and prepared for delivery.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="col-lg col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fas fa-envelope-open-text"></i>
+                            </div>
+
+                            <h5>Email Delivery</h5>
+
+                            <p>
+                                The voucher code is securely delivered to your registered email address.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="col-lg col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+
+                            <h5>Schedule Exam</h5>
+
+                            <p>
+                                Redeem your voucher and book your exam through the official testing provider.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
 
         <!-- TRAINING-REVIEWS-CAROUSEL -->
         <section class="traning-reviews-carousel py-5" id="testimonials">
             <div class="container">
-                <h3 class="title-stylish mb-4">What Our Trainees <span> Say</span></h3>
+                <h3 class="title-stylish section-title mb-4">What Our Trainees <span> Say</span></h3>
                 <div id="brandsReview" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="students-review-card">
@@ -851,7 +1175,7 @@
         <!-- FAQ -->
         <section class="training-faq py-5" id="trainee-faq">
             <div class="container">
-                <h3 class="title-stylish mb-4">FAQ <span> </span></h3>
+                <h3 class="title-stylish section-title mb-4">FAQ <span> </span></h3>
                 <div class="accordion custom-faq" id="faqAccordion">
 
                     <!-- ITEM -->

@@ -698,6 +698,13 @@
     margin-top: 30px;
 }
 
+.vouchers-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
 
 .course-detail-item {
     background: rgba(255, 255, 255, 0.78);
@@ -878,11 +885,11 @@ span.strip-value a {
 }
 
 .students-review-card:hover {
-    transform: translateY(-8px);
+
     box-shadow: 0 25px 60px rgba(23, 144, 168, 0.18);
 }
 
-.students-review-card::before {
+/* .students-review-card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -890,7 +897,7 @@ span.strip-value a {
     width: 100%;
     height: 6px;
     background: var(--gradient-main);
-}
+} */
 
 .students-review-card .quote-icon {
     width: 65px;
@@ -1061,26 +1068,14 @@ ul {
     border: 1px solid rgba(23, 144, 168, .08);
 }
 
-.objective-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: var(--gradient-main);
-    transform: scaleX(0);
-    transition: .4s;
-}
+
 
 .objective-card:hover {
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
     box-shadow: var(--shadow-lg);
 }
 
-.objective-card:hover::before {
-    transform: scaleX(1);
-}
+
 
 .icon-box {
     width: 75px;
