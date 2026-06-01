@@ -1054,6 +1054,9 @@ ul {
     margin: auto;
     color: var(--gray-text);
     font-size: 1.05rem;
+    margin-bottom: 16px;
+
+    text-align: justify;
 }
 
 .objective-card {
@@ -1820,4 +1823,9 @@ ul {
     .journey-line {
         display: none;
     }
+}
+
+
+.voucher-benifits {
+    margin-bottom: 20px;
 }
