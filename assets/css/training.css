@@ -700,7 +700,7 @@
 
 .vouchers-grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 30px;
 }
@@ -757,6 +757,14 @@
     font-weight: 900;
     font-size: 18px;
     margin-right: 10px;
+}
+
+.training-details-list li {
+    margin-bottom: 8px;
+    color: var(--gray-text);
+    font-size: 1.05rem;
+    list-style: none;
+
 }
 
 .course-card {
@@ -844,7 +852,7 @@
 
 .enquery-right-form {
     position: sticky;
-    top: 60px;
+    top: 100px;
 }
 
 span.strip-value a {
@@ -1828,4 +1836,157 @@ ul {
 
 .voucher-benifits {
     margin-bottom: 20px;
+}
+
+
+
+.certification-journey {
+    background: var(--white);
+    overflow: hidden;
+}
+
+.journey-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: rgba(23, 144, 168, .1);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.journey-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: var(--dark-text);
+}
+
+.journey-title span {
+    background: var(--gradient-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.journey-desc {
+    max-width: 700px;
+    margin: auto;
+    color: var(--gray-text);
+}
+
+.journey-wrapper {
+    position: relative;
+    margin-top: 40px;
+}
+
+.journey-line {
+    position: absolute;
+    top: 55px;
+    left: 12%;
+    width: 76%;
+    height: 4px;
+    background: linear-gradient(90deg,
+            var(--primary),
+            var(--primary-dark));
+    z-index: 1;
+}
+
+.journey-item {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.journey-icon {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 6px solid rgba(23, 144, 168, .15);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    position: relative;
+}
+
+.journey-icon::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border-radius: 50%;
+    background: var(--gradient-main);
+}
+
+.journey-icon i {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 34px;
+}
+
+.journey-item:hover .journey-icon {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.journey-item h5 {
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--dark-text);
+}
+
+.journey-item p {
+    color: var(--gray-text);
+    line-height: 1.7;
+    font-size: .95rem;
+    max-width: 260px;
+    margin: auto;
+}
+
+/* Tablet */
+@media(max-width:991px) {
+
+    .journey-line {
+        display: none;
+    }
+
+    .journey-item {
+        background: var(--white);
+        padding: 25px;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-sm);
+        border: 1px solid rgba(23, 144, 168, .08);
+    }
+
+}
+
+@media(max-width:767px) {
+
+    .journey-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .journey-icon i {
+        font-size: 28px;
+    }
+
+    .journey-item {
+        margin-bottom: 10px;
+    }
+
+}
+
+.journey-line {
+    position: absolute;
+    top: 55px;
+    left: 10%;
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(90deg,
+            var(--primary),
+            var(--primary-dark));
+    z-index: 1;
 }

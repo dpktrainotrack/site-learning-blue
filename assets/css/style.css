@@ -155,7 +155,7 @@ span.logo-text-site div {
 
 .navbar {
   background: var(--white);
-  padding: 12px 0;
+  padding: 0;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
   position: sticky;
@@ -186,9 +186,20 @@ span.logo-text-site div {
 }
 
 .navbar-logo {
-  height: 55px;
+  height: 65px;
   width: auto;
   transition: var(--transition);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-logo {
+    height: 45px;
+  }
+
+  #navbarMainMenu {
+    box-shadow: none;
+  }
+
 }
 
 .navbar.sticky .navbar-logo {
@@ -276,6 +287,17 @@ span.logo-text-site div {
   margin-left: 6px;
   transition: transform 0.3s ease;
   vertical-align: middle;
+}
+
+.dropdown-toggle {
+  position: relative;
+}
+
+.dropdown-toggle>i {
+  position: absolute;
+  top: 16px;
+  right: 1px;
+  font-size: 16px;
 }
 
 .navbar-nav .dropdown.show .dropdown-toggle::after {
@@ -684,8 +706,9 @@ ul.cert-listing li a i {
 .voucher-mega-dropdown.show .voucher-mega-menu {
   opacity: 1;
   visibility: visible;
-  /* transform: translateX(-50%) translateY(0) !important; */
+  /* transform: translateX(-50%) translateY(10%) !important; */
 }
+
 
 .mega-menu-column {
   padding: 10px;
@@ -865,6 +888,32 @@ ul.cert-listing li a i {
 /* =============================================
    HERO SECTION
    ============================================= */
+
+.intro-list li::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.intro-features h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--dark-text);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.intro-list li {
+  margin-bottom: 8px;
+  color: var(--gray-text);
+  font-size: 1.05rem;
+  list-style: none;
+}
+
 .hero-section {
   background: var(--gradient-hero);
   position: relative;
@@ -1922,7 +1971,7 @@ ul.cert-listing li a i {
   margin-bottom: 12px;
   line-height: 1.4;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1997,6 +2046,11 @@ ul.cert-listing li a i {
   font-size: 14px;
   transition: var(--transition);
   border: none;
+}
+
+.training-card-btn {
+  width: 100%;
+  text-align: center;
 }
 
 .card-action-btn:hover {
@@ -2797,7 +2851,7 @@ ul.cert-listing li a i {
   width: 60px;
   height: 60px;
   border-radius: 18px;
-  background: rgba(6, 187, 204, 0.1);
+  /* background: rgba(6, 187, 204, 0.1); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2812,6 +2866,7 @@ ul.cert-listing li a i {
 .rating-stars {
   display: flex;
   gap: 5px;
+  display: none;
 }
 
 .rating-stars i {
@@ -5716,3 +5771,83 @@ h5.traning-card-title {
 .traning-fancy-card {
   margin-top: 20px;
 }
+
+
+
+
+
+
+
+
+
+/* WhatsApp Floating & Back To Top */
+.whatsapp-float,
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--white);
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.whatsapp-float {
+  right: 30px;
+  background-color: #25D366;
+
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  color: var(--white);
+}
+
+.call-float {
+  position: fixed;
+  right: 30px;
+  bottom: 120px;
+  background-color: var(--primary-blue);
+  background-color: rgb(202, 48, 61);
+  padding: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--white);
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.call-float:hover {
+  transform: scale(1.1);
+  color: var(--white);
+}
+
+
+.back-to-top {
+  left: 30px;
+  background-color: var(--primary-blue);
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);

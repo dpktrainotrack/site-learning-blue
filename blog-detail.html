@@ -8,6 +8,7 @@
     <meta name="description"
         content="Get the ultimate roadmap to passing your AWS Certified Cloud Practitioner (CLF-C02) exam, featuring core exam domains, top prep resources, and discounted vouchers.">
 
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,442 +25,20 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Premium Custom/Internal CSS for Redesigned Blog Detail Page -->
-    <style>
-        /* Article Hero Header */
 
-
-        .blog-detail-hero .badge-category {
-            background: var(--gradient-main);
-            color: var(--white);
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 0.8rem;
-            padding: 6px 16px;
-            border-radius: 50px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            display: inline-block;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        }
-
-        .blog-detail-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.8rem;
-            font-weight: 800;
-            color: var(--white);
-            line-height: 1.3;
-            margin-bottom: 25px;
-        }
-
-        .blog-detail-meta {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.85);
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 25px;
-        }
-
-        .blog-detail-meta span {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .blog-detail-meta i {
-            color: #4cd360;
-            font-size: 1.1rem;
-        }
-
-        /* Article Structure & Layout */
-        .blog-detail-section {
-            background-color: var(--light-bg);
-            padding: 80px 0;
-        }
-
-        /* Rich Content Styling */
-        .article-card {
-            background: var(--white);
-            border-radius: 24px;
-            padding: 50px 45px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-            border: 1px solid rgba(0, 0, 0, 0.02);
-            margin-bottom: 40px;
-        }
-
-        .featured-image-wrapper {
-            border-radius: 18px;
-            overflow: hidden;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow-md);
-        }
-
-        .featured-image-wrapper img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .article-body {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.05rem;
-            line-height: 1.9;
-            color: var(--gray-text);
-        }
-
-        .article-body h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.7rem;
-            font-weight: 700;
-            color: var(--primary-dark);
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        .article-body h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.35rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-
-        /* Pullquote / Blockquote */
-        .article-blockquote {
-            background: rgba(66, 95, 133, 0.04);
-            border-left: 5px solid var(--primary);
-            padding: 25px 35px;
-            border-radius: 0 16px 16px 0;
-            margin: 35px 0;
-            position: relative;
-        }
-
-        .article-blockquote p {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.15rem;
-            font-style: italic;
-            font-weight: 600;
-            color: var(--primary-dark);
-            line-height: 1.7;
-            margin-bottom: 0;
-        }
-
-        .article-blockquote i {
-            position: absolute;
-            font-size: 4rem;
-            color: rgba(66, 95, 133, 0.08);
-            right: 25px;
-            bottom: 10px;
-            pointer-events: none;
-        }
-
-        .article-list {
-            list-style: none;
-            padding: 0;
-            margin: 25px 0;
-        }
-
-        .article-list li {
-            position: relative;
-            padding-left: 28px;
-            margin-bottom: 15px;
-            line-height: 1.7;
-            color: var(--gray-text);
-        }
-
-        .article-list li::before {
-            content: "\f00c";
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            color: #4cd360;
-            position: absolute;
-            left: 0;
-            top: 2px;
-            font-size: 0.95rem;
-        }
-
-        /* Share Area */
-        .article-share-area {
-            border-top: 1px solid rgba(0, 0, 0, 0.08);
-            margin-top: 50px;
-            padding-top: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .share-title {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            color: var(--primary-dark);
-            margin: 0;
-            font-size: 1.1rem;
-        }
-
-        .share-icons {
-            display: flex;
-            gap: 10px;
-        }
-
-        .share-btn {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white) !important;
-            transition: var(--transition);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .share-btn:hover {
-            transform: translateY(-3px);
-            opacity: 0.9;
-        }
-
-        .share-btn.fb {
-            background: #3b5998;
-        }
-
-        .share-btn.tw {
-            background: #1da1f2;
-        }
-
-        .share-btn.ln {
-            background: #0077b5;
-        }
-
-        .share-btn.wa {
-            background: #25d366;
-        }
-
-        /* Sidebar Widgets */
-        .sidebar-widget {
-            background: var(--white);
-            border-radius: 20px;
-            padding: 35px 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-            border: 1px solid rgba(0, 0, 0, 0.02);
-            margin-bottom: 30px;
-        }
-
-        .widget-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--primary-dark);
-            margin-bottom: 25px;
-            position: relative;
-            padding-bottom: 12px;
-            margin-top: 0;
-        }
-
-        .widget-title::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 3px;
-            background: var(--gradient-main);
-            border-radius: 2px;
-        }
-
-        /* Recent Posts Widget */
-        .widget-post-list {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .widget-post-item {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .widget-post-img {
-            width: 80px;
-            height: 60px;
-            border-radius: 8px;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-
-        .widget-post-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .widget-post-info h4 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 700;
-            line-height: 1.45;
-            margin: 0 0 6px 0;
-        }
-
-        .widget-post-info h4 a {
-            color: var(--primary-dark);
-            transition: var(--transition);
-        }
-
-        .widget-post-info h4 a:hover {
-            color: var(--primary);
-        }
-
-        .widget-post-info span {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.78rem;
-            color: var(--gray-text);
-        }
-
-        /* CTA Widget */
-        .widget-cta {
-            background: var(--gradient-hero);
-            color: var(--white);
-            border: none;
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
-        }
-
-        .widget-cta::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(66, 95, 133, 0.25) 0%, rgba(35, 57, 97, 0.25) 100%);
-            z-index: -1;
-        }
-
-        .widget-cta h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.45rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-            line-height: 1.35;
-            color: var(--white);
-        }
-
-        .widget-cta p {
-            font-size: 0.95rem;
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.85);
-            margin-bottom: 25px;
-        }
-
-        .widget-cta-btn {
-            background: var(--white);
-            color: var(--primary-dark);
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 0.9rem;
-            padding: 12px 28px;
-            border-radius: 8px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: var(--transition);
-            box-shadow: var(--shadow-sm);
-            text-decoration: none;
-        }
-
-        .widget-cta-btn:hover {
-            transform: translateY(-3px);
-            background: #eef2f6;
-            color: var(--primary-dark) !important;
-        }
-
-        /* Categories Widget */
-        .widget-categories-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .widget-categories-list li {
-            margin-bottom: 12px;
-        }
-
-        .widget-categories-list li:last-child {
-            margin-bottom: 0;
-        }
-
-        .widget-categories-list li a {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            color: var(--gray-text);
-            padding: 8px 12px;
-            border-radius: 8px;
-            background: rgba(0, 0, 0, 0.02);
-            transition: var(--transition);
-            text-decoration: none;
-        }
-
-        .widget-categories-list li a:hover {
-            background: rgba(66, 95, 133, 0.08);
-            color: var(--primary);
-            padding-left: 18px;
-        }
-
-        .widget-categories-list li span {
-            font-size: 0.8rem;
-            background: rgba(0, 0, 0, 0.05);
-            padding: 3px 8px;
-            border-radius: 20px;
-            font-weight: 600;
-        }
-
-        @media (max-width: 991px) {
-            .blog-detail-title {
-                font-size: 2.3rem;
-            }
-
-            .article-card {
-                padding: 35px 25px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .blog-detail-title {
-                font-size: 1.8rem;
-            }
-
-            .blog-detail-meta {
-                gap: 15px;
-            }
-
-            .article-card {
-                padding: 25px 20px;
-            }
-        }
-    </style>
 </head>
 
 <body>
+
     <!-- ========== MAIN NAVBAR ========== -->
     <nav class="navbar navbar-expand-lg" id="mainNavbar">
-        <div class="container">
+        <div class="container-fluid px-md-5">
             <a class="navbar-brand d-flex align-items-center gap-1" href="index.html">
                 <img src="assets/images/logo.png" alt="Site Learning America" class="navbar-logo">
             </a>
@@ -470,56 +49,61 @@
                 <span class="toggler-icon"></span>
                 <span class="toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarMainMenu">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarMainMenu">
+                <ul class="navbar-nav  align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item dropdown mega-dropdown voucher-mega-dropdown position-relative">
-                        <a class="nav-link dropdown-toggle" href="training-list.html">Training <i
-                                class="fa-solid fa-angle-down"></i></a>
+                        <a class="nav-link dropdown-toggle" href="training-list.html">IT Training
+                            <i class="far fa-angle-down"></i>
+
+                        </a>
                         <div class="dropdown-menu mega-menu voucher-mega-menu">
-                            <div class="" style="min-width: 200px;">
+                            <div class="" style="min-width: 230px;">
                                 <div class="mega-menu-column">
                                     <ul class="mega-menu-links">
-                                        <li><a href="training-brand.html"><span>AWS</span></a></li>
-                                        <li><a href="training-brand.html"><span>Microsoft</span></a></li>
-                                        <li><a href="training-brand.html"><span>PECB</span></a></li>
-                                        <li><a href="training-brand.html"><span>PEGA</span></a></li>
-                                        <li><a href="training-brand.html"><span>CISCO</span></a></li>
-                                        <li><a href="training-brand.html"><span>CompTIA</span></a></li>
-                                        <li><a href="training-brand.html"><span>Paloalto</span></a></li>
+                                        <li><a href="training-brand.html"><span>AWS Training</span></a></li>
+                                        <li><a href="training-brand.html"><span>Microsoft Training</span></a></li>
+                                        <li><a href="training-brand.html"><span>PECB Training</span></a></li>
+                                        <li><a href="training-brand.html"><span>PEGA Training</span></a></li>
+                                        <li><a href="training-brand.html"><span>CISCO Training</span></a></li>
+                                        <li><a href="training-brand.html"><span>CompTIA Training</span></a></li>
+                                        <li><a href="training-brand.html"><span>Paloalto Training</span></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item dropdown mega-dropdown voucher-mega-dropdown position-relative">
-                        <a class="nav-link dropdown-toggle" href="vouchers-list.html">Vouchers <i
-                                class="fa-solid fa-angle-down"></i></a>
+                        <a class="nav-link dropdown-toggle" href="vouchers-list.html">Exams Vouchers
+
+                            <i class="far fa-angle-down"></i>
+                        </a>
                         <div class="dropdown-menu mega-menu voucher-mega-menu">
-                            <div class="" style="min-width: 200px;">
+                            <div class="" style="min-width: 230px;">
                                 <div class="mega-menu-column">
                                     <ul class="mega-menu-links">
-                                        <li><a href="vouchers-brand.html"><span>AWS</span></a></li>
-                                        <li><a href="vouchers-brand.html"><span>Microsoft</span></a></li>
-                                        <li><a href="vouchers-brand.html"><span>PECB</span></a></li>
-                                        <li><a href="vouchers-brand.html"><span>PEGA</span></a></li>
-                                        <li><a href="vouchers-brand.html"><span>CISCO</span></a></li>
-                                        <li><a href="vouchers-brand.html"><span>CompTIA</span></a></li>
-                                        <li><a href="vouchers-brand.html"><span>Paloalto</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>AWS Exam Voucher</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>Microsoft Exam Voucher</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>PECB Exam Voucher</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>PEGA Exam Voucher</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>CISCO Exam Voucher</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>CompTIA Exam Voucher</span></a></li>
+                                        <li><a href="vouchers-brand.html"><span>Paloalto Exam Voucher</span></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link active" href="blogs.html">Blogs</a></li>
+
 
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <div class="navbar-cta ms-lg-3">
-                    <a href="contact.html" class="btn btn-cta-nav" id="navEnquiryBtn"><i
-                            class="fa-brands fa-whatsapp"></i><span>+1 804-441-8645</span></a>
-                </div>
+
+            </div>
+            <div class="navbar-cta ms-lg-3 d-none d-lg-block">
+                <a href="contact.html" class="btn btn-cta-nav" id="navEnquiryBtn"><i
+                        class="fa-brands fa-whatsapp"></i><span>+1 804-441-8645</span></a>
             </div>
         </div>
     </nav>
