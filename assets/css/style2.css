@@ -5851,28 +5851,3 @@ h5.traning-card-title {
 
 .back-to-top:hover {
   transform: translateY(-5px);
-}
-
-.intro-features h2,
-.intro-features3 h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--gray-text);
-  line-height: 1.2;
-  margin-bottom: 14px;
-}
-
-.intro-features {
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 20px;
-  border: 1px solid rgba(33, 55, 102, 0.5);
-  border-bottom-width: 5px;
-}
-
-.intro-features3 {
-  border: none;
-  padding: 0;
-}

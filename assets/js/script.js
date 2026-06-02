@@ -270,7 +270,7 @@ $(".certification-slider").owlCarousel({
   margin: 25,
   //   padding: 20,
   nav: true,
-  dots: true,
+  dots: false,
   autoplay: false,
   autoplayTimeout: 3500,
   smartSpeed: 800,
@@ -289,12 +289,12 @@ $(".certification-slider").owlCarousel({
 $(".voucher-slider").owlCarousel({
   loop: true,
   margin: 30,
-  nav: false,
+  nav: true,
   dots: false,
   autoplay: false,
-  // autoplayTimeout: 1,
-  autoplaySpeed: 10000,
-  smartSpeed: 10000,
+
+  autoplayTimeout: 3500,
+  smartSpeed: 800,
   slideTransition: "linear",
   autoplayHoverPause: false,
   responsive: {
