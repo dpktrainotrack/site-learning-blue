@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   //     navbar.classList.remove("sticky");
   //   }
 
-
   //   if (window.scrollY > 300) {
   //     backToTop.classList.add("active");
   //   } else {
@@ -146,8 +145,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-
-
   // 7. Mega Menu Behavior Fixes (One at a time, Click outside)
   const allDropdowns = document.querySelectorAll(".nav-item.dropdown");
   const allDropdownMenus = document.querySelectorAll(".dropdown-menu");
@@ -171,9 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //       const isOpen = dropdown.classList.contains("show");
 
-
   //       closeAllDropdowns();
-
 
   //       if (!isOpen) {
   //         dropdown.classList.add("show");
@@ -183,14 +178,12 @@ document.addEventListener("DOMContentLoaded", function () {
   //     }
   //   });
 
-
   //   dropdown.addEventListener("mouseenter", function () {
   //     if (window.innerWidth >= 992) {
 
   //     }
   //   });
   // });
-
 
   // document.addEventListener("click", function (e) {
   //   if (!e.target.closest(".nav-item.dropdown")) {
@@ -205,14 +198,12 @@ document.addEventListener("DOMContentLoaded", function () {
   //   });
   // });
 
-
   const naTabs = document.querySelectorAll(".na-tab");
   const naCardItems = document.querySelectorAll(".na-card-item");
 
   if (naTabs.length > 0 && naCardItems.length > 0) {
     naTabs.forEach((tab) => {
       tab.addEventListener("click", function () {
-
         naTabs.forEach((t) => t.classList.remove("active"));
         this.classList.add("active");
 
@@ -338,6 +329,19 @@ $("#careerPathOwlCarousel").owlCarousel({
     1000: { items: 3 },
   },
 });
+$("#trainingPathOwlCarousel").owlCarousel({
+  loop: true,
+  margin: 20,
+  autoplay: false,
+  autoplayTimeout: 4000,
+  autoplayHoverPause: true,
+  dots: true,
+  responsive: {
+    0: { items: 1 },
+    768: { items: 2 },
+    1000: { items: 3 },
+  },
+});
 
 $("#brandsReview").owlCarousel({
   loop: true,
@@ -353,14 +357,11 @@ $("#brandsReview").owlCarousel({
   },
 });
 
-
-
 /* -----------------------------
 LENIS
 ----------------------------- */
 
 const lenis = new Lenis({
-
   duration: 1.8,
 
   lerp: 0.08,
@@ -369,24 +370,21 @@ const lenis = new Lenis({
 
   smoothWheel: true,
 
-  smoothTouch: true
+  smoothTouch: true,
 });
 
 function raf(time) {
-
   lenis.raf(time);
 
   requestAnimationFrame(raf);
 }
 
 requestAnimationFrame(raf);
-lenis.on('scroll', ScrollTrigger.update);
+lenis.on("scroll", ScrollTrigger.update);
 gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 gsap.ticker.lagSmoothing(0);
-
-
 
 AOS.init({
   duration: 1000,

@@ -160,7 +160,7 @@
     position: relative;
     padding: 40px 0;
     min-height: 70vh;
-    background: url('../images/traning/banners/banner4.jpg') no-repeat center center;
+    background: url('../images/traning/banners/banner5.webp') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -198,7 +198,7 @@
 }
 
 .training-hero-section .hero-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: white;
 }
@@ -234,8 +234,9 @@
 }
 
 .hero-content-card .stat-text p {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 17px;
+    font-weight: 600;
+    /* color: rgba(255, 255, 255, 0.7) !important; */
 }
 
 /* Form Card */
@@ -323,10 +324,19 @@
 .hero-highlight-points .highlight {
     color: var(--primary-light);
     /* font-weight: 600; */
-    list-style: disc;
+    /* list-style: disc; */
     margin-bottom: 10px;
     line-height: 1.6;
-    font-size: 1.1rem;
+    font-size: 1rem;
+}
+
+.hero-highlight-points .highlight::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    color: var(--white);
+    font-weight: 900;
+    font-size: 18px;
+    margin-right: 10px;
 }
 
 .training-hero-btn {
@@ -974,6 +984,7 @@ span.strip-value a {
     display: flex;
     align-items: center;
     gap: 6px;
+    display: none;
 }
 
 .students-review-card .verified-badge i {
@@ -1064,7 +1075,7 @@ ul {
     font-size: 1.05rem;
     margin-bottom: 16px;
 
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .objective-card {
@@ -1403,7 +1414,7 @@ ul {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     border-radius: 24px;
-    padding: 35px;
+    padding: 25px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
     border: 1px solid rgba(6, 187, 204, 0.4);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1989,4 +2000,18 @@ ul {
             var(--primary),
             var(--primary-dark));
     z-index: 1;
+}
+
+
+.duration {
+    display: inline-block;
+    margin-top: 10px;
+
+    background: rgba(23, 144, 168, .08);
+    color: var(--primary);
+
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
 }

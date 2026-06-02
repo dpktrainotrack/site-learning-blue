@@ -533,3 +533,138 @@
 
             </div>
         </section>
+
+
+
+
+Certification path
+
+ <section class="py-5">
+            <div class="container">
+                <!-- SECTION HEADER -->
+                <div class="text-center mb-5 aos-init aos-animate" data-aos="fade-up">
+                    <!-- <div class="section-badge justify-content-center mb-3">
+                            <span> </span>
+                        </div> -->
+                    <h2 class="process-title">
+                        Certification
+                        <span>Tracks</span>
+                    </h2>
+                    <p class="process-desc">
+                        Follow a structured learning path from foundational cloud concepts to advanced architecture and
+                        operations expertise.
+                    </p>
+                </div>
+
+
+                <!-- PROCESS STEPS -->
+                <div class="row g-4 position-relative process-wrapper">
+
+                    <!-- CONNECTOR LINE -->
+                    <div class="process-line d-none d-lg-block" style="top:55px"></div> 
+                    <!-- Step 1 -->
+                    <div class="col-lg col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fa-solid fa-cloud"></i>
+                            </div>
+
+                            <h5>Cloud Practitioner</h5>
+
+                            <p>
+                                Learn cloud fundamentals, AWS services, pricing and security concepts.
+                            </p>
+                            <span class="duration">
+                                2-4 Weeks
+                            </span>
+
+                        </div>
+                    </div> 
+                    <!-- Step 2 -->
+                    <div class="col-lg col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fa-solid fa-sitemap"></i>
+                            </div>
+
+                            <h5>Solutions Architect</h5>
+
+                            <p>
+                                Design secure, scalable and cost-effective cloud architectures.
+                            </p>
+                            <span class="duration">
+                                6-8 Weeks
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-lg col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+
+                            <h5>Developer Associate</h5>
+
+                            <p>
+                                Build, deploy and maintain cloud-native applications on AWS.
+                            </p>
+                            <span class="duration">
+                                6-8 Weeks
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="col-lg col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+
+                            <h5>SysOps Administrator</h5>
+
+                            <p>
+                                Manage operations, monitoring, automation and cloud infrastructure.
+                            </p>
+                            <span class="duration">
+                                6-8 Weeks
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="col-lg col-md-6">
+                        <div class="journey-item">
+
+                            <div class="journey-icon">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+
+                            <h5>AWS Professional</h5>
+
+                            <p>
+                                Master enterprise-scale architecture, governance and cloud strategy.
+                            </p>
+                            <span class="duration">
+                                6-8 Weeks
+                            </span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
