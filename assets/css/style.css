@@ -307,8 +307,8 @@ span.logo-text-site div {
 /* CTA Button in Navbar */
 .btn-cta-nav {
   /* background: #4cd360; */
-  border: 2px solid #4cd360;
-  color: #4cd360;
+  border: 2px solid #128528;
+  color: #128528;
   padding: 5px 10px;
   border-radius: 50px;
   font-family: 'Inter', sans-serif;
@@ -5566,7 +5566,7 @@ h5.traning-card-title {
 }
 
 .banner-breadcrumb li a:hover {
-  color: #4cd360;
+  color: #128528;
 }
 
 .banner-breadcrumb li:not(:last-child)::after {

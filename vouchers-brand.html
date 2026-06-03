@@ -38,55 +38,57 @@
             background: var(--white);
             border-radius: 24px;
             overflow: hidden;
-
             box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
-
             border: 1px solid rgba(23, 144, 168, .08);
-
             transition: .35s ease;
-
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .certification-card:hover {
-            transform: translateY(-8px);
-
             box-shadow: 0 25px 50px rgba(23, 144, 168, .15);
         }
 
         .certification-header {
             position: relative;
-
-            background: var(--gradient-main);
-
-            min-height: 180px;
-
+            /* background: var(--gradient-main); */
+            /* min-height: 180px; */
             display: flex;
             align-items: center;
             justify-content: center;
-
-            padding: 30px;
+            padding: 20px;
+            background: rgb(245, 245, 242);
+            border-bottom: 1px solid rgb(231, 231, 231);
         }
 
-        .certification-header img {
-            max-width: 180px;
+        .certification-card .certification-header {}
+
+        /* .certification-card:first-child .certification-header img {
+            max-width: 160px;
             filter: brightness(0) invert(1);
+        } */
+
+        .certification-card .certification-header img {
+            max-width: 160px;
+
         }
 
 
 
         .certification-body {
-            padding: 30px;
+            padding: 25px;
+        }
+
+        .card-actions {
+            padding: 0 20px 25px 25px;
         }
 
         .certification-body h4 {
-
-
             color: var(--primary-dark);
-
             font-size: 22px;
             font-weight: 700;
-
             margin-bottom: 25px;
         }
 
@@ -101,10 +103,7 @@
             gap: 6px;
             font-size: 14px;
             margin-bottom: 8px;
-
-
             color: var(--gray-text);
-
             font-weight: 500;
         }
 
@@ -116,54 +115,43 @@
         .pricing-box {
             display: flex;
             justify-content: space-between;
-
-            /* padding: 20px; */
-
-            /* background: rgba(23, 144, 168, .05);
-
-            border-radius: 16px; */
-
             margin-bottom: 20px;
-        }
-
-        .offer-price small,
-        .actual-price small {
-            display: block;
-            margin-bottom: 5px;
             color: var(--gray-text);
         }
 
-        .offer-price strong {
-            /* font-size: 32px;
-            color: #198754;
-            font-weight: 800; */
+        .offer-price span {
+            font-size: 18px;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .offer-price span:first-child {
+            font-size: 18px;
+            color: var(--gray-text);
+            font-weight: 800;
         }
 
         .actual-price span {
-            font-size: 24px;
-            color: var(--gray-text);
+            font-size: 16px;
+            color: rgb(172, 172, 172);
             text-decoration: line-through;
-            font-weight: 700;
+            font-weight: 500;
         }
 
         .card-actions {
             display: flex;
             gap: 12px;
+            justify-content: space-between;
         }
 
         .btn-buy,
         .btn-details {
             flex: 1;
-
             text-align: center;
             text-decoration: none;
-
-            padding: 14px;
-
+            padding: 10px;
             border-radius: 12px;
-
             font-weight: 700;
-
             transition: .3s;
         }
 
@@ -172,10 +160,7 @@
             color: #fff;
         }
 
-        .btn-buy:hover {
-            color: #fff;
-            transform: translateY(-2px);
-        }
+
 
         .btn-details {
             border: 2px solid var(--primary);
@@ -183,7 +168,7 @@
         }
 
         .btn-details:hover {
-            background: var(--primary);
+            background: var(--gradient-main);
             color: #fff;
         }
 
@@ -204,6 +189,7 @@
             background-color: white;
             border-radius: 30px 8px;
             max-width: 200px;
+            opacity: 0.4;
         }
     </style>
 </head>
@@ -292,7 +278,7 @@
                     <div class="col-lg-8 ">
                         <div class="" data-aos="fade-right">
 
-                            <h1 class=" text-white fw-bold mb-4">AWS Exam Vouchers</h1>
+                            <h1 class=" text-white  mb-4">AWS Exam Vouchers</h1>
                             <p class="text-white mb-4">Get discounts on AWS Certification exams through our official
                                 voucher
                                 store. Available for all AWS certifications, including Associate, Professional, and
@@ -306,7 +292,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 justify-content-center d-flex">
-                        <div class="voucher-hero-right" data-aos="fade-left">
+                        <div class="voucher-hero-right">
                             <img src="assets/images/brands/aws.webp" alt="AWS Exam Voucher" class="img-fluid">
                         </div>
                     </div>
@@ -315,38 +301,39 @@
             </div>
         </section>
 
+
         <section class="vouchers-card-listing py-4 py-md-5">
-            <div class="container">
-                <div class=" text-dark" data-aos="fade-up">
-                    <ul class="banner-breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li>AWS </li>
-                    </ul>
+            <div class="container text-center breadcrumb-body">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                    <div class=" text-dark" data-aos="fade-up">
+                        <ul class="banner-breadcrumb m-0">
+                            <li><a href="index.html">Home</a></li>
+                            <li>AWS </li>
+                        </ul>
+                    </div>
+                    <a href="tel:+18044418645" class="btn-light cta-btn " data-aos="fade-up" data-aos-delay="100">
+                        <i class="fad fa-phone-volume"></i> +1
+                        804-441-8645</a>
                 </div>
+            </div>
+
+            <div class="container">
                 <div class="row ">
                     <div class="col-12">
                         <div class="vouchers-grid-wrapper">
-                            <!-- <a href="detail.html"> -->
                             <div class="certification-card">
-
                                 <!-- Header -->
                                 <div class="certification-header">
-
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+                                    <img src="assets/images/traning/aws/AWS Certified Developer Associate - DVA-C02.webp"
                                         alt="AWS">
-
-
                                 </div>
-
                                 <!-- Body -->
-                                <div class="certification-body">
+                                <div class="certification-body ">
 
                                     <h4>
-                                        AWS Professional & Specialty Exams
+                                        AWS Certified Developer Associate - DVA-C02
                                     </h4>
-
                                     <ul class=" training-details-list mb-3">
-
                                         <li>
                                             Lorem ipsum dolor sit amet, consectetur
                                         </li>
@@ -357,41 +344,83 @@
                                             Lorem ipsum dolor sit amet,
                                         </li>
 
-
-
-
                                     </ul>
-
                                     <div class="pricing-box">
-
-                                        <div class="offer-price">
-                                            <span>Offer Price</span>
-                                            <span>$270</span>
-                                        </div>
-
                                         <div class="actual-price">
-                                            <small>Regular Price</small>
+                                            <strong>Regular Price:</strong>
                                             <span>$300</span>
                                         </div>
-
+                                        <div class="offer-price">
+                                            <span>Offer Price:</span>
+                                            <span>$270</span>
+                                        </div>
                                     </div>
 
-                                    <div class="card-actions">
-
-                                        <a href="#" class="btn-buy">
-                                            Buy Now
-                                        </a>
-
-                                        <a href="#" class="btn-details">
-                                            View Details
-                                        </a>
-
-                                    </div>
 
                                 </div>
-
+                                <div class="card-actions">
+                                    <a href="#" class="btn-buy">
+                                        Buy Now
+                                    </a>
+                                    <a href="detail.html" class="btn-details">
+                                        View Details
+                                    </a>
+                                </div>
                             </div>
-                            <!-- </a> -->
+                            <div class="certification-card ">
+                                <!-- Header -->
+                                <div class="certification-header">
+                                    <img src="assets/images/traning/aws/AWS Certified Developer Associate - DVA-C02.webp"
+                                        alt="AWS">
+                                </div>
+                                <!-- Body -->
+                                <div class="certification-body ">
+
+                                    <h4>
+                                        AWS Certified Developer Associate - DVA-C02
+                                    </h4>
+                                    <ul class=" training-details-list mb-3">
+                                        <li>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                        </li>
+                                        <li>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                        </li>
+                                        <li>
+                                            Lorem ipsum dolor sit amet,
+                                        </li>
+                                        <li>
+                                            Lorem ipsum dolor sit amet,
+                                        </li>
+                                    </ul>
+                                    <div class="pricing-box">
+                                        <div class="actual-price">
+                                            <strong>Regular Price:</strong>
+                                            <span>$300</span>
+                                        </div>
+                                        <div class="offer-price">
+                                            <span>Offer Price:</span>
+                                            <span>$270</span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="card-actions">
+                                    <a href="#" class="btn-buy">
+                                        Buy Now
+                                    </a>
+                                    <a href="detail.html" class="btn-details">
+                                        View Details
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+
+
+
                             <!-- <div class="">
                                 <a href="detail.html">
                                     <div class="training-card">
@@ -560,6 +589,7 @@
                     </div> -->
 
                 </div>
+            </div>
         </section>
 
         <!-- Overview -->
