@@ -4819,6 +4819,17 @@ h5.traning-card-title {
 
 }
 
+.voucher-brand-hero2 {
+  background-image: url('../images/voucher-banner2.webp');
+  background-size: cover;
+  background-position: left;
+  padding: 130px 0 130px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+
+}
+
 .search-voucher-box {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
