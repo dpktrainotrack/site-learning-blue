@@ -33,6 +33,179 @@
     <link rel="stylesheet" href="assets/css/training.css">
 
 
+    <style>
+        .certification-card {
+            background: var(--white);
+            border-radius: 24px;
+            overflow: hidden;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+
+            border: 1px solid rgba(23, 144, 168, .08);
+
+            transition: .35s ease;
+
+            height: 100%;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow: 0 25px 50px rgba(23, 144, 168, .15);
+        }
+
+        .certification-header {
+            position: relative;
+
+            background: var(--gradient-main);
+
+            min-height: 180px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 30px;
+        }
+
+        .certification-header img {
+            max-width: 180px;
+            filter: brightness(0) invert(1);
+        }
+
+
+
+        .certification-body {
+            padding: 30px;
+        }
+
+        .certification-body h4 {
+
+
+            color: var(--primary-dark);
+
+            font-size: 22px;
+            font-weight: 700;
+
+            margin-bottom: 25px;
+        }
+
+        .certification-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px;
+        }
+
+        .certification-list li {
+            display: flex;
+            gap: 6px;
+            font-size: 14px;
+            margin-bottom: 8px;
+
+
+            color: var(--gray-text);
+
+            font-weight: 500;
+        }
+
+        .certification-list i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        .pricing-box {
+            display: flex;
+            justify-content: space-between;
+
+            /* padding: 20px; */
+
+            /* background: rgba(23, 144, 168, .05);
+
+            border-radius: 16px; */
+
+            margin-bottom: 20px;
+        }
+
+        .offer-price small,
+        .actual-price small {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--gray-text);
+        }
+
+        .offer-price strong {
+            /* font-size: 32px;
+            color: #198754;
+            font-weight: 800; */
+        }
+
+        .actual-price span {
+            font-size: 24px;
+            color: var(--gray-text);
+            text-decoration: line-through;
+            font-weight: 700;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn-buy,
+        .btn-details {
+            flex: 1;
+
+            text-align: center;
+            text-decoration: none;
+
+            padding: 14px;
+
+            border-radius: 12px;
+
+            font-weight: 700;
+
+            transition: .3s;
+        }
+
+        .btn-buy {
+            background: var(--gradient-main);
+            color: #fff;
+        }
+
+        .btn-buy:hover {
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .btn-details {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-details:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        @media(max-width:576px) {
+
+            .card-actions {
+                flex-direction: column;
+            }
+
+            .pricing-box {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+
+        .voucher-hero-right {
+            background-color: white;
+            border-radius: 30px 8px;
+            max-width: 200px;
+        }
+    </style>
 </head>
 
 <body>
@@ -110,25 +283,31 @@
     </nav>
     <main>
         <!-- =================== HERO SECTION ================== -->
-        <section class="contact-hero ">
+        <section class=" voucher-brand-hero">
             <div class="hero-shape hero-shape-1"></div>
             <div class="hero-shape hero-shape-2"></div>
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <!-- Left Content -->
-                    <div class="col-12">
-                        <div class=" text-center" data-aos="fade-right">
+                    <div class="col-lg-8 ">
+                        <div class="" data-aos="fade-right">
 
-                            <h1 class="hero-title text-white fw-bold mb-4">AWS Certification Exam Vouchers</h1>
+                            <h1 class=" text-white fw-bold mb-4">AWS Exam Vouchers</h1>
                             <p class="text-white mb-4">Get discounts on AWS Certification exams through our official
                                 voucher
                                 store. Available for all AWS certifications, including Associate, Professional, and
                                 Specialty levels.</p>
-                            <ul class="banner-breadcrumb">
-                                <li><a href="index.html">Home</a></li>
-                                <li>AWS Vouchers</li>
-                            </ul>
 
+                            <div class="">
+                                <a href="#vouchers" class="btn-light btn-lg cta-btn">Talk to Expert</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 justify-content-center d-flex">
+                        <div class="voucher-hero-right" data-aos="fade-left">
+                            <img src="assets/images/brands/aws.webp" alt="AWS Exam Voucher" class="img-fluid">
                         </div>
                     </div>
 
@@ -138,10 +317,82 @@
 
         <section class="vouchers-card-listing py-4 py-md-5">
             <div class="container">
+                <div class=" text-dark" data-aos="fade-up">
+                    <ul class="banner-breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li>AWS </li>
+                    </ul>
+                </div>
                 <div class="row ">
-                    <div class="col-lg-8">
+                    <div class="col-12">
                         <div class="vouchers-grid-wrapper">
-                            <div class="">
+                            <!-- <a href="detail.html"> -->
+                            <div class="certification-card">
+
+                                <!-- Header -->
+                                <div class="certification-header">
+
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+                                        alt="AWS">
+
+
+                                </div>
+
+                                <!-- Body -->
+                                <div class="certification-body">
+
+                                    <h4>
+                                        AWS Professional & Specialty Exams
+                                    </h4>
+
+                                    <ul class=" training-details-list mb-3">
+
+                                        <li>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                        </li>
+                                        <li>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                        </li>
+                                        <li>
+                                            Lorem ipsum dolor sit amet,
+                                        </li>
+
+
+
+
+                                    </ul>
+
+                                    <div class="pricing-box">
+
+                                        <div class="offer-price">
+                                            <span>Offer Price</span>
+                                            <span>$270</span>
+                                        </div>
+
+                                        <div class="actual-price">
+                                            <small>Regular Price</small>
+                                            <span>$300</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-actions">
+
+                                        <a href="#" class="btn-buy">
+                                            Buy Now
+                                        </a>
+
+                                        <a href="#" class="btn-details">
+                                            View Details
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- </a> -->
+                            <!-- <div class="">
                                 <a href="detail.html">
                                     <div class="training-card">
                                         <div class="card-img-wrapper">
@@ -267,11 +518,12 @@
                                         </div>
                                     </div>
                                 </a>
-                            </div>
+                            </div> -->
+
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-12">
+                    <!-- <div class="col-lg-4 col-md-12">
                         <div class="enquery-right-form">
                             <div class="enquery-form-card" data-aos="fade-left" data-aos-delay="100">
                                 <div class="form-header">
@@ -302,11 +554,10 @@
                                         <button type="submit" class="btn  training-hero-btn">Talk To Expert <i
                                                 class="fa fa-arrow-right ms-2"></i></button>
 
-                                </div>
-
+                                </div> 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
         </section>
@@ -316,7 +567,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="title-stylish section-title">Looking for <span>Vouchers</span></h2>
+                        <h2 class="section-title">Looking for <span>Vouchers</span></h2>
                         <div class="content-area-left">
 
                             <p class="section-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
@@ -434,13 +685,6 @@
 
         </section>
 
-
-
-
-
-
-
-
         <!-- Career Opportunities Section -->
         <section class="career-opportunities py-5 position-relative overflow-hidden">
             <div class="career-orb orb-1"></div>
@@ -449,13 +693,14 @@
 
             <div class="container position-relative">
                 <div class="text-center mb-5" data-aos="fade-up">
-                    <h2 class="career-title mt-3">
+                    <h2 class="section-title mt-3">
                         Careers After <span>Taking This Voucher</span>
                     </h2>
 
-                    <p class="career-description">
-                        Vouchers save money on exam fees — they don’t give you job-ready skills.
-                        For that, you need proper training and hands-on practice.
+                    <p class="section-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit non cum facere
+                        soluta, perspiciatis possimus officiis itaque tempora eligendi vel, exercitationem ipsam
+                        repellendus quas magni necessitatibus. Fugiat, ad qui.
                     </p>
                 </div>
                 <!-- Career Path Cards -->
@@ -580,18 +825,14 @@
             <div class="container">
                 <!-- SECTION HEADER -->
                 <div class="text-center mb-5 aos-init aos-animate" data-aos="fade-up">
-                    <!-- <div class="section-badge justify-content-center mb-3">
-                    <span> </span>
-                </div> -->
-                    <h2 class="process-title">
+                    <h2 class="section-title">
                         How Voucher
                         <span>Delivery Works</span>
                     </h2>
-                    <p class="process-desc">
-                        Our simple certification process helps learners and professionals achieve their career goals
-                        efficiently through trusted
-                        training, authentic vouchers, and expert support.
-
+                    <p class="section-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit non cum facere
+                        soluta, perspiciatis possimus officiis itaque tempora eligendi vel, exercitationem ipsam
+                        repellendus quas magni necessitatibus. Fugiat, ad qui.
                     </p>
                 </div>
 
@@ -703,7 +944,14 @@
         <!-- TRAINING-REVIEWS-CAROUSEL -->
         <section class="traning-reviews-carousel py-5" id="testimonials">
             <div class="container">
-                <h3 class="title-stylish section-title mb-4">What Our Trainees <span> Say</span></h3>
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h3 class=" section-title mb-4">What Our Students <span> Say</span></h3>
+                    <p class="section-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque amet
+                        voluptates
+                        incidunt id perferendis itaque dolorem laborum, quibusdam nemo, quae, commodi enim. Omnis
+                        dignissimos a praesentium iure fuga magni dolorem! quibusdam nemo, quae, commodi enim. Omnis
+                        dignissimos a praesentium iure fuga magni dolorem!</p>
+                </div>
                 <div id="brandsReview" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="students-review-card">
@@ -829,7 +1077,15 @@
         <!-- FAQ -->
         <section class="training-faq py-5" id="trainee-faq">
             <div class="container">
-                <h3 class="title-stylish section-title mb-4">FAQ <span> </span></h3>
+                <div class="text-center mb-5" data-aos="fade-up">
+
+                    <h3 class="section-title mb-4">Frequently Asked <span>Questions</span></h3>
+                    <p class="section-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit non cum facere
+                        soluta, perspiciatis possimus officiis itaque tempora eligendi vel, exercitationem ipsam
+                        repellendus quas magni necessitatibus. Fugiat, ad qui.
+                    </p>
+                </div>
                 <div class="accordion custom-faq" id="faqAccordion">
 
                     <!-- ITEM -->

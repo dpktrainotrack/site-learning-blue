@@ -193,7 +193,7 @@
 }
 
 .training-hero-section .hero-title {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     line-height: 1.2;
 }
 
@@ -710,7 +710,7 @@
 
 .vouchers-grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
     gap: 20px;
     margin-top: 30px;
 }
@@ -1057,7 +1057,7 @@ ul {
 }
 
 .section-title {
-    font-size: clamp(2rem, 4vw, 3rem);
+    /* font-size: clamp(2rem, 4vw, 3rem); */
     font-weight: 700;
     color: var(--dark-text);
 }
@@ -1333,7 +1333,7 @@ ul {
 
 
 .career-opportunities {
-    background: radial-gradient(120% 120% at 50% 10%, #ffffff 0%, #f6fdfd 50%, #eefbfb 100%);
+
     position: relative;
 }
 
@@ -2014,4 +2014,16 @@ ul {
     border-radius: 50px;
     font-size: 13px;
     font-weight: 600;
+}
+
+.vouchers-card-listing .banner-breadcrumb li {
+    color: var(--gray-text);
+}
+
+.vouchers-card-listing .banner-breadcrumb li a {
+    color: var(--primary);
+}
+
+.banner-breadcrumb li:not(:last-child)::after {
+    color: var(--gray-text);
 }

@@ -514,7 +514,7 @@ ul.cert-listing li a .mega-link-title {
 
 .btn-mega-cta {
   background: var(--accent);
-  color: var(--dark-text) !important;
+  color: var(--dark-text);
   padding: 10px 22px;
   border-radius: 50px;
   font-weight: 700;
@@ -3752,7 +3752,7 @@ section {
 }
 
 .section-title {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   font-weight: 800;
   line-height: 1.2;
   color: var(--dark-text);
@@ -4807,6 +4807,18 @@ h5.traning-card-title {
 /* =========================================
    HERO SEARCH VOUCHER BOX
    ========================================= */
+
+.voucher-brand-hero {
+  background-image: url('../images/voucher-banner.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0 100px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+
+}
+
 .search-voucher-box {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -5026,7 +5038,7 @@ h5.traning-card-title {
 }
 
 .section-title {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   font-weight: 800;
   line-height: 1.2;
   color: var(--dark-text);
