@@ -3120,8 +3120,8 @@ ul.cert-listing li a i {
 /* ACCORDION */
 .custom-faq .accordion-item {
   border: none;
-  margin-bottom: 20px;
-  border-radius: 22px !important;
+  margin-bottom: 10px;
+  /* border-radius: 22px !important; */
   overflow: hidden;
   background: var(--white);
   box-shadow: var(--shadow-sm);
@@ -3130,9 +3130,9 @@ ul.cert-listing li a i {
 .custom-faq .accordion-button {
   background: var(--white);
   color: var(--dark-text);
-  font-weight: 700;
-  font-size: 1.05rem;
-  padding: 24px 28px;
+  font-weight: 500;
+  /* font-size: 1.05rem;
+  padding: 24px 28px; */
   border: none;
   box-shadow: none;
 }

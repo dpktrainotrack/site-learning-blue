@@ -1551,7 +1551,7 @@ ul {
 /* Card Elements */
 .card-header-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 25px;
 }
@@ -1603,6 +1603,7 @@ ul {
     color: var(--dark-text);
     margin-bottom: 12px;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .salary-meter {
