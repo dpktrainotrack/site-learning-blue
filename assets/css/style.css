@@ -4082,7 +4082,7 @@ section {
 }
 
 .mv-card {
-  background: var(--light-bg);
+  background: var(--white);
   border-radius: 28px;
   padding: 40px 35px;
   transition: var(--transition);
