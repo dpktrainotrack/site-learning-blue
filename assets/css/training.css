@@ -770,6 +770,14 @@
     font-size: 18px;
     margin-right: 10px;
 } */
+.voucher-details-list li::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    color: var(--primary);
+    font-weight: 900;
+    font-size: 18px;
+    margin-right: 10px;
+}
 
 .training-details-list p {
     display: inline;
@@ -792,6 +800,14 @@
 
 }
 
+.voucher-details-list li {
+    margin-bottom: 8px;
+    color: var(--gray-text);
+    font-size: 1.05rem;
+    list-style: none;
+    margin-bottom: 6px;
+}
+
 .course-card {
     display: flex;
     align-items: center;
@@ -802,7 +818,6 @@
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
     border: 1px solid rgba(0, 0, 0, 0.05);
-
 }
 
 .course-image {
