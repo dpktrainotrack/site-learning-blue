@@ -1,0 +1,1283 @@
+/* ==============================================================
+   IT EXAM VOUCHER DETAILS LANDING PAGE — Custom Stylesheet
+   ============================================================== */
+
+/* ---- CSS Variables ---- */
+
+
+/* Base sections spacing */
+.vd-section-padding {
+  padding: 80px 0;
+}
+
+.vd-bg-accent {
+  background-color: var(--accent);
+}
+
+.vd-bg-white {
+  background-color: var(--white);
+}
+
+
+
+.vd-section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: rgba(66, 95, 133, 0.1);
+  color: var(--primary);
+  font-family: var(--font-inter);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+
+.vd-section-title span {
+  color: var(--primary);
+  position: relative;
+  display: inline-block;
+}
+
+.vd-section-title span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  height: 4px;
+  background: var(--warning-orange);
+  opacity: 0.6;
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.vd-section-subtitle {
+  color: var(--gray-text);
+  font-size: 16px;
+
+  margin: 15px auto 0;
+  line-height: 1.6;
+}
+
+/* ==============================================================
+   1. HERO SECTION & BOOKING WIDGET
+   ============================================================== */
+.vd-hero {
+  position: relative;
+  background-image: url('../images/voucher-banner.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 100px 0 80px;
+  overflow: hidden;
+}
+
+/* Orbs */
+.vd-hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.vd-hero-orb-1 {
+  top: -10%;
+  right: -5%;
+  width: 450px;
+  height: 450px;
+  background: var(--warning-orange);
+}
+
+.vd-hero-orb-2 {
+  bottom: -15%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  background: var(--primary);
+}
+
+.vd-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 25px;
+  backdrop-filter: blur(4px);
+}
+
+.vd-hero-badge i {
+  color: var(--warning-orange);
+}
+
+.vd-hero-title {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.vd-hero-title span {
+  background: linear-gradient(90deg, #fff 0%, #d8e5f5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vd-hero-lead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+}
+
+/* Trust Pill list */
+.vd-hero-trust-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.vd-hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.vd-hero-trust-item i {
+  color: var(--success);
+  font-size: 18px;
+}
+
+/* Hero Pricing Box */
+.vd-hero-pricing-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.vd-hero-price-tag {
+  display: flex;
+  flex-direction: column;
+}
+
+.vd-hero-price-lbl {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.vd-hero-price-strike {
+  font-size: 18px;
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+}
+
+.vd-hero-price-now {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+  margin-top: 4px;
+}
+
+.vd-hero-price-now span {
+  color: var(--warning-orange);
+}
+
+.vd-hero-price-save {
+  background: var(--sale-red);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5);
+  }
+
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+/* Secure form card */
+.vd-hero-card-wrapper {
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  /* padding: 35px 30px; */
+  /* color: var(--dark-text); */
+  position: relative;
+  z-index: 5;
+}
+
+.vd-hero-card-header {
+  text-align: center;
+  /* margin-bottom: 25px; */
+  padding: 20px 20px 10px 20px;
+  background-color: var(--primary);
+  border-radius: 17px 17px 0 0;
+  /* height: 100%; */
+  color: var(--white);
+}
+
+form#voucherPurchaseForm {
+  padding: 30px 20px;
+}
+
+.vd-hero-card-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 5px;
+}
+
+.vd-hero-card-subtitle {
+  font-size: 14px;
+  color: var(--white);
+}
+
+.vd-form-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.vd-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: var(--primary);
+  font-size: 16px;
+}
+
+.vd-form-input {
+  width: 100%;
+  padding: 13px 16px 13px 44px;
+  border: 1.5px solid var(--border-light);
+  border-radius: 10px;
+  font-size: 15px;
+  color: var(--dark-text);
+  font-family: var(--font-inter);
+  background-color: var(--light-bg);
+  transition: var(--transition-smooth);
+}
+
+.vd-form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(66, 95, 133, 0.15);
+}
+
+.vd-form-textarea {
+  width: 100%;
+  padding: 13px 16px 13px 44px;
+  border: 1.5px solid var(--border-light);
+  border-radius: 10px;
+  font-size: 15px;
+  color: var(--dark-text);
+  font-family: var(--font-inter);
+  background-color: var(--light-bg);
+  transition: var(--transition-smooth);
+  resize: none;
+  min-height: 80px;
+}
+
+.vd-form-textarea+.vd-form-icon {
+  top: 25px;
+  transform: none;
+}
+
+.vd-form-textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(66, 95, 133, 0.15);
+}
+
+.vd-submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, var(--warning-orange) 0%, var(--warning-orange-hover) 100%);
+  color: var(--white);
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 6px 20px rgba(255, 153, 0, 0.3);
+}
+
+.vd-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 153, 0, 0.45);
+}
+
+.vd-form-secure-note {
+  margin-top: 15px;
+  font-size: 12px;
+  color: var(--text-muted-dark);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.vd-form-secure-note i {
+  color: var(--success);
+}
+
+/* ==============================================================
+   2. TRUST & SECURITY BAR
+   ============================================================== */
+.vd-trust-bar {
+  background: var(--light-bg);
+  border-bottom: 1px solid var(--border-light);
+  padding: 20px 0;
+}
+
+.vd-trust-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vd-trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.vd-trust-badge i {
+  color: var(--success);
+  font-size: 18px;
+}
+
+.vd-payment-logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  opacity: 0.65;
+  filter: grayscale(100%);
+  transition: var(--transition-smooth);
+}
+
+.vd-payment-logos:hover {
+  opacity: 0.95;
+  filter: none;
+}
+
+.vd-payment-logos i {
+  font-size: 26px;
+  color: var(--primary-dark);
+}
+
+/* ==============================================================
+   3. VOUCHER SPECIFICATIONS GRID
+   ============================================================== */
+.vd-spec-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid var(--primary);
+  box-shadow: var(--shadow-premium);
+  transition: var(--transition-smooth);
+  height: 100%;
+}
+
+.vd-spec-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(66, 95, 133, 0.3);
+}
+
+.vd-spec-icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: rgba(66, 95, 133, 0.08);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  transition: var(--transition-smooth);
+}
+
+.vd-spec-card:hover .vd-spec-icon-box {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.vd-spec-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+}
+
+.vd-spec-value {
+  font-size: 15px;
+  color: var(--gray-text);
+  line-height: 1.5;
+}
+
+/* ==============================================================
+   4. INTERACTIVE BUNDLE BUILDER
+   ============================================================== */
+.vd-bundle-card {
+  background: var(--white);
+  border: 2px solid var(--border-light);
+  border-radius: 20px;
+  padding: 35px 30px;
+  position: relative;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.vd-bundle-popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--warning-orange) 0%, #ff7700 100%);
+  color: var(--white);
+  padding: 4px 16px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0 4px 10px rgba(255, 153, 0, 0.3);
+}
+
+.vd-bundle-card.active {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-hover);
+  background-color: rgba(66, 95, 133, 0.02);
+}
+
+.vd-bundle-selector {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+
+.vd-bundle-card.active .vd-bundle-selector {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.vd-bundle-selector::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transform: scale(0);
+  transition: var(--transition-smooth);
+}
+
+.vd-bundle-card.active .vd-bundle-selector::after {
+  transform: scale(1);
+}
+
+.vd-bundle-name {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+  padding-right: 30px;
+}
+
+.vd-bundle-price-box {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.vd-bundle-price {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.vd-bundle-card.active .vd-bundle-price {
+  color: var(--primary);
+}
+
+.vd-bundle-price-strike {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: var(--text-muted-dark);
+}
+
+.vd-bundle-desc {
+  font-size: 16px;
+  color: var(--gray-text);
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.vd-bundle-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.vd-bundle-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--dark-text);
+  font-weight: 500;
+}
+
+.vd-bundle-feature-item i {
+  color: var(--success);
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.vd-bundle-feature-item.disabled {
+  color: var(--text-muted-dark);
+  text-decoration: line-through;
+}
+
+.vd-bundle-feature-item.disabled i {
+  color: var(--text-muted-dark);
+}
+
+/* live pricing summary card */
+.vd-summary-wrapper {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: var(--shadow-premium);
+  position: sticky;
+  top: 100px;
+}
+
+.vd-summary-title {
+  font-size: 22px;
+  font-weight: 800;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.vd-summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.vd-summary-item.savings {
+  color: #10b981;
+  font-weight: 700;
+}
+
+.vd-summary-total-box {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vd-summary-total-lbl {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.vd-summary-total-price {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--warning-orange);
+}
+
+.vd-summary-cta-btn {
+  width: 100%;
+  background: var(--warning-orange);
+  color: var(--white);
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.vd-summary-cta-btn:hover {
+  background: var(--warning-orange-hover);
+  transform: translateY(-2px);
+}
+
+.vd-summary-guarantee-note {
+  margin-top: 20px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.vd-summary-guarantee-note i {
+  color: #10b981;
+  font-size: 16px;
+}
+
+/* ==============================================================
+   5. STEP-BY-STEP PROCESS FLOW
+   ============================================================== */
+.vd-steps-row {
+  position: relative;
+}
+
+.vd-steps-timeline-line {
+  position: absolute;
+  top: 50px;
+  left: 15%;
+  right: 15%;
+  height: 4px;
+  background-color: var(--border-light);
+  z-index: 1;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .vd-steps-timeline-line {
+    display: none;
+  }
+}
+
+.vd-step-node {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px 15px;
+  border: 1px solid var(--gray-text);
+  border-radius: 10px;
+}
+
+.vd-step-number-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 4px solid var(--border-light);
+  color: var(--primary-dark);
+  font-weight: 800;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+}
+
+.vd-step-node:hover .vd-step-number-circle {
+  border-color: var(--primary);
+  background-color: var(--primary);
+  color: var(--white);
+  transform: scale(1.1);
+  box-shadow: var(--shadow-md);
+}
+
+.vd-step-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.vd-step-desc {
+  font-size: 14px;
+  color: var(--gray-text);
+  line-height: 1.5;
+}
+
+/* ==============================================================
+   6. DOMAIN ACCORDIONS
+   ============================================================== */
+.vd-domains-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.vd-accordion-item {
+  border: 1px solid var(--border-light) !important;
+  /* border-radius: 12px !important; */
+  margin-bottom: 10px;
+  overflow: hidden;
+  /* box-shadow: var(--shadow-sm); */
+  background: var(--white);
+}
+
+.vd-accordion-btn {
+  padding: 15px;
+  font-weight: 500 !important;
+  color: var(--primary-dark) !important;
+  background-color: var(--white) !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.vd-accordion-btn:not(.collapsed) {
+  background-color: rgba(66, 95, 133, 0.6) !important;
+  color: var(--white) !important;
+  box-shadow: none !important;
+}
+
+.vd-accordion-btn::after {
+  display: none !important;
+}
+
+.vd-accordion-btn-icon {
+  font-size: 16px;
+  transition: var(--transition-smooth);
+}
+
+.vd-accordion-btn:not(.collapsed) .vd-accordion-btn-icon {
+  transform: rotate(180deg);
+  color: var(--primary);
+}
+
+.vd-accordion-body {
+  padding: 20px 25px !important;
+  background-color: #fff;
+  border-top: 1px solid var(--border-light);
+  color: var(--gray-text);
+}
+
+.vd-domain-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vd-domain-details-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--gray-text);
+  line-height: 1.5;
+}
+
+.vd-domain-details-list li i {
+  color: var(--primary);
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+/* ==============================================================
+   7. PASS ASSURANCE BANNER
+   ============================================================== */
+.vd-assurance-section {
+  position: relative;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  padding: 60px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-premium);
+}
+
+.vd-assurance-glow {
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 153, 0, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.vd-assurance-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.vd-assurance-badge i {
+  color: var(--warning-orange);
+}
+
+.vd-assurance-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.vd-assurance-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0;
+}
+
+.vd-guarantee-seal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.vd-guarantee-seal {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 4px dashed rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  animation: rotate-dashed 40s linear infinite;
+}
+
+.vd-guarantee-seal-inner {
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--primary-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  position: absolute;
+}
+
+.vd-guarantee-seal-inner i {
+  font-size: 24px;
+  color: var(--success);
+  margin-bottom: 4px;
+}
+
+.vd-guarantee-seal-inner span {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--gray-text);
+}
+
+@keyframes rotate-dashed {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==============================================================
+   8. USA CUSTOMER REVIEWS
+   ============================================================== */
+.vd-review-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: var(--shadow-premium);
+  transition: var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.vd-review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.vd-review-stars {
+  display: flex;
+  gap: 4px;
+  color: var(--warning-orange);
+  margin-bottom: 15px;
+}
+
+.vd-review-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray-text);
+  font-style: italic;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.vd-review-author-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid var(--border-light);
+  padding-top: 15px;
+  margin-top: auto;
+}
+
+.vd-review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(66, 95, 133, 0.1);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.vd-review-author-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 2px;
+}
+
+.vd-review-author-title {
+  font-size: 12px;
+  color: var(--text-muted-dark);
+}
+
+.vd-review-verified-badge {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--success);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ==============================================================
+   9. FAQS ACCORDION
+   ============================================================== */
+.vd-faq-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ==============================================================
+   10. STICKY/URGENT BOTTOM CTA BANNER
+   ============================================================== */
+.vd-bottom-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(15, 32, 59, 0.95);
+  backdrop-filter: blur(10px);
+  color: var(--white);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0;
+  z-index: 999;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.25);
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vd-bottom-banner.show {
+  transform: translateY(0);
+}
+
+.vd-bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.vd-bottom-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.vd-bottom-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.vd-bottom-title span {
+  color: var(--warning-orange);
+}
+
+.vd-countdown-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.vd-countdown-lbl {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.vd-countdown-timer {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--warning-orange);
+}
+
+.vd-bottom-price-tag {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.vd-bottom-strike {
+  font-size: 13px;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.vd-bottom-price {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--warning-orange);
+}
+
+.vd-bottom-btn {
+  background: var(--warning-orange);
+  color: var(--white);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 153, 0, 0.3);
+}
+
+.vd-bottom-btn:hover {
+  background: var(--warning-orange-hover);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .vd-bottom-banner {
+    padding: 12px 0;
+  }
+
+  .vd-bottom-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .vd-bottom-price-tag {
+    margin-left: 0;
+  }
+
+  .vd-bottom-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+.voucher-trust-section {
+  background: #fff;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 18px;
+
+  border-radius: 50px;
+
+  background: rgba(23, 144, 168, .08);
+  color: var(--primary);
+
+  font-weight: 600;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--dark-text);
+}
+
+.section-header h2 span {
+  color: var(--primary);
+}
+
+.section-header p {
+  max-width: 700px;
+  margin: auto;
+  color: var(--gray-text);
+}
+
+.voucher-benefit-card {
+  height: 100%;
+  padding: 30px;
+
+  background: #fff;
+
+  border-radius: 24px;
+
+  border: 1px solid rgba(23, 144, 168, .08);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+
+  transition: .35s ease;
+}
+
+.voucher-benefit-card:hover {
+  transform: translateY(-8px);
+
+  border-color: var(--primary);
+
+  box-shadow: 0 20px 40px rgba(23, 144, 168, .12);
+}
+
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+
+  background: rgba(23, 144, 168, .08);
+
+  color: var(--primary);
+
+  margin-bottom: 20px;
+}
+
+.voucher-benefit-card h5 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.voucher-benefit-card p {
+  color: var(--gray-text);
+  margin-bottom: 0;
+  line-height: 1.7;
+}
