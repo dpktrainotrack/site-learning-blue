@@ -1597,6 +1597,11 @@ ul {
     font-size: 0.6rem;
 }
 
+.hero-right-image img {
+    border-radius: 20px;
+    max-width: 300px;
+}
+
 .card-heading {
     font-size: 1rem;
     font-weight: 800;

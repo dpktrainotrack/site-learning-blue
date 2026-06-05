@@ -5879,9 +5879,9 @@ h5.traning-card-title {
 
 .intro-features h2,
 .intro-features3 h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  color: var(--gray-text);
+  color: var(--primary);
   line-height: 1.2;
   margin-bottom: 14px;
 }
@@ -5892,7 +5892,7 @@ h5.traning-card-title {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 20px;
-  border: 1px solid rgba(33, 55, 102, 0.5);
+  border: 1px solid var(--primary);
   border-bottom-width: 5px;
 }
 
@@ -5937,4 +5937,13 @@ h5.traning-card-title {
 
 .breadcrumb li:not(:last-child)::after {
   color: var(--gray-text);
+}
+
+.review-text {
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
