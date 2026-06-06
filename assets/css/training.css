@@ -183,7 +183,7 @@
 }
 
 .hero-content-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -209,6 +209,7 @@
     border-radius: 15px;
     padding: 12px 20px;
     transition: transform 0.3s ease, background 0.3s ease;
+    justify-content: center;
 }
 
 .hero-content-card .stat-box:hover {
@@ -818,6 +819,12 @@
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
     border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@media (width<=575px) {
+    .course-card {
+        flex-direction: column;
+    }
 }
 
 .course-image {
@@ -1599,7 +1606,7 @@ ul {
 
 .hero-right-image img {
     border-radius: 20px;
-    max-width: 300px;
+    max-width: 100%;
 }
 
 .card-heading {

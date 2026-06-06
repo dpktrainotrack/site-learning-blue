@@ -3148,7 +3148,7 @@ ul.cert-listing li a i {
 }
 
 .custom-faq .accordion-body {
-  padding: 0 28px 28px;
+  padding: 10px 28px 28px;
   color: var(--gray-text);
   line-height: 1.9;
   font-size: 15px;
