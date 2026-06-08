@@ -1022,7 +1022,7 @@ ul.cert-listing li a i {
 }
 
 .hero-title {
-  font-size: 4.2rem;
+  /* font-size: 4.2rem; */
   font-weight: 800;
   color: var(--white);
   line-height: 1.15;
@@ -5946,4 +5946,19 @@ h5.traning-card-title {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+
+.banner-breadcrumb li {
+  color: var(--gray-text);
+}
+
+.banner-breadcrumb li a {
+  color: var(--primary);
+}
+
+.banner-breadcrumb li:not(:last-child)::after {
+  content: "/";
+  margin-left: 10px;
+  color: rgba(126, 126, 126, 0.5);
 }

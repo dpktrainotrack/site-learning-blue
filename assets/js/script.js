@@ -238,13 +238,15 @@ document.head.appendChild(style);
 
 $(".testimonial-slider").owlCarousel({
   loop: true,
-  margin: 30,
-  nav: false,
-  dots: false,
-  center: true,
+  margin: 20,
   autoplay: true,
   autoplayTimeout: 4000,
   smartSpeed: 2000,
+  center: true,
+  autoplayHoverPause: true,
+  dots: false,
+
+
   responsive: {
     0: {
       items: 1,
@@ -253,7 +255,7 @@ $(".testimonial-slider").owlCarousel({
       items: 2,
     },
     1200: {
-      items: 3,
+      items: 2,
     },
   },
 });
@@ -297,39 +299,21 @@ $(".voucher-slider").owlCarousel({
     1200: { items: 4 },
   },
 });
-$("#newArrivalCarousel").owlCarousel({
-  loop: true,
-  margin: 30,
-  nav: false,
-  dots: false,
-  autoplay: true,
-  // autoplayTimeout: 1,
-  autoplaySpeed: 10000,
-  smartSpeed: 10000,
-  slideTransition: "linear",
-  autoplayHoverPause: false,
-  responsive: {
-    0: { items: 1 },
-    576: { items: 1 },
-    768: { items: 2 },
-    992: { items: 3 },
-    1200: { items: 4 },
-  },
-});
 
-$("#careerPathOwlCarousel").owlCarousel({
-  loop: true,
-  margin: 20,
-  autoplay: false,
-  autoplayTimeout: 4000,
-  autoplayHoverPause: true,
-  dots: true,
-  responsive: {
-    0: { items: 1 },
-    768: { items: 2 },
-    1000: { items: 3 },
-  },
-});
+
+// $("#careerPathOwlCarousel").owlCarousel({
+//   loop: true,
+//   margin: 20,
+//   autoplay: false,
+//   autoplayTimeout: 4000,
+//   autoplayHoverPause: true,
+//   dots: true,
+//   responsive: {
+//     0: { items: 1 },
+//     768: { items: 2 },
+//     1000: { items: 3 },
+//   },
+// });
 $("#trainingPathOwlCarousel").owlCarousel({
   loop: true,
   margin: 20,

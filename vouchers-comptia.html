@@ -224,16 +224,20 @@
             opacity: 0.3;
         }
 
-        /* .voucher-card-shape-bottom {
+        /* .certification-header .voucher-card-shape-bottom {
             position: absolute;
-            bottom: -150px;
-            right: -170px;
+            bottom: 0px;
+            right: 0px;
             width: 220px;
             height: 220px;
-            background: rgb(212, 215, 255);
+            background: rgb(15, 21, 107);
             border-radius: 50%;
-            opacity: 0.2;
+            opacity: 1;
+            z-index: 100;
+
         } */
+
+
 
         .search-box {
             max-width: 400px;
@@ -397,7 +401,9 @@
                                     <!-- Header -->
                                     <div class="certification-header">
                                         <div class="voucher-card-shape-top"></div>
+
                                         <img src="assets/images/brands/aws.webp" alt="AWS">
+
                                     </div>
                                     <!-- Body -->
 
@@ -838,142 +844,6 @@
                     </div>
 
         </section>
-
-        <!-- Career Opportunities Section -->
-        <!-- <section class="career-opportunities py-5 position-relative overflow-hidden">
-            <div class="career-orb orb-1"></div>
-            <div class="career-orb orb-2"></div>
-            <div class="career-orb orb-3"></div>
-
-            <div class="container position-relative">
-                <div class="text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title mt-3">
-                        Careers After <span>Taking This Voucher</span>
-                    </h2>
-
-                    <p class="section-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit non cum facere
-                        soluta, perspiciatis possimus officiis itaque tempora eligendi vel, exercitationem ipsam
-                        repellendus quas magni necessitatibus. Fugiat, ad qui.
-                    </p>
-                </div>
-       
-                <div class="career-path-wrap owl-carousel owl-theme" id="careerPathOwlCarousel">
-          
-                    <div class="" data-aos="fade-up" data-aos-delay="100">
-                        <div class="career-card aws-card">
-                            <div class="card-glow"></div>
-                            <div class="card-header-flex">
-                                <div class="career-icon">
-                                    <img src="assets/images/brands/aws.webp" alt="">
-                                </div>
-                                <div class="header-badges"> 
-                                    <span class="badge-growth">+28% Growth</span>
-                                </div>
-                            </div>
-
-                            <h4 class="card-heading">AWS Cloud Engineering</h4>
-                            <div class="salary-meter">
-                                <span class="salary-label">Avg. Salary:</span>
-                                <span class="salary-value">$124,000 - $165,000</span>
-                            </div>
-
-                            <ul class="roles-list">
-                                <li><i class="fas fa-circle-check"></i>
-                                    <div><strong>Cloud Infrastructure Engineer</strong><span>Deploys and maintains
-                                            high-availability cloud platforms.</span></div>
-                                </li>
-                                <li><i class="fas fa-circle-check"></i>
-                                    <div><strong>Solutions Architect</strong><span>Designs scalable, resilient, and
-                                            secure
-                                            AWS systems.</span></div>
-                                </li>
-                                <li><i class="fas fa-circle-check"></i>
-                                    <div><strong>DevOps Specialist</strong><span>Automates deployment pipelines and
-                                            handles
-                                            CI/CD workflows.</span></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-           
-                    <div class="" data-aos="fade-up" data-aos-delay="200">
-                        <div class="career-card ms-card">
-                            <div class="card-glow"></div>
-                            <div class="card-header-flex">
-                                <div class="career-icon">
-                                    <img src="assets/images/brands/microsoft.webp" alt="microsoft">
-                                </div>
-                                <div class="header-badges">
-                                    <span class="badge-demand text-uppercase">Trending</span>
-                                    <span class="badge-growth">+24% Growth</span>
-                                </div>
-                            </div>
-
-                            <h4 class="card-heading">Microsoft Azure & AI</h4>
-                            <div class="salary-meter">
-                                <span class="salary-label">Avg. Salary:</span>
-                                <span class="salary-value">$118,000 - $152,000</span>
-                            </div>
-
-                            <ul class="roles-list">
-                                <li><i class="fas fa-circle-check"></i>
-                                    <div><strong>Azure Administrator</strong><span>Manages core identity, storage, and
-                                            compute resources.</span></div>
-                                </li>
-                                <li><i class="fas fa-circle-check"></i>
-                                    <div><strong>Azure Solutions Architect</strong><span>Translates business needs into
-                                            secure, scalable solutions.</span></div>
-                                </li>
-                                <li><i class="fas fa-circle-check"></i>
-                                    <div><strong>Enterprise AI Engineer</strong><span>Deploys intelligent agents and LLM
-                                            services on Azure.</span></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                
-                    <div class="" data-aos="fade-up" data-aos-delay="300">
-                        <div class="career-card cisco-card">
-                            <div class="card-glow"></div>
-                            <div class="card-header-flex">
-                                <div class="career-icon">
-                                    <img src="assets/images/brands/cisco.webp" alt="">
-                                </div>
-                                <div class="header-badges">
-                                    <span class="badge-demand text-uppercase">Core IT</span>
-                                    <span class="badge-growth">+18% Growth</span>
-                                </div>
-                            </div>
-
-                            <h4 class="card-heading">Cisco Network Systems</h4>
-                            <div class="salary-meter">
-                                <span class="salary-label">Avg. Salary:</span>
-                                <span class="salary-value">$95,000 - $135,000</span>
-                            </div>
-
-                            <ul class="roles-list">
-                                <li><i class="fas fa-circle-check"></i>
-                                    <div><strong>Network Operations Engineer</strong><span>Monitors, troubleshoots, and
-                                            configures complex networks.</span></div>
-                                </li>
-                                <li><i class="fas fa-circle-check"></i>
-                                    <div><strong>Systems Administrator</strong><span>Maintains enterprise network
-                                            hardware
-                                            and directories.</span></div>
-                                </li>
-                                <li><i class="fas fa-circle-check"></i>
-                                    <div><strong>Infrastructure Designer</strong><span>Architects LAN/WAN networks for
-                                            distributed offices.</span></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
 
         <!-- <section class="py-5">

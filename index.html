@@ -30,7 +30,53 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        .hero2 {
+            position: relative;
+        }
 
+        .hero-video {
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+            position: relative;
+            z-index: -1;
+        }
+
+        .hero-video::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0 0 0 / 40%);
+            z-index: 1;
+        }
+
+        .search-input.mx-auto {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -108,7 +154,54 @@
     </nav>
 
     <main>
-        <section>
+
+        <section class="hero2">
+            <div class="hero-content container">
+                <div>
+
+                    <h1 class="hero-title text-center"> <span class="">Get Exam Vouchers</span> For
+                        Major IT Certifications </h1>
+                    <p class=" text-center">Discover authentic exam vouchers with Site Learning America. A
+                        trusted
+                        platform offering for AWS, Microsoft, CompTIA, Cisco, and more.</p>
+                </div>
+                <!-- search voucher section -->
+                <div class="row mt-4">
+                    <div class="col-lg-9 mx-auto position-relative z-index-2">
+                        <div class="search-voucher-box">
+                            <form class="search-input-wrapper" onsubmit="event.preventDefault();">
+                                <div class="input-group search-group">
+                                    <!-- <span class="input-group-text search-icon">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </span> -->
+                                    <input type="text" class="form-control search-input"
+                                        placeholder="Search for IT Certifications (e.g., AWS, Azure, CompTIA)...">
+                                    <button type="submit" class="btn search-btn">
+                                        <span>Search</span>
+                                        <i class="fa-solid fa-arrow-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="popular-searches mt-3 text-center">
+                                <span class="popular-label">Trending:</span>
+                                <a href="#" class="search-tag">AWS Cloud</a>
+                                <a href="#" class="search-tag">Azure Fundamentals</a>
+                                <a href="#" class="search-tag">CompTIA Security+</a>
+                                <a href="#" class="search-tag">Cisco CCNA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="overlay"></div>
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="assets/images/siteLearning2.mp4">
+            </video>
+
+        </section>
+        <!-- <section>
             <div class="hero-carousel owl-carousel owl-theme" id="heroOwlCarousel">
                 <div class="hero-carousel-item item">
                     <img src="assets/images/banners/3.webp" alt="Hero Carousel Image 1" class="img-fluid">
@@ -123,7 +216,7 @@
                     <img src="assets/images/banners/4.webp" alt="Hero Carousel Image 4" class="img-fluid">
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="about-section py-5 position-relative overflow-hidden">
             <div class="hero-shape hero-shape-1"></div>
@@ -982,12 +1075,12 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="text-center mb-4">
-                            <!-- TITLE -->
+
                             <h2 class="section-title">
                                 Recent
                                 <span>Blogs</span>
                             </h2>
-                            <!-- DESCRIPTION -->
+
                             <p class="section-desc">
                                 Stay updated with the latest trends and insights in IT certifications, exam preparation,
                                 and
@@ -1028,7 +1121,7 @@
                         </div>
                     </div>
 
-                    <!-- BLOG 2 (Cybersecurity) -->
+
                     <div class="col-lg-4 col-md-6 blog-card-col" data-aos="fade-up" data-aos-delay="150">
                         <div class="blog-item">
                             <div class="blog-image-wrapper">
@@ -1057,7 +1150,7 @@
                         </div>
                     </div>
 
-                    <!-- BLOG 3 (Development) -->
+
                     <div class="col-lg-4 col-md-6 blog-card-col" data-aos="fade-up" data-aos-delay="200">
                         <div class="blog-item">
                             <div class="blog-image-wrapper">
