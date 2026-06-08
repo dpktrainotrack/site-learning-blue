@@ -28,11 +28,40 @@
     <!-- AOS CSS -->
     <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/training.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/detail.css">
 
+    <style>
+        [popover] {
+            margin: auto;
+            padding: 0;
+            border: none;
+            outline: none;
+            background: transparent;
+            max-width: 500px;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            box-shadow: none;
+        }
 
+        /* Optional custom backdrop */
+        [popover]::backdrop {
+            background: rgba(0, 0, 0, .6);
+            backdrop-filter: blur(4px);
+        }
+
+
+
+        button.close-voucher-button {
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -298,98 +327,129 @@
                 <div class="row g-5">
 
                     <!-- LEFT MAIN CONTENT -->
-                    <div class="col-12">
+                    <div class="col-lg-3">
+                        <div style="position: sticky; top: 100px;">
+                            <!-- DYNAMIC TABS SELECTOR FOR BEST UI/UX -->
+                            <div class="tabs-navigation-card mb-4" data-aos="fade-up">
+                                <ul class="nav nav-pills custom-tabs-pills d-flex flex-row flex-lg-column"
+                                    id="detailTabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link " href="#overview_section">
+                                            <i class="fas fa-file-alt me-2"></i>
+                                            Overview
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link " href="#curriculum_section">
+                                            <i class="fas fa-graduation-cap me-2"></i>
+                                            Curriculm
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#who_its_for">
+                                            <i class="fas fa-user-check me-2"></i>
+                                            Who It’s For
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link " href="#learn_section">
+                                            <i class="fas fa-user-check me-2"></i>
+                                            What skills you will master
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link " href="#overview_section">
+                                            <i class="fas fa-users me-2"></i>
 
-                        <!-- DYNAMIC TABS SELECTOR FOR BEST UI/UX -->
-                        <div class="tabs-navigation-card mb-4" data-aos="fade-up">
-                            <ul class="nav nav-pills custom-tabs-pills" id="detailTabs" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="overview-tab" data-bs-toggle="tab"
-                                        data-bs-target="#overview-pane" type="button" role="tab"
-                                        aria-controls="overview-pane" aria-selected="true"><i
-                                            class="fas fa-file-alt me-2"></i>Overview</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="curriculum-tab" data-bs-toggle="tab"
-                                        data-bs-target="#curriculum-pane" type="button" role="tab"
-                                        aria-controls="curriculum-pane" aria-selected="false"><i
-                                            class="fas fa-graduation-cap me-2"></i>Curriculum
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="learn-tab" data-bs-toggle="tab"
-                                        data-bs-target="#learn-pane" type="button" role="tab" aria-controls="learn-pane"
-                                        aria-selected="false"><i class="fas fa-check-circle me-2"></i>Skills
-                                        Covered</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="faq-tab" data-bs-toggle="tab"
-                                        data-bs-target="#faq-pane" type="button" role="tab" aria-controls="faq-pane"
-                                        aria-selected="false"><i class="fas fa-question-circle me-2"></i>FAQ</button>
-                                </li>
-                            </ul>
+                                            FAQ
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <div class="px-3">
+                                <button popovertarget="voucherPopupForm" class="card-action-btn mt-3 w-100">
+                                    Book Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                            <div class="px-3 mt-3 text-center">
+                                <a href="tel:+18044418645" class="fs-16 text-decoration-none text-muted">Call Us: <i
+                                        class="fa-solid fa-phone ms-1"></i> +1 804-441-8645</a>
+                            </div>
+
                         </div>
 
-                        <!-- TABS PANES WRAPPER -->
+                    </div>
+
+                    <!-- RIGHT SIDEBAR (HIGH CONVERTING & STICKY REDESIGNED) -->
+                    <div class="col-lg-9">
                         <div class="tab-content" id="detailTabsContent">
 
                             <!-- TAB 1: Certification Overview -->
-                            <div class="tab-pane fade show active" id="overview-pane" role="tabpanel"
-                                aria-labelledby="overview-tab">
+                            <div class="mb-4 " id="overview_section">
                                 <div class="detail-card" data-aos="fade-up">
                                     <div class="card-header-title mb-4">
                                         <h3 class="fw-bold"><span class="header-line"></span>Overview</h3>
                                     </div>
                                     <p class="section-desc">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore nihil
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore
+                                        nihil
                                         doloremque! Explicabo adipisci amet officiis eius temporibus deleniti natus
                                         dolorum, blanditiis id, dolorem commodi numquam, quidem voluptatem nihil.
                                         Aperiam!
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore nihil
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore
+                                        nihil
                                         doloremque! Explicabo adipisci amet officiis eius temporibus deleniti natus
                                         dolorum, blanditiis id, dolorem commodi numquam, quidem voluptatem nihil.
                                         Aperiam!
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore nihil
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore
+                                        nihil
                                         doloremque! Explicabo adipisci amet officiis eius temporibus deleniti natus
                                         dolorum, blanditiis id, dolorem commodi numquam, quidem voluptatem nihil.
                                         Aperiam!
                                     </p>
                                     <p class="section-desc">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore nihil
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore
+                                        nihil
                                         doloremque! Explicabo adipisci amet officiis eius temporibus deleniti natus
                                         dolorum, blanditiis id, dolorem commodi numquam, quidem voluptatem nihil.
                                         Aperiam!
                                     </p>
                                     <h3>
-                                        Who Should Attend
+                                        What you will learn
                                     </h3>
-                                    <p class="section-desc">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore nihil
-                                        doloremque! Explicabo adipisci amet officiis eius temporibus deleniti natus
-                                        dolorum, blanditiis id, dolorem commodi numquam, quidem voluptatem nihil.
-                                        Aperiam!
-                                    </p>
+                                    <ul class="intro-list">
+                                        <li>Gain in-depth knowledge of AWS cloud services and infrastructure</li>
+                                        <li>Master core AWS services including compute, storage, database, and
+                                            networking</li>
+                                        <li>Understand AWS security best practices and compliance frameworks</li>
+                                        <li>Learn to design and implement scalable, cost-effective cloud solutions
+                                        </li>
+                                        <li>Prepare for the AWS Certified Cloud Practitioner certification</li>
+                                    </ul>
 
                                 </div>
                             </div>
 
                             <!-- TAB 2: Training Outline (Syllabus Accordion) -->
-                            <div class="tab-pane fade" id="curriculum-pane" role="tabpanel"
-                                aria-labelledby="curriculum-tab">
+                            <div class="mb-4" id="curriculum_section" role="tabpanel" aria-labelledby="curriculum-tab">
                                 <div class="detail-card">
                                     <div class="card-header-title mb-4">
-                                        <h3 class="fw-bold"><span class="header-line"></span>Syllabus Outline & Modules
+                                        <h3 class=""><span class="header-line"></span>Syllabus Outline &
+                                            Modules
                                         </h3>
                                     </div>
-                                    <p class="text-muted mb-4">Explore the comprehensive domains covered in the updated
+                                    <p class="text-muted mb-4">Explore the comprehensive domains covered in the
+                                        updated
                                         CLF-C02 syllabus. Each module includes video classes, active labs, and mock
                                         exams.
                                     </p>
 
                                     <div class="accordion custom-voucher-faq" id="syllabusAccordion">
-                                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                        <div class="accordion-item border-0 mb-3 shadow-sm  overflow-hidden">
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button fw-bold" type="button"
+                                                <button class="accordion-button " type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#module1"
                                                     aria-expanded="true">
                                                     Domain 1: Cloud Concepts (24% of Exam)
@@ -399,22 +459,25 @@
                                                 data-bs-parent="#syllabusAccordion">
                                                 <div class="accordion-body">
                                                     <ul class="syllabus-list">
-                                                        <li>Defining the AWS Cloud value proposition and cost benefits
+                                                        <li>Defining the AWS Cloud value proposition and cost
+                                                            benefits
                                                         </li>
                                                         <li>Understanding cloud delivery models: Infrastructure as a
                                                             Service
-                                                            (IaaS), Platform as a Service (PaaS), Software as a Service
+                                                            (IaaS), Platform as a Service (PaaS), Software as a
+                                                            Service
                                                             (SaaS)</li>
-                                                        <li>Reviewing the AWS Global Infrastructure: Availability Zones
+                                                        <li>Reviewing the AWS Global Infrastructure: Availability
+                                                            Zones
                                                             (AZs), AWS Regions, and Edge Locations</li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                        <div class="accordion-item border-0 mb-3 shadow-sm  overflow-hidden">
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed fw-bold" type="button"
+                                                <button class="accordion-button collapsed " type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#module2"
                                                     aria-expanded="false">
                                                     Domain 2: Security & Compliance (30% of Exam)
@@ -424,22 +487,24 @@
                                                 data-bs-parent="#syllabusAccordion">
                                                 <div class="accordion-body">
                                                     <ul class="syllabus-list">
-                                                        <li>AWS Shared Responsibility Security Model: Customer controls
+                                                        <li>AWS Shared Responsibility Security Model: Customer
+                                                            controls
                                                             vs.
                                                             AWS controls</li>
                                                         <li>AWS Identity and Access Management (IAM): Users, groups,
                                                             roles,
                                                             permissions, and Multi-Factor Authentication (MFA)</li>
-                                                        <li>Encryption strategies, AWS Key Management Service (KMS), and
+                                                        <li>Encryption strategies, AWS Key Management Service (KMS),
+                                                            and
                                                             compliance tools (AWS Artifact)</li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                        <div class="accordion-item border-0 mb-3 shadow-sm  overflow-hidden">
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed fw-bold" type="button"
+                                                <button class="accordion-button collapsed " type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#module3"
                                                     aria-expanded="false">
                                                     Domain 3: Core Technology & Services (34% of Exam)
@@ -449,13 +514,17 @@
                                                 data-bs-parent="#syllabusAccordion">
                                                 <div class="accordion-body">
                                                     <ul class="syllabus-list">
-                                                        <li>Compute Services: Amazon Elastic Compute Cloud (EC2), AWS
+                                                        <li>Compute Services: Amazon Elastic Compute Cloud (EC2),
+                                                            AWS
                                                             Lambda, and AWS Elastic Beanstalk</li>
-                                                        <li>Storage Platforms: Amazon Simple Storage Service (S3) and
+                                                        <li>Storage Platforms: Amazon Simple Storage Service (S3)
+                                                            and
                                                             Elastic Block Store (EBS)</li>
-                                                        <li>Databases: Amazon Relational Database Service (RDS), Amazon
+                                                        <li>Databases: Amazon Relational Database Service (RDS),
+                                                            Amazon
                                                             DynamoDB, and Amazon Aurora</li>
-                                                        <li>Networking: Amazon Virtual Private Cloud (VPC), Route 53,
+                                                        <li>Networking: Amazon Virtual Private Cloud (VPC), Route
+                                                            53,
                                                             and
                                                             CloudFront Content Delivery Network (CDN)</li>
                                                     </ul>
@@ -463,9 +532,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="accordion-item border-0 mb-0 shadow-sm rounded-4 overflow-hidden">
+                                        <div class="accordion-item border-0 mb-0 shadow-sm  overflow-hidden">
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed fw-bold" type="button"
+                                                <button class="accordion-button collapsed " type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#module4"
                                                     aria-expanded="false">
                                                     Domain 4: Billing, Pricing & Support (12% of Exam)
@@ -475,12 +544,14 @@
                                                 data-bs-parent="#syllabusAccordion">
                                                 <div class="accordion-body">
                                                     <ul class="syllabus-list">
-                                                        <li>Comparing AWS pricing models (On-Demand, Savings Plans, Spot
+                                                        <li>Comparing AWS pricing models (On-Demand, Savings Plans,
+                                                            Spot
                                                             Instances, Reserved Instances)</li>
                                                         <li>Budgeting tools: AWS Budgets, Cost Explorer, and the AWS
                                                             Pricing
                                                             Calculator</li>
-                                                        <li>AWS Support Plans: Developer, Business, and Enterprise tiers
+                                                        <li>AWS Support Plans: Developer, Business, and Enterprise
+                                                            tiers
                                                             and
                                                             characteristics</li>
                                                     </ul>
@@ -491,11 +562,76 @@
                                 </div>
                             </div>
 
-                            <!-- TAB 3: What You'll Learn (Checker Cards) -->
-                            <div class="tab-pane fade" id="learn-pane" role="tabpanel" aria-labelledby="curriculum-tab">
+                            <!-- TAB 4: Who It’s For -->
+                            <div class="mb-4" id="who_its_for" role="tabpanel" aria-labelledby="curriculum-tab">
                                 <div class="detail-card">
                                     <div class="card-header-title mb-4">
-                                        <h3 class="fw-bold"><span class="header-line"></span>What Skills You Will Master
+                                        <h3 class="fw-bold"><span class="header-line"></span>Who It’s For
+                                        </h3>
+                                        <p>
+                                            IT professionals aiming to build or advance their networking careers through
+                                            instructor-led training and hands-on labs. Best for these roles:
+                                        </p>
+                                    </div>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>Cloud practitioners</h6>
+                                                    <!-- <p class="small text-muted mb-0">Learn how regions, edge
+                                                        locations,
+                                                        and
+                                                        availability zones work together.</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>IT support professionals</h6>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>System administrators</h6>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>Developers</h6>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="learn-box-premium">
+                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                                                <div>
+                                                    <h6>Database professionals</h6>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4" id="learn_section" role="tabpanel" aria-labelledby="curriculum-tab">
+                                <div class="detail-card">
+                                    <div class="card-header-title mb-4">
+                                        <h3 class="fw-bold"><span class="header-line"></span>What Skills You Will
+                                            Master
                                         </h3>
                                     </div>
                                     <div class="row g-4">
@@ -504,7 +640,8 @@
                                                 <div class="learn-icon"><i class="fas fa-check-double"></i></div>
                                                 <div>
                                                     <h6>AWS Infrastructure Architecture</h6>
-                                                    <p class="small text-muted mb-0">Learn how regions, edge locations,
+                                                    <p class="small text-muted mb-0">Learn how regions, edge
+                                                        locations,
                                                         and
                                                         availability zones work together.</p>
                                                 </div>
@@ -515,7 +652,8 @@
                                                 <div class="learn-icon"><i class="fas fa-check-double"></i></div>
                                                 <div>
                                                     <h6>Cost Optimization Metrics</h6>
-                                                    <p class="small text-muted mb-0">Compute accurate pricing models,
+                                                    <p class="small text-muted mb-0">Compute accurate pricing
+                                                        models,
                                                         reserve instances, and cut monthly cloud waste.</p>
                                                 </div>
                                             </div>
@@ -525,7 +663,8 @@
                                                 <div class="learn-icon"><i class="fas fa-check-double"></i></div>
                                                 <div>
                                                     <h6>Cloud Security Best Practices</h6>
-                                                    <p class="small text-muted mb-0">Apply IAM user settings, policies,
+                                                    <p class="small text-muted mb-0">Apply IAM user settings,
+                                                        policies,
                                                         encryption keys, and active threat hunting protocols.</p>
                                                 </div>
                                             </div>
@@ -557,7 +696,8 @@
                                                 <div class="learn-icon"><i class="fas fa-check-double"></i></div>
                                                 <div>
                                                     <h6>Career & Exam Blueprinting</h6>
-                                                    <p class="small text-muted mb-0">Confidently navigate the CLF-C02
+                                                    <p class="small text-muted mb-0">Confidently navigate the
+                                                        CLF-C02
                                                         syllabus, practice exam patterns, and mock tests.</p>
                                                 </div>
                                             </div>
@@ -566,97 +706,99 @@
                                 </div>
                             </div>
 
-                            <!-- TAB 4: Career & Salaries (NEW) -->
-                            <div class="tab-pane fade" id="faq-pane" role="tabpanel" aria-labelledby="faq-tab">
+                            <!-- FaQ -->
+                            <div class="mb-4" id="faq_section" role="tabpanel" aria-labelledby="faq-tab">
                                 <div class="detail-card mt-4" data-aos="fade-up">
                                     <div class="card-header-title mb-4">
-                                        <h3 class="fw-bold"><span class="header-line"></span>Frequently Asked Questions
+                                        <h3 class="fw-bold"><span class="header-line"></span>Frequently Asked
+                                            Questions
                                         </h3>
                                     </div>
 
-                                    <div class="accordion custom-voucher-faq" id="faqAccordionDetail">
-                                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                    <div class="accordion custom-faq" id="faqAccordion">
+                                        <!-- ITEM -->
+                                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button fw-bold" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#dfaq1"
-                                                    aria-expanded="true">
-                                                    Is the AWS Certified Cloud Practitioner ideal for non-technical
-                                                    individuals?
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#faq1">
+                                                    What is information technology? What do information technology
+                                                    professionals do?
                                                 </button>
                                             </h2>
-                                            <div id="dfaq1" class="accordion-collapse collapse show"
-                                                data-bs-parent="#faqAccordionDetail">
+
+                                            <div id="faq1" class="accordion-collapse collapse show"
+                                                data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body">
-                                                    Absolutely. This certification is specifically designed as an entry
-                                                    point
-                                                    for
-                                                    non-technical profiles, sales teams, directors, developers, and
-                                                    systems
-                                                    administrators new to cloud infrastructure concepts.
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odit
+                                                    quam at eos amet! Dolore, repellendus nihil doloremque totam
+                                                    blanditiis numquam dolorem ad quia voluptas cum voluptatem, in,
+                                                    assumenda perspiciatis.
                                                 </div>
                                             </div>
+
                                         </div>
 
-                                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                        <!-- ITEM -->
+                                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed fw-bold" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#dfaq2"
-                                                    aria-expanded="false">
-                                                    How will I receive my discount exam voucher?
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                    What is the average salary for information technology professionals?
                                                 </button>
                                             </h2>
-                                            <div id="dfaq2" class="accordion-collapse collapse"
-                                                data-bs-parent="#faqAccordionDetail">
+
+                                            <div id="faq2" class="accordion-collapse collapse"
+                                                data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body">
-                                                    Your discount exam voucher code will be generated and delivered
-                                                    securely via
-                                                    email within 2 to 4 hours of your purchase confirmation, containing
-                                                    comprehensive scheduling directions.
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odit
+                                                    quam at eos amet! Dolore, repellendus nihil doloremque totam
+                                                    blanditiis numquam dolorem ad quia voluptas cum voluptatem, in,
+                                                    assumenda perspiciatis.
                                                 </div>
                                             </div>
+
                                         </div>
 
-                                        <div class="accordion-item border-0 mb-0 shadow-sm rounded-4 overflow-hidden">
+                                        <!-- ITEM -->
+                                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed fw-bold" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#dfaq3"
-                                                    aria-expanded="false">
-                                                    Can I reschedule my proctored exam?
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                    Does this class help me prepare for the N10-009 Certification Exam?
                                                 </button>
                                             </h2>
-                                            <div id="dfaq3" class="accordion-collapse collapse"
-                                                data-bs-parent="#faqAccordionDetail">
+
+                                            <div id="faq3" class="accordion-collapse collapse"
+                                                data-bs-parent="#faqAccordion">
                                                 <div class="accordion-body">
-                                                    Yes, you can reschedule your exam up to 24 hours prior to your
-                                                    selected date
-                                                    inside your official testing portal (PearsonVUE) without any penalty
-                                                    or
-                                                    administrative fees.
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odit
+                                                    quam at eos amet! Dolore, repellendus nihil doloremque totam
+                                                    blanditiis numquam dolorem ad quia voluptas cum voluptatem, in,
+                                                    assumenda perspiciatis.
                                                 </div>
                                             </div>
+
                                         </div>
+
+
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-
-
-
-
-                        <!-- =================== FAQS SECTION (REDESIGNED) ================== -->
-
-
                     </div>
-
-                    <!-- RIGHT SIDEBAR (HIGH CONVERTING & STICKY REDESIGNED) -->
-                    <!-- <div class="col-lg-4">
-
-                    </div> -->
 
                 </div>
             </div>
         </section>
+
+
+
+
+
 
         <!-- =================== SECTION 5: RELATED CERTIFICATIONS SLIDER (NEW) ================== -->
         <section class="related-certifications py-5  border-top">
@@ -757,6 +899,52 @@
                 </div>
             </div>
         </section>
+
+        <div>
+            <div id="voucherPopupForm" popover="auto">
+                <div class="enquery-right-form">
+                    <div class="enquery-form-card" data-aos="fade-left" data-aos-delay="100">
+                        <div class="form-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="fw-bold text-white Session -white mb-1">Book Now</h3>
+
+                                <button type="button" class="close-voucher-button" popovertarget="voucherPopupForm"
+                                    popovertargetaction="hide">
+
+                                    <i class="fa-sharp fa-solid fa-circle-xmark text-white fa-2x"></i>
+
+                                </button>
+                            </div>
+                            <p class="text-white mb-0 small">Get one to one coaching with expert trainers.
+                            </p>
+                        </div>
+                        <div class="form-body">
+                            <form id="trainingEnquiryForm">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Your Name"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Your Email"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control form-control-lg" placeholder="Mobile Number"
+                                        required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <textarea class="form-control form-control-lg" rows="3"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn  training-hero-btn">Talk To Expert <i
+                                        class="fa fa-arrow-right ms-2"></i></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="site-footer py-5 position-relative overflow-hidden">
         <div class="container">

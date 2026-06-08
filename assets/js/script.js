@@ -344,10 +344,30 @@ $(".brands_review").owlCarousel({
   },
 });
 
-/* -----------------------------
-LENIS
------------------------------ */
 
+const trustedSlider = $(".trusted-brands-slider");
+
+trustedSlider.owlCarousel({
+  loop: true,
+  autoplay: true,
+  autoplaySpeed: 10000,
+  smartSpeed: 10000,
+  slideTransition: "linear",
+  autoplayHoverPause: true,
+  dots: false,
+  nav: false,
+  margin: 20,
+  smartSpeed: 800,
+  responsive: {
+    0: { items: 2 },
+    576: { items: 3 },
+    768: { items: 4 },
+    992: { items: 5 },
+    1200: { items: 6 }
+  }
+});
+
+/* -----------LENIS--------- */
 const lenis = new Lenis({
   duration: 1.8,
 
@@ -372,6 +392,8 @@ gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 gsap.ticker.lagSmoothing(0);
+
+
 
 AOS.init({
   duration: 1000,

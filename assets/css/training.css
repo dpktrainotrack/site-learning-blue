@@ -2110,3 +2110,9 @@ ul {
 /* .enroll-btn-wrapper {
     max-width: 400px;
 } */
+
+.image-shape {
+    background-color: var(--primary-dark);
+    padding: 6px;
+    border-radius: 14px;
+}
