@@ -15,7 +15,7 @@
 }
 
 .section-title {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     font-weight: 800;
     line-height: 1.2;
     color: var(--dark-text);
@@ -36,7 +36,7 @@
 ========================= */
 
 .voucher-hero {
-    background-image: url("../images/traning/banners/banner1.jpg");
+    background-image: url("../images/traning/banners/banner4.jpg");
     padding: 80px 0 100px;
     overflow: hidden;
     position: relative;
@@ -670,7 +670,7 @@
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.12);
     padding: 10px 18px;
-    border-radius: 14px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     gap: 8px;

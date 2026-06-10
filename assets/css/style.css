@@ -3553,7 +3553,7 @@ ul.cert-listing li a i {
 }
 
 .site-footer .footer-links a {
-  color: #a0abb8;
+  color: #a7b4bb;
   text-decoration: none;
   transition: var(--transition);
   display: inline-block;
@@ -3774,7 +3774,7 @@ section {
       ========================= */
 
 .about-hero {
-  padding: 120px 0 90px;
+  padding: 60px 20px;
   background: var(--gradient-hero);
   overflow: hidden;
   position: relative;
@@ -4823,7 +4823,7 @@ h5.traning-card-title {
 .voucher-brand-hero2 {
   background-image: url('../images/voucher-banner2.webp');
   background-size: cover;
-  background-position: left;
+  background-position: right;
   padding: 100px 0 90px;
   position: relative;
   overflow: hidden;
@@ -5007,7 +5007,7 @@ h5.traning-card-title {
 }
 
 .contact-hero-content h1 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   font-weight: 800;
   color: var(--white);
   margin-bottom: 25px;
@@ -5108,7 +5108,7 @@ h5.traning-card-title {
 }
 
 .contact-hero-content h1 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   font-weight: 800;
   color: var(--white);
   margin-bottom: 25px;
@@ -5544,7 +5544,7 @@ h5.traning-card-title {
   font-weight: 800;
   color: var(--white);
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
+
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
@@ -5961,4 +5961,40 @@ h5.traning-card-title {
   content: "/";
   margin-left: 10px;
   color: rgba(126, 126, 126, 0.5);
+}
+
+
+
+@view-transition {
+  navigation: auto;
+}
+
+/* New page entering */
+::view-transition-new(root) {
+  animation: slide-in 0.5s ease forwards;
+}
+
+/* Current page leaving */
+::view-transition-old(root) {
+  animation: slide-out 0.5s ease forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }

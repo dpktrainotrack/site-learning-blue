@@ -1,23 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // 1. Sticky Navbar & Back to Top Button
-  const navbar = document.querySelector(".navbar");
+  // 1. Back to Top Button Setup
   const backToTop = document.getElementById("backToTop");
-  const topHeaderElements = document.querySelector(".top-header");
-  let topHeaderHeight = topHeaderElements ? topHeaderElements.offsetHeight : 0;
-
-  // window.addEventListener("scroll", function () {
-  //   if (window.scrollY > topHeaderHeight) {
-  //     navbar.classList.add("sticky");
-  //   } else {
-  //     navbar.classList.remove("sticky");
-  //   }
-
-  //   if (window.scrollY > 300) {
-  //     backToTop.classList.add("active");
-  //   } else {
-  //     backToTop.classList.remove("active");
-  //   }
-  // });
 
   // 2. Back to Top Click Action
   if (backToTop) {
@@ -80,69 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     });
-  }
-
-  // 5. Mega Menu — Two-Panel Hover Functionality
-  const certNavItems = document.querySelectorAll(".cert-nav-item");
-  const certPanels = document.querySelectorAll(".cert-panel");
-
-  if (certNavItems.length > 0 && certPanels.length > 0) {
-    // Determine interaction type based on viewport
-    const isMobile = () => window.innerWidth < 992;
-
-    certNavItems.forEach((item) => {
-      // Hover event for desktop
-      item.addEventListener("mouseenter", function () {
-        if (!isMobile()) {
-          switchPanel(this);
-        }
-      });
-
-      // Click event for mobile (prevent navigation, just switch panel)
-      item.addEventListener("click", function (e) {
-        if (isMobile()) {
-          e.preventDefault();
-          e.stopPropagation();
-          switchPanel(this);
-        }
-      });
-
-      // Prevent link click inside mega menu left nav (only hover to preview)
-      item.querySelector("a").addEventListener("click", function (e) {
-        // On desktop, prevent default so hover just previews the panel
-        // User can still navigate via the right-panel course links
-        if (!isMobile()) {
-          e.preventDefault();
-        }
-      });
-    });
-
-    function switchPanel(activeItem) {
-      const targetId = activeItem.getAttribute("data-target");
-      const targetPanel = document.getElementById(targetId);
-      if (!targetPanel || activeItem.classList.contains("active")) return;
-
-      // Update left nav active state
-      certNavItems.forEach((nav) => nav.classList.remove("active"));
-      activeItem.classList.add("active");
-
-      // Switch right panel
-      certPanels.forEach((panel) => {
-        panel.classList.remove("active");
-        panel.style.animation = "none";
-      });
-
-      targetPanel.classList.add("active");
-
-      if (isMobile()) {
-        // On mobile, scroll to the content panel so the user sees the courses
-        targetPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      } else {
-        // On desktop, trigger the slide-in animation
-        void targetPanel.offsetWidth;
-        targetPanel.style.animation = "panelSlideIn 0.3s ease forwards";
-      }
-    }
   }
 
   // 7. Mega Menu Behavior Fixes (One at a time, Click outside)
