@@ -2112,7 +2112,7 @@ ul {
 } */
 
 .image-shape {
-    background-color: var(--primary-dark);
+    /* background-color: var(--primary); */
     padding: 6px;
     border-radius: 14px;
 }

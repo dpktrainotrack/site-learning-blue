@@ -1,4 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+
+  $('.voucher_brands_review').owlCarousel({
+    loop: true,
+    margin: 25,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 4500,
+    smartSpeed: 900,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      1200: {
+        items: 2
+      }
+    }
+  });
+
   // 1. Back to Top Button Setup
   const backToTop = document.getElementById("backToTop");
 
@@ -155,6 +178,7 @@ style.innerHTML = `
 }
 `;
 document.head.appendChild(style);
+
 
 $(".testimonial-slider").owlCarousel({
   loop: true,
@@ -355,6 +379,7 @@ AOS.init({
 
 //   observer.observe(counter);
 // });
+
 
 
 
