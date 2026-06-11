@@ -5998,3 +5998,21 @@ h5.traning-card-title {
     transform: translateX(-100%);
   }
 }
+
+
+
+@media screen and (width>=768px) {
+  .hero-left-content {
+    max-width: 76%;
+  }
+
+}
+
+.pricing-table tbody tr:nth-child(even) td {
+  background-color: #fffff3;
+}
+
+.table-responsive {
+  max-height: 500px;
+  overflow: auto;
+}
