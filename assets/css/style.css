@@ -4810,21 +4810,21 @@ h5.traning-card-title {
    ========================================= */
 
 .voucher-brand-hero {
-  background-image: url('../images/voucher-banner.webp');
-  background-size: cover;
+  /* background-image: url('../images/voucher-banner.webp'); */
+  /* background-size: cover;
   background-position: center;
   padding: 120px 0 100px;
   position: relative;
   overflow: hidden;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 
 }
 
 .voucher-brand-hero2 {
-  background-image: url('../images/voucher-banner2.webp');
+  /* background-image: url('../images/voucher-banner2.webp'); */
   background-size: cover;
   background-position: right;
-  padding: 80px 0 80px;
+  padding: 120px 0 80px;
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -5000,7 +5000,7 @@ h5.traning-card-title {
 
 .contact-hero-content {
   text-align: center;
-  max-width: 850px;
+  /* max-width: 850px; */
   margin: auto;
   position: relative;
   z-index: 2;
@@ -5101,7 +5101,7 @@ h5.traning-card-title {
 
 .contact-hero-content {
   text-align: center;
-  max-width: 850px;
+  /* max-width: 850px; */
   margin: auto;
   position: relative;
   z-index: 2;
@@ -5206,7 +5206,7 @@ h5.traning-card-title {
 
 /* LEFT SIDE */
 .contact-left {
-  padding: 60px;
+  padding: 30px;
   background: var(--white);
 }
 
@@ -5319,6 +5319,10 @@ h5.traning-card-title {
   margin-bottom: 30px;
 }
 
+.support-list li:last-child {
+  margin-bottom: 0;
+}
+
 .support-list li i {
   width: 55px;
   height: 55px;
@@ -5347,7 +5351,7 @@ h5.traning-card-title {
 .social-links {
   display: flex;
   gap: 15px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .social-links a {
@@ -5553,7 +5557,7 @@ h5.traning-card-title {
   font-size: 1.15rem;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.85);
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 0 auto;
 }
 

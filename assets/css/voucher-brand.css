@@ -99,7 +99,7 @@
 
  .learn-box-premium {
      display: flex;
-     align-items: center;
+     /* align-items: center; */
      gap: 15px;
      padding: 22px;
      background: #fcfcfc;
@@ -119,7 +119,7 @@
  .learn-icon {
      font-size: 20px;
      color: var(--primary);
-     margin-top: 2px;
+     /* margin-top: 2px; */
  }
 
  .learn-box-premium h6 {
@@ -332,4 +332,11 @@
      background: rgb(212, 215, 255);
      border-radius: 50%;
      opacity: 0.2;
+ }
+
+ @media screen and (width >=1024px) {
+     .certification-card {
+         max-width: 450px;
+     }
+
  }
