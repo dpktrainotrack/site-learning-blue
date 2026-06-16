@@ -199,6 +199,47 @@
                 flex-direction: column;
             }
         }
+
+
+
+        .learn-box-premium {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: #f8fafc;
+            border: 1px solid #e4e4e4;
+            border-radius: 8px;
+            height: 100%;
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .learn-box-premium:hover {
+            transform: translateY(-4px);
+            background: #fff;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
+            border-color: rgba(6, 187, 204, 0.15);
+        }
+
+        .learn-icon {
+            font-size: 20px;
+            color: var(--primary);
+            margin-top: 2px;
+        }
+
+        .learn-box-premium h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 0.98rem;
+            color: var(--dark-text);
+            margin-bottom: 6px;
+        }
+
+        .training-domain-points-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(240px, 1fr));
+            gap: 15px;
+        }
     </style>
 
 </head>
@@ -209,30 +250,30 @@
     <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
     <main>
-        <div class="contact-hero">
+        <section class="regular-banner" style="background-image: url(assets/images/traning/banners/banner06.webp);">
+            <div class="contact-hero">
+                <div class="container">
+                    <div class="contact-hero-content" data-aos="fade-up">
+                        <h1> IT Certification Training Programs </h1>
+                        <p class="pb-4">
+                            Build the skills employers value with professional IT certification training from Site
+                            Learning
+                            America. Our training
+                            programs are designed to help IT professionals, students, career changers, and corporate
+                            teams
+                            gain practical knowledge,
+                            strengthen technical capabilities, and prepare for industry-recognized certification exams.
+                            Whether you are advancing
+                            your career in California, Texas, Florida, New York, Virginia, or anywhere across the United
+                            States, our training
+                            solutions provide the support needed to achieve your professional goals.
 
-            <div class="hero-shape hero-shape-1"></div>
-            <div class="hero-shape hero-shape-2"></div>
-
-            <div class="container">
-                <div class="contact-hero-content" data-aos="fade-up">
-                    <h1> IT Certification Training Programs </h1>
-                    <p class="pb-4">
-                        Build the skills employers value with professional IT certification training from Site Learning
-                        America. Our training
-                        programs are designed to help IT professionals, students, career changers, and corporate teams
-                        gain practical knowledge,
-                        strengthen technical capabilities, and prepare for industry-recognized certification exams.
-                        Whether you are advancing
-                        your career in California, Texas, Florida, New York, Virginia, or anywhere across the United
-                        States, our training
-                        solutions provide the support needed to achieve your professional goals.
-
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <section style="background-color: #fff8e4">
+
+            <div class="overlay"></div>
         </section>
 
         <section class=" py-5 position-relative overflow-hidden">
@@ -354,81 +395,132 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="brand-content-section">
             <div class="container py-5">
-                <div class="content-wrapper">
 
-
-
-                    <h3 class="mt-4 title-stylish section-title">
-                        Industry-Aligned Training for <span> Today's Technology Landscape</span>
-                    </h3>
-
-                    <p class="section-text">
-                        Technology continues to evolve rapidly, and organizations need professionals
-                        who can keep pace with changing industry demands. Our training programs are
-                        developed around current technologies, certification objectives, and
-                        real-world job roles to help learners build relevant, practical, and
-                        applicable skills for today's competitive technology workforce.
-                    </p>
-
-                    <h3 class="mt-4 title-stylish section-title">
-                        Certification Preparation That <span> Builds Confidence</span>
-                    </h3>
-
-                    <p class="section-text">
-                        Preparing for a certification exam requires more than reviewing study
-                        materials. Our training programs help learners develop a strong understanding
-                        of core concepts, industry best practices, and exam-focused knowledge that
-                        supports certification success and long-term professional growth.
-                    </p>
-
-                    <h3 class="mt-4 title-stylish section-title">
+                <div class="mb-5">
+                    <h2 class="mb-4  section-title text-center">
                         Training Across <span> Leading Technology Domains</span>
-                    </h3>
+                    </h2>
 
-                    <ul class="mt-2 intro-list">
-                        <li>Cloud Computing</li>
-                        <li>Cybersecurity</li>
-                        <li>Networking</li>
-                        <li>Project Management</li>
-                        <li>Enterprise Technologies</li>
-                        <li>IT Service Management</li>
-                        <li>Infrastructure & Systems Administration</li>
-                        <li>Data and Emerging Technologies</li>
-                    </ul>
-
-
-                    <h3 class="mt-4 section-title title-stylish">
-                        Flexible Learning Solutions for <span>Individuals and Teams</span>
-                    </h3>
-
-                    <p class="section-text">
-                        Whether you are pursuing a personal certification goal or developing
-                        the skills of an entire workforce, Site Learning America offers
-                        training solutions designed to meet diverse learning needs. We support
-                        individual professionals, government organizations, educational
-                        institutions, and businesses seeking scalable workforce development
-                        programs.
-                    </p>
-
-                    <h3 class="mt-4 section-title title-stylish">
-                        Support Your Professional <span>Development Journey</span>
-                    </h3>
-
-                    <p class="section-text mb-0">
-                        Professional certifications demonstrate commitment, knowledge, and
-                        technical expertise. Our training programs are designed to help learners
-                        strengthen their capabilities, remain competitive in a rapidly changing
-                        technology environment, and pursue meaningful career advancement
-                        opportunities through continuous learning and professional development.
-                    </p>
-
+                    <div class="training-domain-points-wrapper">
+                        <div class="learn-box-premium">
+                            <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                            <div>
+                                <h6>Cloud Computing</h6>
+                            </div>
+                        </div>
+                        <div class="learn-box-premium">
+                            <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                            <div>
+                                <h6>Cybersecurity</h6>
+                            </div>
+                        </div>
+                        <div class="learn-box-premium">
+                            <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                            <div>
+                                <h6>Networking</h6>
+                            </div>
+                        </div>
+                        <div class="learn-box-premium">
+                            <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                            <div>
+                                <h6>Project Management</h6>
+                            </div>
+                        </div>
+                        <div class="learn-box-premium">
+                            <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                            <div>
+                                <h6>Enterprise Technologies</h6>
+                            </div>
+                        </div>
+                        <div class="learn-box-premium">
+                            <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                            <div>
+                                <h6>IT Service Management</h6>
+                            </div>
+                        </div>
+                        <div class="learn-box-premium">
+                            <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                            <div>
+                                <h6>Infrastructure & Systems Administration</h6>
+                            </div>
+                        </div>
+                        <div class="learn-box-premium">
+                            <div class="learn-icon"><i class="fas fa-check-double"></i></div>
+                            <div>
+                                <h6>Data and Emerging Technologies </h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="  row g-4 ">
+                    <div class="col-lg-6">
+                        <div class="mb-3   ">
+                            <h3 class="medimum-text mt-4  ">
+                                Industry-Aligned Training for <span> Today's Technology Landscape</span>
+                            </h3>
+
+                            <p class="section-text">
+                                Technology continues to evolve rapidly, and organizations need professionals
+                                who can keep pace with changing industry demands. Our training programs are
+                                developed around current technologies, certification objectives, and
+                                real-world job roles to help learners build relevant, practical, and
+                                applicable skills for today's competitive technology workforce.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3  ">
+                            <h3 class="medimum-text mt-4  ">
+                                Certification Preparation That <span> Builds Confidence</span>
+                            </h3>
+
+                            <p class="section-text">
+                                Preparing for a certification exam requires more than reviewing study
+                                materials. Our training programs help learners develop a strong understanding
+                                of core concepts, industry best practices, and exam-focused knowledge that
+                                supports certification success and long-term professional growth.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="  row g-4 ">
+                    <div class="col-lg-6 ">
+                        <h3 class="medimum-text mt-4  ">
+                            Flexible Learning Solutions for <span>Individuals and Teams</span>
+                        </h3>
+                        <p class="section-text">
+                            Whether you are pursuing a personal certification goal or developing
+                            the skills of an entire workforce, Site Learning America offers
+                            training solutions designed to meet diverse learning needs. We support
+                            individual professionals, government organizations, educational
+                            institutions, and businesses seeking scalable workforce development
+                            programs.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <h3 class="medimum-text mt-4  ">
+                            Support Your Professional <span>Development Journey</span>
+                        </h3>
+                        <p class="section-text mb-0">
+                            Professional certifications demonstrate commitment, knowledge, and
+                            technical expertise. Our training programs are designed to help learners
+                            strengthen their capabilities, remain competitive in a rapidly changing
+                            technology environment, and pursue meaningful career advancement
+                            opportunities through continuous learning and professional development.
+                        </p>
+                    </div>
+                </div>
+
             </div>
             <div class="container pb-5">
                 <div class="text-center mb-4">
-                    <h2 class="section-title mt-3">
+                    <h2 class="section-title mb-3">
                         Why Choose
                         <span>Site Learning America</span>
                     </h2>
@@ -444,7 +536,7 @@
 
                         <div class="row g-4">
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-3">
                                 <div class="feature-card">
 
                                     <div class="feature-icon">
@@ -461,7 +553,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-3">
                                 <div class="feature-card">
 
                                     <div class="feature-icon">
@@ -478,7 +570,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-3">
                                 <div class="feature-card">
 
                                     <div class="feature-icon">
@@ -495,7 +587,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-3">
                                 <div class="feature-card">
 
                                     <div class="feature-icon">
@@ -519,7 +611,7 @@
                         <div class="commitment-card mt-4">
 
                             <div class="commitment-icon">
-                                <i class="fa-solid fa-circle-check"></i>.
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
 
                             <div>

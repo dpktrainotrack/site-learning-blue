@@ -49,6 +49,14 @@ h6 {
   font-weight: 700;
 }
 
+.medimum-text {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--primary-dark);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
 a {
   text-decoration: none;
   transition: var(--transition);
@@ -1759,7 +1767,7 @@ ul.cert-listing li a i {
 
 /* SECTION HEADER */
 .section-title {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   /* font-weight: 800; */
   color: var(--dark-text);
   margin-bottom: 15px;
@@ -4255,7 +4263,7 @@ section {
   }
 
   .section-title {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
 
 }
@@ -4272,7 +4280,7 @@ section {
   }
 
   .section-title {
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
   }
 
   .card-one,
@@ -4971,7 +4979,7 @@ h5.traning-card-title {
 
 .contact-hero {
   padding: 50px 0 50px;
-  background: var(--gradient-hero);
+  /* background: var(--gradient-hero); */
   overflow: hidden;
   position: relative;
 }
@@ -5419,7 +5427,7 @@ h5.traning-card-title {
   }
 
   .section-title {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
 
 }
@@ -5431,7 +5439,7 @@ h5.traning-card-title {
   }
 
   .section-title {
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
   }
 
   .contact-left,
@@ -6026,4 +6034,12 @@ h5.traning-card-title {
   background-size: cover;
   background-position: left bottom;
   background-repeat: no-repeat;
+}
+
+
+.regular-banner {
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
