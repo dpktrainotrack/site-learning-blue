@@ -61,6 +61,56 @@
             border: 0;
             cursor: pointer;
         }
+
+        #detailTabsContent li {
+
+            font-size: 17px;
+            padding: 6px 0;
+        }
+
+        #detailTabsContent li span {
+
+            font-weight: 700;
+            margin-left: 8px;
+        }
+
+        p {
+            color: var(--gray-text);
+
+        }
+
+        h3 {
+
+            margin-bottom: 24px;
+        }
+
+        #detailTabsContent h3:after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            margin-top: 8px;
+            border-radius: 2px;
+        }
+
+
+
+        table tr td {
+            border-bottom: 1px solid rgb(219, 219, 219);
+
+        }
+
+        table tr td {
+            padding: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+            margin-bottom: 26px;
+        }
     </style>
 </head>
 
@@ -90,22 +140,32 @@
                             <div class="detail-hero-img mb-4" data-aos="zoom-in" data-aos-delay="200">
                                 <img src="assets/images/traning/aws/Cloud-Practitioner.webp" alt="">
                             </div>
-                            <h1 class="hero-title fw-bold mb-4">
-                                AWS Certified Cloud Practitioner <span class="gradient-text">(CLF-C02)</span>
+                            <h1 class="hero-title   mb-4">
+                                AWS Certified Developer – Associate
+                                <span class="gradient-text">(DVA-C02)</span>
                             </h1>
+                            <p class="hero-description mb-1">
+                                The AWS Certified Cloud
+                                Practitioner (CLF-C02) certification is designed for individuals who want to develop a
+                                solid understanding of Amazon Web
+                                Services (AWS) and cloud concepts without requiring deep technical expertise.
 
-                            <p class="hero-description mb-4">
-                                Kickstart your cloud journey by validating your core technical expertise. This globally
-                                recognized foundational certification verifies your baseline knowledge of cloud
-                                concepts,
-                                security protocols, core AWS infrastructure services, billing, and pricing structures.
                             </p>
+                            <!-- <p class="text-white mb-4">
+                                Modern applications are increasingly being built, deployed, and managed in cloud
+                                environments. Organizations are looking
+                                for developers who can create scalable, secure, and high-performing applications using
+                                cloud-native services. The AWS
+                                Certified Developer – Associate (DVA-C02) certification is designed for professionals
+                                who want to demonstrate their
+                                ability to develop, deploy, and maintain applications on Amazon Web Services (AWS). 
+                            </p> -->
 
                             <div class="hero-feature-flex d-flex flex-wrap gap-3">
                                 <div class="hero-feature-pill">
                                     <div class="">
                                         <i class="fas fa-users text-info me-2"></i>
-                                        <span class="fw-bold">12,850+</span> Students
+                                        <span class=" ">12,850+</span> Students
                                         Trained
                                     </div>
                                 </div>
@@ -127,11 +187,11 @@
                             <div class="sidebar-card shadow-lg border border-light p-4 rounded-4">
                                 <div class="pricing-panel mb-4 p-3 bg-light rounded-4 border border-light">
                                     <div class="d-flex justify-content-between align-items-center mb-1">
-                                        <span class="small text-muted text-uppercase fw-bold">Actual Price</span>
-                                        <span class="text-decoration-line-through text-muted fw-bold">$1,000</span>
+                                        <span class="small text-muted text-uppercase  ">Actual Price</span>
+                                        <span class="text-decoration-line-through text-muted  ">$1,000</span>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <span class="small text-muted text-uppercase fw-bold">Our Price</span>
+                                        <span class="small text-muted text-uppercase  ">Our Price</span>
                                         <span class="sidebar-our-price fw-extrabold text-primary">$500</span>
                                     </div>
 
@@ -141,17 +201,17 @@
                                 <div class="mb-4">
 
                                     <button popovertarget="voucherPopupForm"
-                                        class="btn purchase-btn w-100 py-3 rounded-3 text-uppercase fw-bold mb-2 shadow-sm text-white">
+                                        class="btn purchase-btn w-100 py-3 rounded-3 text-uppercase   mb-2 shadow-sm text-white">
                                         Book Now <i class="fa-solid fa-arrow-right ms-2"></i>
                                     </button>
                                     <a href="https://wa.me/18044418645" target="_blank"
-                                        class="btn secondary-btn w-100 py-3 rounded-3 text-uppercase fw-bold d-inline-flex justify-content-center align-items-center"><i
+                                        class="btn secondary-btn w-100 py-3 rounded-3 text-uppercase   d-inline-flex justify-content-center align-items-center"><i
                                             class="fab fa-whatsapp me-2 fs-5 text-success"></i>Talk to Consultant</a>
                                 </div>
 
 
                                 <div>
-                                    <h6 class="sidebar-title mb-3 fw-bold">Highlights</h6>
+                                    <h6 class="sidebar-title mb-3  ">Highlights</h6>
                                     <ul class="sidebar-checklist list-unstyled">
                                         <li class="mb-2 pb-2 border-bottom d-flex align-items-center gap-2"> <span
                                                 class="small text-muted">✓ Live Instructor-Led Sessions</span></li>
@@ -172,10 +232,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
 
         <!-- =================== MAIN DETAIL WRAPPER SECTION ================== -->
         <section class="voucher-detail-page pb-5 pt-3 position-relative">
@@ -198,9 +254,8 @@
                 <div class="row g-5">
 
                     <!-- LEFT MAIN CONTENT -->
-                    <div class="col-lg-3">
-                        <div style="position: sticky; top: 100px;">
-                            <!-- DYNAMIC TABS SELECTOR FOR BEST UI/UX -->
+                    <!-- <div class="col-lg-3">
+                        <div style="position: sticky; top: 100px;"> 
                             <div class="tabs-navigation-card mb-4" data-aos="fade-up">
                                 <ul class="nav nav-pills custom-tabs-pills d-flex flex-row flex-lg-column"
                                     id="detailTabs" role="tablist">
@@ -243,426 +298,434 @@
                                 <button popovertarget="voucherPopupForm" class="card-action-btn mt-3 w-100">
                                     Book Now <i class="fa-solid fa-arrow-right ms-2"></i>
                                 </button>
-                            </div>
-                            <div class="px-3 mt-3 text-center">
-                                <a href="tel:+18044418645" class="fs-16 text-decoration-none text-muted">Call Us: <i
-                                        class="fa-solid fa-phone ms-1"></i> +1 804-441-8645</a>
-                            </div>
-
-                        </div>
-
-                    </div>
+                            </div>  
+                        </div> 
+                    </div> -->
 
                     <!-- RIGHT SIDEBAR (HIGH CONVERTING & STICKY REDESIGNED) -->
-                    <div class="col-lg-9">
-                        <div class="tab-content" id="detailTabsContent">
+                    <div class="col-12">
+                        <div class="tab-content " id="detailTabsContent">
+                            <div class="detail-card" data-aos="fade-up">
+                                <h3>Certification Overview</h3>
+                                <ul>
+                                    <li>
+                                        Certification Name: <span>AWS Certified Cloud Practitioner (CLF-C02)</span>
+                                    </li>
+                                    <li>
+                                        Certification Level: <span>Foundational</span>
+                                    </li>
+                                    <li>
+                                        Exam Format: <span>Multiple-choice and Multiple-response Questions
+                                        </span>
+                                    </li>
+                                    <li>
+                                        Exam Duration: <span>Approximately 90 Minutes</span>
+                                    </li>
+                                    <li>
+                                        Recommended Experience: <span>Basic understanding of IT services and cloud
+                                            concepts
+                                        </span>
+                                    </li>
+                                    <li>Target Audience: <span>Beginners, Students, Business Professionals,
+                                            Non-Technical,
+                                            Beginners, Students, Business Professionals, Non-Technical
+                                            Professionals, and
+                                            Aspiring Cloud Practitioners
+                                        </span></li>
 
-                            <!-- TAB 1: Certification Overview -->
-                            <div class="mb-4 " id="overview_section">
-                                <div class="detail-card" data-aos="fade-up">
-                                    <div class="card-header-title mb-4">
-                                        <h3 class="fw-bold title-stylish">Overview</h3>
+                                </ul>
+                                <p>
+                                    This certification does not require prior AWS certification or extensive
+                                    hands-on experience, making it one of the most
+                                    accessible certifications within the AWS certification pathway.
+                                </p>
+
+
+                                
+                                <h3>What You Will Learn
+                                </h3>
+                                <p>The CLF-C02 certification focuses on developing a broad understanding of AWS
+                                    rather than deep technical implementation
+                                    skills. During your preparation, you will gain knowledge of cloud fundamentals,
+                                    AWS architecture principles, security
+                                    responsibilities, billing models, and governance practices.
+                                </p>
+                                <div class="table-responsive">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th width="30%">Domain</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        Cloud Concepts
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    Understanding cloud computing principles, benefits,
+                                                    and deployment models.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        Security and Compliance
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    AWS security framework, shared responsibility model,
+                                                    and compliance programs.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        Cloud Technology and Services
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    Core AWS services including compute, storage,
+                                                    networking, and databases.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        Billing, Pricing, and Support
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    AWS pricing models, cost optimization,
+                                                    billing tools, and support plans.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        AWS Architecture Basics
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    Understanding how AWS infrastructure is designed
+                                                    and managed.
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        Business Value of AWS
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    Identifying how AWS solutions support
+                                                    organizational goals.
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                                <h3>Why Choose AWS Certified Cloud Practitioner?
+                                </h3>
+                                
+                                <p>
+                                    The AWS Certified Cloud Practitioner certification serves as an entry point into
+                                    the AWS ecosystem. It validates your
+                                    understanding of essential cloud concepts and demonstrates your ability to
+                                    explain AWS services and their business
+                                    value.
+                                
+                                </p>
+                                <p>
+                                    As organizations continue migrating workloads to the cloud, professionals who
+                                    understand cloud fundamentals are becoming
+                                    increasingly valuable. This certification helps bridge the gap between technical
+                                    teams and business stakeholders by
+                                    providing a common understanding of cloud technologies and AWS solutions.
+                                
+                                </p>
+                                <p>
+                                    It is particularly beneficial for individuals who are planning to pursue
+                                    advanced AWS certifications in the future or
+                                    looking to strengthen their cloud knowledge for professional growth.
+                                </p>
+                                <h3>Career Benefits of Earning CLF-C02 Certification
+                                </h3>
+                                <p>Obtaining the AWS Certified Cloud Practitioner certification demonstrates your
+                                    commitment to learning cloud technologies
+                                    and helps establish credibility in a rapidly growing field.
+                                </p>
+                                <p>Professionals who earn this certification often find it easier to understand
+                                    cloud-based projects, collaborate with
+                                    technical teams, and participate in digital transformation initiatives. The
+                                    certification also serves as a stepping
+                                    stone toward more specialized AWS certifications in areas such as architecture,
+                                    operations, security, and development.
+                                </p>
+                                <p>For employers, certified professionals bring a stronger understanding of cloud
+                                    terminology, services, and business
+                                    considerations, helping organizations make informed cloud-related decisions.</p>
+
+                                <h3>Who Should Take This Certification?</h3>
+
+                                <p>
+                                    The AWS Certified Cloud Practitioner certification is suitable for a wide range of
+                                    professionals. It is particularly
+                                    valuable for individuals who interact with cloud technologies but may not
+                                    necessarily perform technical
+                                    implementation tasks.
+                                </p>
+
+                                <p>
+                                    This certification is ideal for students exploring cloud careers, business analysts
+                                    working on cloud initiatives,
+                                    sales and marketing professionals involved with cloud solutions, project managers
+                                    overseeing cloud projects, and IT
+                                    professionals looking to begin their AWS certification journey.
+                                </p>
+
+                                <p>
+                                    Even professionals with limited technical backgrounds can successfully prepare for
+                                    and pass the CLF-C02 examination
+                                    with the right learning approach and dedication.
+                                </p>
+                                <h3>Skills Validated by the Certification</h3>
+
+                                <p>
+                                    The CLF-C02 certification validates your ability to understand and explain key AWS
+                                    concepts. Successful candidates
+                                    can identify common AWS services, recognize cloud security principles, understand
+                                    pricing structures, and describe
+                                    how AWS solutions support business objectives.
+                                </p>
+
+                                <p>
+                                    The certification also demonstrates familiarity with AWS global infrastructure,
+                                    cloud economics, governance models,
+                                    and operational best practices. These foundational skills provide a strong base for
+                                    future specialization within the
+                                    AWS ecosystem.
+                                </p>
+                                <h3>Training and Preparation Approach</h3>
+
+                                <p>
+                                    Effective preparation for the AWS Certified Cloud Practitioner exam involves
+                                    understanding both theoretical concepts
+                                    and practical applications. Learners should focus on cloud fundamentals, AWS core
+                                    services, security concepts, and
+                                    pricing mechanisms.
+                                </p>
+
+                                <p>
+                                    Hands-on exposure to AWS services can significantly improve understanding by
+                                    allowing candidates to connect
+                                    theoretical knowledge with real-world cloud environments. Consistent study, practice
+                                    assessments, and regular
+                                    revision are key factors in building confidence before the examination.
+                                </p>
+
+                                <p>
+                                    A structured training program can help candidates navigate the exam objectives
+                                    efficiently and ensure complete
+                                    coverage of the CLF-C02 syllabus.
+                                </p>
+                                <h3>Start Your AWS Cloud Journey Today</h3>
+
+                                <p>
+                                    The AWS Certified Cloud Practitioner (CLF-C02) certification is an excellent
+                                    starting point for anyone interested in
+                                    cloud computing. It provides a comprehensive understanding of AWS fundamentals while
+                                    creating a pathway toward
+                                    advanced cloud certifications and career opportunities.
+                                </p>
+
+                                <p>
+                                    As cloud adoption continues to expand across industries, developing AWS knowledge
+                                    can help professionals stay
+                                    relevant, enhance their skills, and contribute more effectively to modern
+                                    technology-driven organizations.
+                                </p>
+
+                                <h3>Frequently Asked Questions (FAQs)</h3>
+                                <div class="accordion custom-faq" id="faqAccordion">
+
+                                    <!-- ITEM 1 -->
+                                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#faq1">
+                                                What is AWS Certified Cloud Practitioner (CLF-C02)?
+                                            </button>
+                                        </h2>
+
+                                        <div id="faq1" class="accordion-collapse collapse show"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                AWS Certified Cloud Practitioner (CLF-C02) is a foundational AWS
+                                                certification that validates your understanding of cloud concepts,
+                                                AWS services, security principles, pricing models, and cloud
+                                                business value.
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="section-desc">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore
-                                        nihil
-                                        doloremque! Explicabo adipisci amet officiis eius temporibus deleniti natus
-                                        dolorum, blanditiis id, dolorem commodi numquam, quidem voluptatem nihil.
-                                        Aperiam!
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore
-                                        nihil
-                                        doloremque! Explicabo adipisci amet officiis eius temporibus deleniti natus
-                                        dolorum, blanditiis id, dolorem commodi numquam, quidem voluptatem nihil.
-                                        Aperiam!
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore
-                                        nihil
-                                        doloremque! Explicabo adipisci amet officiis eius temporibus deleniti natus
-                                        dolorum, blanditiis id, dolorem commodi numquam, quidem voluptatem nihil.
-                                        Aperiam!
-                                    </p>
-                                    <p class="section-desc">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore
-                                        nihil
-                                        doloremque! Explicabo adipisci amet officiis eius temporibus deleniti natus
-                                        dolorum, blanditiis id, dolorem commodi numquam, quidem voluptatem nihil.
-                                        Aperiam!
-                                    </p>
-                                    <h4>
-                                        What you will learn
-                                    </h4>
-                                    <ul class="intro-list">
-                                        <li>Gain in-depth knowledge of AWS cloud services and infrastructure</li>
-                                        <li>Master core AWS services including compute, storage, database, and
-                                            networking</li>
-                                        <li>Understand AWS security best practices and compliance frameworks</li>
-                                        <li>Learn to design and implement scalable, cost-effective cloud solutions
-                                        </li>
-                                        <li>Prepare for the AWS Certified Cloud Practitioner certification</li>
-                                    </ul>
+
+                                    <!-- ITEM 2 -->
+                                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                Is the CLF-C02 certification suitable for beginners?
+                                            </button>
+                                        </h2>
+
+                                        <div id="faq2" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                Yes. The certification is specifically designed for beginners and
+                                                does not require advanced technical knowledge or prior AWS
+                                                certification experience.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 3 -->
+                                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                Who should pursue the AWS Certified Cloud Practitioner certification?
+                                            </button>
+                                        </h2>
+
+                                        <div id="faq3" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                Students, business professionals, project managers, sales teams,
+                                                marketing professionals, and individuals starting their cloud
+                                                computing journey can benefit from this certification.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 4 -->
+                                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq4">
+                                                Does this certification require coding knowledge?
+                                            </button>
+                                        </h2>
+
+                                        <div id="faq4" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                No. The CLF-C02 certification focuses on cloud fundamentals and
+                                                AWS concepts rather than programming or software development
+                                                skills.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 5 -->
+                                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq5">
+                                                What topics are covered in the CLF-C02 exam?
+                                            </button>
+                                        </h2>
+
+                                        <div id="faq5" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                The exam covers cloud concepts, AWS services, security and
+                                                compliance, pricing and billing, support plans, governance,
+                                                and AWS architecture fundamentals.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 6 -->
+                                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq6">
+                                                What can I do after earning the AWS Certified Cloud Practitioner
+                                                certification?
+                                            </button>
+                                        </h2>
+
+                                        <div id="faq6" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                After earning this certification, many professionals continue
+                                                their AWS learning journey by pursuing associate-level
+                                                certifications focused on architecture, development,
+                                                operations, or security.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 7 -->
+                                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="700">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq7">
+                                                How does the certification help my career?
+                                            </button>
+                                        </h2>
+
+                                        <div id="faq7" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                The certification demonstrates cloud knowledge, improves
+                                                professional credibility, and helps individuals understand and
+                                                participate more effectively in cloud-related projects and
+                                                business initiatives.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 8 -->
+                                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="800">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq8">
+                                                Is AWS Certified Cloud Practitioner recognized by employers?
+                                            </button>
+                                        </h2>
+
+                                        <div id="faq8" class="accordion-collapse collapse"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                Yes. AWS certifications are widely recognized across industries
+                                                and help demonstrate a foundational understanding of cloud
+                                                computing and AWS technologies.
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
+
                             </div>
-
-                            <!-- TAB 2: Training Outline (Syllabus Accordion) -->
-                            <div class="mb-4" id="curriculum_section" role="tabpanel" aria-labelledby="curriculum-tab">
-                                <div class="detail-card">
-                                    <div class="card-header-title mb-4">
-                                        <h3 class="title-stylish">Syllabus Outline &
-                                            Modules
-                                        </h3>
-                                    </div>
-                                    <p class="text-muted mb-4">Explore the comprehensive domains covered in the
-                                        updated
-                                        CLF-C02 syllabus. Each module includes video classes, active labs, and mock
-                                        exams.
-                                    </p>
-
-                                    <div class="accordion custom-voucher-faq" id="syllabusAccordion">
-                                        <div class="accordion-item border-0 mb-3 shadow-sm  overflow-hidden">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button " type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#module1"
-                                                    aria-expanded="true">
-                                                    Domain 1: Cloud Concepts (24% of Exam)
-                                                </button>
-                                            </h2>
-                                            <div id="module1" class="accordion-collapse collapse show"
-                                                data-bs-parent="#syllabusAccordion">
-                                                <div class="accordion-body">
-                                                    <ul class="syllabus-list">
-                                                        <li>Defining the AWS Cloud value proposition and cost
-                                                            benefits
-                                                        </li>
-                                                        <li>Understanding cloud delivery models: Infrastructure as a
-                                                            Service
-                                                            (IaaS), Platform as a Service (PaaS), Software as a
-                                                            Service
-                                                            (SaaS)</li>
-                                                        <li>Reviewing the AWS Global Infrastructure: Availability
-                                                            Zones
-                                                            (AZs), AWS Regions, and Edge Locations</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item border-0 mb-3 shadow-sm  overflow-hidden">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed " type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#module2"
-                                                    aria-expanded="false">
-                                                    Domain 2: Security & Compliance (30% of Exam)
-                                                </button>
-                                            </h2>
-                                            <div id="module2" class="accordion-collapse collapse"
-                                                data-bs-parent="#syllabusAccordion">
-                                                <div class="accordion-body">
-                                                    <ul class="syllabus-list">
-                                                        <li>AWS Shared Responsibility Security Model: Customer
-                                                            controls
-                                                            vs.
-                                                            AWS controls</li>
-                                                        <li>AWS Identity and Access Management (IAM): Users, groups,
-                                                            roles,
-                                                            permissions, and Multi-Factor Authentication (MFA)</li>
-                                                        <li>Encryption strategies, AWS Key Management Service (KMS),
-                                                            and
-                                                            compliance tools (AWS Artifact)</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item border-0 mb-3 shadow-sm  overflow-hidden">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed " type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#module3"
-                                                    aria-expanded="false">
-                                                    Domain 3: Core Technology & Services (34% of Exam)
-                                                </button>
-                                            </h2>
-                                            <div id="module3" class="accordion-collapse collapse"
-                                                data-bs-parent="#syllabusAccordion">
-                                                <div class="accordion-body">
-                                                    <ul class="syllabus-list">
-                                                        <li>Compute Services: Amazon Elastic Compute Cloud (EC2),
-                                                            AWS
-                                                            Lambda, and AWS Elastic Beanstalk</li>
-                                                        <li>Storage Platforms: Amazon Simple Storage Service (S3)
-                                                            and
-                                                            Elastic Block Store (EBS)</li>
-                                                        <li>Databases: Amazon Relational Database Service (RDS),
-                                                            Amazon
-                                                            DynamoDB, and Amazon Aurora</li>
-                                                        <li>Networking: Amazon Virtual Private Cloud (VPC), Route
-                                                            53,
-                                                            and
-                                                            CloudFront Content Delivery Network (CDN)</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item border-0 mb-0 shadow-sm  overflow-hidden">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed " type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#module4"
-                                                    aria-expanded="false">
-                                                    Domain 4: Billing, Pricing & Support (12% of Exam)
-                                                </button>
-                                            </h2>
-                                            <div id="module4" class="accordion-collapse collapse"
-                                                data-bs-parent="#syllabusAccordion">
-                                                <div class="accordion-body">
-                                                    <ul class="syllabus-list">
-                                                        <li>Comparing AWS pricing models (On-Demand, Savings Plans,
-                                                            Spot
-                                                            Instances, Reserved Instances)</li>
-                                                        <li>Budgeting tools: AWS Budgets, Cost Explorer, and the AWS
-                                                            Pricing
-                                                            Calculator</li>
-                                                        <li>AWS Support Plans: Developer, Business, and Enterprise
-                                                            tiers
-                                                            and
-                                                            characteristics</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- TAB 4: Who It’s For -->
-                            <div class="mb-4" id="who_its_for" role="tabpanel" aria-labelledby="curriculum-tab">
-                                <div class="detail-card">
-                                    <div class="card-header-title mb-4">
-                                        <h3 class="title-stylish">Who It’s For
-                                        </h3>
-                                        <p>
-                                            IT professionals aiming to build or advance their networking careers through
-                                            instructor-led training and hands-on labs. Best for these roles:
-                                        </p>
-                                    </div>
-                                    <div class="row g-4">
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>Cloud practitioners</h6>
-                                                    <!-- <p class="small text-muted mb-0">Learn how regions, edge
-                                                        locations,
-                                                        and
-                                                        availability zones work together.</p> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>IT support professionals</h6>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>System administrators</h6>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>Developers</h6>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>Database professionals</h6>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mb-4" id="learn_section" role="tabpanel" aria-labelledby="curriculum-tab">
-                                <div class="detail-card">
-                                    <div class="card-header-title mb-4">
-                                        <h3 class="fw-bold title-stylish">What Skills You Will
-                                            Master
-                                        </h3>
-                                    </div>
-                                    <div class="row g-4">
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>AWS Infrastructure Architecture</h6>
-                                                    <p class="small text-muted mb-0">Learn how regions, edge
-                                                        locations,
-                                                        and
-                                                        availability zones work together.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>Cost Optimization Metrics</h6>
-                                                    <p class="small text-muted mb-0">Compute accurate pricing
-                                                        models,
-                                                        reserve instances, and cut monthly cloud waste.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>Cloud Security Best Practices</h6>
-                                                    <p class="small text-muted mb-0">Apply IAM user settings,
-                                                        policies,
-                                                        encryption keys, and active threat hunting protocols.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>Core Platform Offerings</h6>
-                                                    <p class="small text-muted mb-0">Understand when to use EC2 vs
-                                                        Lambda,
-                                                        RDS vs DynamoDB, and S3 vs EBS databases.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>Highly-Available Auto Scaling</h6>
-                                                    <p class="small text-muted mb-0">Deploy load balancers and
-                                                        auto-scaling
-                                                        rules that handle spikes in traffic gracefully.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="learn-box-premium">
-                                                <div class="learn-icon"><i class="fas fa-check-double"></i></div>
-                                                <div>
-                                                    <h6>Career & Exam Blueprinting</h6>
-                                                    <p class="small text-muted mb-0">Confidently navigate the
-                                                        CLF-C02
-                                                        syllabus, practice exam patterns, and mock tests.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- FaQ -->
-                            <div class="mb-4" id="faq_section" role="tabpanel" aria-labelledby="faq-tab">
-                                <div class="detail-card mt-4" data-aos="fade-up">
-                                    <div class="card-header-title mb-4">
-                                        <h3 class="title-stylish">Frequently Asked
-                                            Questions
-                                        </h3>
-                                    </div>
-
-                                    <div class="accordion custom-faq" id="faqAccordion">
-                                        <!-- ITEM -->
-                                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
-
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#faq1">
-                                                    What is information technology? What do information technology
-                                                    professionals do?
-                                                </button>
-                                            </h2>
-
-                                            <div id="faq1" class="accordion-collapse collapse show"
-                                                data-bs-parent="#faqAccordion">
-                                                <div class="accordion-body">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odit
-                                                    quam at eos amet! Dolore, repellendus nihil doloremque totam
-                                                    blanditiis numquam dolorem ad quia voluptas cum voluptatem, in,
-                                                    assumenda perspiciatis.
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <!-- ITEM -->
-                                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
-
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#faq2">
-                                                    What is the average salary for information technology professionals?
-                                                </button>
-                                            </h2>
-
-                                            <div id="faq2" class="accordion-collapse collapse"
-                                                data-bs-parent="#faqAccordion">
-                                                <div class="accordion-body">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odit
-                                                    quam at eos amet! Dolore, repellendus nihil doloremque totam
-                                                    blanditiis numquam dolorem ad quia voluptas cum voluptatem, in,
-                                                    assumenda perspiciatis.
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <!-- ITEM -->
-                                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
-
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#faq3">
-                                                    Does this class help me prepare for the N10-009 Certification Exam?
-                                                </button>
-                                            </h2>
-
-                                            <div id="faq3" class="accordion-collapse collapse"
-                                                data-bs-parent="#faqAccordion">
-                                                <div class="accordion-body">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odit
-                                                    quam at eos amet! Dolore, repellendus nihil doloremque totam
-                                                    blanditiis numquam dolorem ad quia voluptas cum voluptatem, in,
-                                                    assumenda perspiciatis.
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                    </div>
 
+
+                    </div>
                 </div>
+
+            </div>
             </div>
         </section>
 
@@ -678,7 +741,7 @@
                     <!-- <span class="career-badge">
                     <i class="fas fa-certificate me-2"></i>RECOMMENDED CERTIFICATIONS
                 </span> -->
-                    <h2 class="section-title fw-bold mt-3">Related Exam <span> Training</span></h2>
+                    <h2 class="section-title   mt-3">Related Exam <span> Training</span></h2>
                     <p class="text-muted max-width-600 mx-auto">Explore advanced certifications and bundle products to
                         map
                         your path towards cloud architect status.</p>
@@ -777,7 +840,7 @@
                     <div class="enquery-form-card" data-aos="fade-left" data-aos-delay="100">
                         <div class="form-header">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h3 class="fw-bold text-white Session -white mb-1">Book Now</h3>
+                                <h3 class="text-white Session -white mb-1">Book Now</h3>
 
                                 <button type="button" class="close-voucher-button" popovertarget="voucherPopupForm"
                                     popovertargetaction="hide">
