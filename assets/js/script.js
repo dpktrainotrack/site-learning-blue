@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-
-
-  $('.voucher_brands_review').owlCarousel({
+  $(".voucher_brands_review").owlCarousel({
     loop: true,
     margin: 25,
     nav: false,
@@ -11,15 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
     smartSpeed: 900,
     responsive: {
       0: {
-        items: 1
+        items: 1,
       },
       768: {
-        items: 1
+        items: 1,
       },
       1200: {
-        items: 2
-      }
-    }
+        items: 2,
+      },
+    },
   });
 
   // 1. Back to Top Button Setup
@@ -179,7 +177,6 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
-
 $(".testimonial-slider").owlCarousel({
   loop: true,
   margin: 20,
@@ -189,7 +186,6 @@ $(".testimonial-slider").owlCarousel({
   center: true,
   autoplayHoverPause: true,
   dots: false,
-
 
   responsive: {
     0: {
@@ -244,7 +240,6 @@ $(".voucher-slider").owlCarousel({
   },
 });
 
-
 // $("#careerPathOwlCarousel").owlCarousel({
 //   loop: true,
 //   margin: 20,
@@ -288,12 +283,11 @@ $(".brands_review").owlCarousel({
   },
 });
 
-
 const trustedSlider = $(".trusted-brands-slider");
 
 trustedSlider.owlCarousel({
   loop: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 10000,
   smartSpeed: 10000,
   slideTransition: "linear",
@@ -307,8 +301,8 @@ trustedSlider.owlCarousel({
     576: { items: 3 },
     768: { items: 4 },
     992: { items: 5 },
-    1200: { items: 6 }
-  }
+    1200: { items: 6 },
+  },
 });
 
 /* -----------LENIS--------- */
@@ -336,8 +330,6 @@ gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 gsap.ticker.lagSmoothing(0);
-
-
 
 AOS.init({
   duration: 1000,
@@ -379,8 +371,3 @@ AOS.init({
 
 //   observer.observe(counter);
 // });
-
-
-
-
-

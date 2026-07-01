@@ -76,6 +76,129 @@
             display: flex;
             justify-content: center;
         }
+
+
+
+        /* Remove all default popover styling */
+        [popover] {
+            margin: auto;
+            padding: 0;
+            border: none;
+            outline: none;
+            background: transparent;
+            max-width: 500px;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            box-shadow: none;
+            top: 15%;
+        }
+
+
+        [popover]::backdrop {
+            background: rgba(0, 0, 0, .6);
+            backdrop-filter: blur(4px);
+        }
+
+        button.close-training-popup-button {
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+
+
+        .enroll-btn {
+            background: var(--gradient-main);
+            /* border-color: var(--gradient-main); */
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: var(--white);
+            transition: all 0.3s ease;
+            font-weight: 600;
+            display: inline-block;
+            border: none;
+        }
+
+        .enquery-form-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .enquery-form-card .form-header {
+            background: var(--gradient-hero);
+            /* Orange color matching image */
+            padding: 30px;
+            text-align: left;
+        }
+
+        .enquery-form-card .form-body {
+            padding: 30px;
+        }
+
+        .enquery-form-card .form-control,
+        .enquery-form-card .form-select {
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-size: 0.95rem;
+            background-color: #f8fafc;
+            transition: all 0.3s ease;
+        }
+
+        .enquery-form-card .form-control:focus,
+        .enquery-form-card .form-select:focus {
+            border-color: var(--gradient-main);
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+            background-color: #fff;
+        }
+
+        .enquery-form-card .btn-warning {
+            background-color: var(--gradient-main);
+            border-color: var(--gradient-main);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .enquery-form-card .btn-warning:hover {
+            background-color: #d97706;
+            border-color: #d97706;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4);
+        }
+
+        .enroll-btn:hover {
+            background: var(--gradient-hero);
+            /* border-color: var(--gradient-hero); */
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4);
+        }
+
+        .training-hero-btn {
+            background-color: var(--gradient-main);
+            color: var(--white);
+            color: white;
+        }
+
+        .training-hero-btn {
+            background: var(--gradient-main);
+            border-color: var(--gradient-main);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: .90rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        span.strip-value a {
+            color: #45566a;
+        }
     </style>
 </head>
 
@@ -140,8 +263,9 @@
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-12" data-aos="fade-right">
-                        <h2 class="about-title mb-4 section-title">
-                            IT Training and Certification Solutions <span>in USA</span>
+
+                        <h2 class=" mb-4 section-title">
+                            IT Training and <span>Certification Solutions</span>
                         </h2>
 
                         <p class="about-text ">
@@ -189,17 +313,23 @@
                         </div>
 
                         <div class="mb-3 intro-features3">
-                            <h2>
-                                Supporting Professionals, Businesses, and Future Technology Leaders
+                            <div class="left">
 
-                            </h2>
-                            <p class="section-desc">Thousands of learners choose Site Learning America as a trusted
-                                resource for IT training and certification preparation.
-                                By providing quality learning solutions, responsive support, and access to leading
-                                certification programs, we help
-                                individuals and organizations strengthen their technical capabilities and achieve
-                                long-term professional success.
-                            </p>
+                                <h2>
+                                    Supporting Professionals, Businesses, and Future Technology Leaders
+
+                                </h2>
+                                <p class="section-desc">Thousands of learners choose Site Learning America as a trusted
+                                    resource for IT training and certification preparation.
+                                    By providing quality learning solutions, responsive support, and access to leading
+                                    certification programs, we help
+                                    individuals and organizations strengthen their technical capabilities and achieve
+                                    long-term professional success.
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="assets/images/technology.webp" alt="Why Choose Us" class="img-fluid">
+                            </div>
                         </div>
                         <!-- <a href="#" class="about-btn">
                                         Explore
@@ -229,109 +359,35 @@
                 </div>
                 <div class="owl-carousel voucher-slider">
                     <div class="cert-card" data-aos="zoom-in">
-                        <a href="detail.html">
-                            <div class="training-card">
-                                <div class="card-img-wrapper">
-                                    <img src="assets/images/traning/cisco/CCNA.png" alt="CCNA">
-                                </div>
-                                <div class="card-body">
+
+                        <div class="training-card">
+                            <div class="card-img-wrapper">
+                                <img src="assets/images/traning/cisco/CCNA.png" alt="CCNA">
+                            </div>
+                            <div class="card-body">
+                                <a href="voucher-details.html">
                                     <h3 class="card-title">Cisco Certified Network Associate - CCNA</h3>
-                                    <!-- <p class="card-desc">Learn the fundamentals of cloud computing and prepare for the
-                                                                        AWS Certified Cloud Practitioner exam with hands-on labs and expert instruction.
-                                                                    </p> -->
-                                    <!-- <div class="card-meta-info">
-                                                                        <div class="card-rating">
-                                                                            <i class="fas fa-star"></i> 4.9 (12K+)
-                                                                        </div>
-                                                                        <span><i class="fas fa-user-graduate me-1"></i> 15k Students</span>
-                                                                    </div> -->
-                                    <div class="card-footer-info">
-                                        <div class="card-price-wrapper">
-                                            <span class="original-price">$150.00</span>
-                                            <div class="d-flex align-items-center">
-                                                <span class="current-price">$120.00</span>
+                                </a>
+                                <div class="card-footer-info">
+                                    <div class="card-price-wrapper">
+                                        <span class="original-price">$150.00</span>
+                                        <div class="d-flex align-items-center">
+                                            <span class="current-price">$120.00</span>
 
-                                            </div>
                                         </div>
-                                        <div class="card-action-btn">Book Now</div>
                                     </div>
+                                    <!-- <div class="card-action-btn " popovertarget="traning_booking_popup">Book Now</div> -->
+                                    <button class="mode-badge enroll-btn" popovertarget="traning_booking_popup">
+                                        <div class="text-white text-decoration-none ">
+                                            Book Now
+                                        </div>
+                                    </button>
                                 </div>
                             </div>
-                        </a>
+                        </div>
+
                     </div>
-                    <div class="cert-card" data-aos="zoom-in">
-                        <a href="detail.html">
-                            <div class="training-card">
-                                <div class="card-img-wrapper">
-                                    <img src="assets/images/traning/aws/AWS Certified DevOps Engineer Professional.webp"
-                                        alt="Palo Alto Networks Certified Security Administrator">
-                                </div>
-                                <div class="card-body">
 
-                                    <h3 class="card-title">AWS Certified DevOps Engineer Professional</h3>
-                                    <div class="card-footer-info">
-                                        <div class="card-price-wrapper">
-                                            <span class="original-price">$200.00</span>
-                                            <div class="d-flex align-items-center">
-                                                <span class="current-price">$160.00</span>
-
-                                            </div>
-                                        </div>
-                                        <div class="card-action-btn">Book Now</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cert-card" data-aos="zoom-in">
-                        <a href="detail.html">
-                            <div class="training-card">
-                                <div class="card-img-wrapper">
-                                    <img src="assets/images/traning/aws/AWS Certified Developer Associate - DVA-C02.webp"
-                                        alt="AWS Developer">
-                                </div>
-                                <div class="card-body">
-
-                                    <h3 class="card-title">AWS Certified Developer Associate - DVA-C02</h3>
-
-
-                                    <div class="card-footer-info">
-                                        <div class="card-price-wrapper">
-                                            <span class="original-price">$180.00</span>
-                                            <div class="d-flex align-items-center">
-                                                <span class="current-price">$144.00</span>
-
-                                            </div>
-                                        </div>
-                                        <div class="card-action-btn">Book Now</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="cert-card" data-aos="zoom-in">
-                        <a href="detail.html">
-                            <div class="training-card">
-                                <div class="card-img-wrapper">
-                                    <img src="assets/images/traning/comptia/9.webp" alt="AWS Developer">
-                                </div>
-                                <div class="card-body">
-
-                                    <h3 class="card-title">AWS Certified DevOps Engineer Professional</h3>
-                                    <div class="card-footer-info">
-                                        <div class="card-price-wrapper">
-                                            <span class="original-price">$250.00</span>
-                                            <div class="d-flex align-items-center">
-                                                <span class="current-price">$200.00</span>
-
-                                            </div>
-                                        </div>
-                                        <div class="card-action-btn">Book Now</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
 
                 </div>
                 <div class="text-center mt-5" data-aos="fade-up">
@@ -367,7 +423,7 @@
                         <a href="training-brand.html">
                             <div class="training-card">
                                 <div class="card-img-wrapper">
-                                    <img class="p-4" src="assets/images/brands/aws.webp"
+                                    <img src="assets/images/brands/aws.webp"
                                         alt="CCNP Enterprise Certification Training">
                                 </div>
                                 <div class="card-body">
@@ -382,11 +438,11 @@
                         </a>
                     </div>
                     <div class="cert-card" data-aos="fade-up">
-                        <a href="training-brand.html">
+                        <a href="training-brand-cisco.html">
                             <div class="training-card">
                                 <div class="card-img-wrapper">
 
-                                    <img class="p-4" src="assets/images/brands/cisco.webp"
+                                    <img src="assets/images/brands/cisco.webp"
                                         alt="CCNP Enterprise Certification Training">
                                 </div>
                                 <div class="card-body">
@@ -401,17 +457,14 @@
                         </a>
                     </div>
                     <div class="cert-card" data-aos="fade-up">
-                        <a href="training-brand.html">
+                        <a href="training-brand-comptia.html">
                             <div class="training-card">
                                 <div class="card-img-wrapper">
-
-                                    <img class="p-4" src="assets/images/brands/comptia.webp"
+                                    <img src="assets/images/brands/comptia.webp"
                                         alt="CCNP Enterprise Certification Training">
                                 </div>
                                 <div class="card-body">
-
                                     <h3 class="card-title">CompTIA Training Program</h3>
-
                                     <div class="card-footer-info">
                                         <div class="card-action-btn training-card-btn">Enroll Now</div>
                                     </div>
@@ -420,16 +473,15 @@
                         </a>
                     </div>
                     <div class="cert-card" data-aos="fade-up">
-                        <a href="training-brand.html">
+                        <a href="training-brand-pega.html">
                             <div class="training-card">
                                 <div class="card-img-wrapper">
-
-                                    <img class="p-4" src="assets/images/brands/paloalto.webp"
+                                    <img src="assets/images/brands/pega.webp"
                                         alt="CCNP Enterprise Certification Training">
                                 </div>
                                 <div class="card-body">
 
-                                    <h3 class="card-title">Palo Alto Training Program</h3>
+                                    <h3 class="card-title">Pega Training Program</h3>
 
                                     <div class="card-footer-info">
                                         <div class="card-action-btn training-card-btn">Enroll Now</div>
@@ -453,7 +505,8 @@
         <section class="learning-process py-5 position-relative overflow-hidden">
             <div class="container">
                 <div class="text-center mb-5" data-aos="fade-up">
-                    <h2 class="process-title"> HOW IT <span>WORKS</span>
+                    <h2 class="section-title"> How IT <span>Works</span>
+
                     </h2>
                     <p class="process-desc">
                         Our simple certification process helps learners and professionals achieve their career goals
@@ -564,13 +617,13 @@
 
         <!-- =============  WHY CHOOSE US SECTION =================== -->
         <!-- =================== FOOTER SECTION ============== -->
-        <section>
+        <section class="py-5">
             <div class="container">
                 <div class="text-center">
                     <!-- TITLE -->
-                    <h2 class="process-title mb-4">
-                        WHY CHOOSE SITE LEARNING
-                        <span>AMERICA</span>
+                    <h2 class="section-title mb-4">
+                        Why Choose Sitelearning
+                        <span>America</span>
                     </h2>
                     <p class="section-desc">
                         We provide globally recognized certification programs with a seamless
@@ -697,7 +750,7 @@
 
                     <h2 class="section-title">
                         What Our
-                        <span>Students Saying</span>
+                        <span>Students Saying?</span>
                     </h2>
 
                     <p class="section-desc">
@@ -917,6 +970,15 @@
                         </div>
 
                     </div>
+                    <div class="item">
+
+                        <div class="company-card" data-aos="zoom-in" data-aos-delay="100">
+
+                            <img src="assets/images/brands/isaca.webp" alt="AWS">
+
+                        </div>
+
+                    </div>
 
 
                     <!-- ITEM -->
@@ -951,21 +1013,7 @@
                             <img src="assets/images/brands/pega.webp" alt="IBM">
 
                         </div>
-
                     </div>
-
-
-                    <!-- ITEM -->
-                    <div class="item">
-
-                        <div class="company-card" data-aos="zoom-in" data-aos-delay="500">
-
-                            <img src="assets/images/brands/paloalto.webp" alt="paloalto">
-
-                        </div>
-
-                    </div>
-
 
                     <!-- ITEM -->
                     <div class="item">
@@ -1105,8 +1153,8 @@
 
                             <!-- TITLE -->
                             <h2 class="section-title">
-                                FREQUENTLY ASKED
-                                <span>QUESTIONS</span>
+                                Frequently Asked
+                                <span>Questions</span>
                             </h2>
 
                             <!-- DESCRIPTION -->
@@ -1242,6 +1290,48 @@
                     </a>
                 </div>
         </section>
+
+
+
+
+        <div class="enquery-right-form" popover="auto" id="traning_booking_popup">
+            <div class="enquery-form-card" data-aos="fade-left" data-aos-delay="100">
+                <div class="form-header">
+                    <!-- <h3 class="fw-bold text-white Session -white mb-1">Book Now</h3>
+                    <p class="text-white mb-0 small">Get one to one coaching with expert trainers.
+                    </p> -->
+
+                    <div class="d-flex justify-content-between align-items-center w-100  text-white">
+                        <h3 class="fw-bold  Session  mb-1">Lorem ipsum dolor sit</h3>
+                        <button type="button" class="close-training-popup-button" popovertarget="traning_booking_popup"
+                            popovertargetaction="hide">
+                            <i class="fa-sharp fa-solid fa-circle-xmark text-white fa-2x "></i>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="form-body">
+                    <form id="trainingEnquiryForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-lg" placeholder="Mobile Number" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-lg" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn  training-hero-btn">Talk To Expert <i
+                                class="fa fa-arrow-right ms-2"></i></button>
+
+                </div>
+
+            </div>
+        </div>
 
     </main>
     <!-- Footer Placeholder -->

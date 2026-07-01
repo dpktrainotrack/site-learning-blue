@@ -182,6 +182,8 @@ span.logo-text-site div {
   animation: slideDown 0.4s ease;
 }
 
+
+
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -344,6 +346,9 @@ span.logo-text-site div {
 .btn-cta-nav i {
   font-size: 24px;
 }
+
+
+.sticky .mega-menu {}
 
 /* =============================================
    MEGA MENU
@@ -1919,13 +1924,17 @@ ul.cert-listing li a i {
   position: relative;
   /* overflow: hidden; */
   /* height: 220px; */
+  display: flex;
+  justify-content: center;
 }
 
 .card-img-wrapper img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   object-fit: cover;
   transition: 0.6s ease;
+  max-width: 180px;
+  padding: 20px 15px 0 15px;
 }
 
 .training-card:hover .card-img-wrapper img {
@@ -1974,13 +1983,13 @@ ul.cert-listing li a i {
 }
 
 .card-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--dark-text);
   margin-bottom: 12px;
   line-height: 1.4;
   display: -webkit-box;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -2420,7 +2429,7 @@ ul.cert-listing li a i {
 ========================= */
 
 .learning-process {
-  background: var(--light-bg);
+
   position: relative;
   z-index: 1;
 }
@@ -2726,7 +2735,7 @@ ul.cert-listing li a i {
 ========================= */
 
 .testimonials-section {
-  background: var(--light-bg);
+
   position: relative;
   z-index: 1;
 }
@@ -4200,8 +4209,8 @@ section {
 }
 
 .cta-box h2 {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -5911,6 +5920,26 @@ h5.traning-card-title {
 .intro-features3 {
   border: none;
   padding: 0;
+
+
+}
+
+@media screen and (width >=1024px) {
+  .intro-features3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+}
+
+.intro-features3 .right img {
+  border-radius: 20px;
+  background-color: white;
+  padding: 6px;
+  max-height: 350px;
 }
 
 
